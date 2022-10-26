@@ -1,0 +1,233 @@
+footer{
+  background-color:#333333;
+  color:white;
+  /* border-top: 5px solid rgba(10, 140, 97,.25); */
+}
+
+/* banner */
+.bottom-banner{
+  z-index:100;
+  position:fixed;
+  bottom:0;
+  width:100%;
+  padding:20px;
+  background-color: #0A8C61;
+  border-top: 5px solid #0A8C61;
+  overflow-y:hidden;
+  transition:opacity .65s, bottom .25s;
+}
+.bottom-banner.stick{
+  position:relative;
+}
+.bottom-banner.minimize{
+  pointer-events:none;
+  opacity:0;
+}
+.bottom-banner .banner-header{
+  margin-bottom:10px;
+}
+.site-banner p{
+  /* font-size:13px; */
+}
+.site-banner .button-container{
+  margin-left:20px;
+  margin-top:0;
+}
+
+/* carbon footer */
+#carbon-footer{
+  background-color:#0A8C61;
+  /* background-image:linear-gradient(45deg, #00573B, #0A8C61); */
+  padding-top:32px;
+  padding-bottom:32px;
+}
+#carbon-footer .tooltip-container{
+  margin-right:20px;
+}
+
+/* true footer */
+#true-footer{
+  z-index:101;
+  position:relative;
+  background-color:#333333;
+  border-top: 5px solid rgba(10, 140, 97,.25);
+  padding-top:50px;
+  padding-bottom:50px;
+  font-size:13px;
+}
+
+/* left footer cols */
+.footer-top-container{
+  margin-bottom:80px;
+}
+#footer-logo{
+  width:100%;
+  max-width:200px;
+}
+.footer-social{
+  width:25px;
+  height:25px;
+  margin-right:10px;
+}
+.footer-social:last-child{
+  margin-right:0px;
+}
+
+
+/* cols */
+.footer-info-col{
+  margin-right:50px;
+}
+#true-footer h3{
+  margin-bottom:15px;
+}
+/* newsletter/socials */
+.footer-right-col{
+  padding-left:100px
+}
+.little-bytes-text{
+  text-transform:lowercase;
+  display:inline-block;
+}
+.footer-form-rows{
+  margin-bottom:10px;
+}
+/* #name-row{
+  width:100%;
+  max-width:142px;
+  margin-right:20px;
+} */
+#email-row{
+  max-width:300px;
+  width:100%;
+}
+.form-button-container{
+  margin-right:20px
+}
+
+
+/* footer bottom */
+#true-footer hr{
+  margin:130px 0 30px 0;
+}
+#footer-bottom-info-container{
+  margin-right:20px;
+}
+.footer-badge{
+  margin-right:20px;
+}
+.footer-badge:last-child{
+  margin-right:0px;
+}
+#wcb #wcb_g{
+  background-color:transparent!important;
+}
+#wcb.wcb-d #wcb_a{
+  color:#333333!important;
+}
+#wcb.carbonbadge{
+  /* --b1:#333333!important; */
+  --b1:white!important;
+  /* --b2:#0A8C61!important; */
+  --b2:white!important;
+}
+#clean-creatives-img{
+  background-image: url('../img/clean-creatives-offwhite-transparent-badge.png');
+  width: 80px;
+  height: 80px;
+}
+
+
+/* *************** */
+/* responsive styles */
+@media only screen and (max-width:1000px){
+  .footer-cols-container{
+    flex-wrap:wrap;
+  }
+  .footer-left-cols{
+    order:2;
+  }
+  .footer-info-col{
+    margin-right:35px;
+  }
+  .footer-right-col{
+    /* margin-left:35px; */
+    padding-left:0;
+    margin-bottom:75px;
+    order:1;
+  }
+}
+@media only screen and (max-width:800px){
+  #carbon-footer{
+    padding-top:20px;
+    padding-bottom:20px;
+  }
+  #true-footer{
+    padding-top:40px;
+    padding-bottom:20px;
+    flex-wrap:wrap;
+  }
+  #footer-socials-container{
+    /* margin-top:20px; */
+  }
+  .footer-item-container{
+    width:35px;
+    height:35px;
+    margin-right:15px;
+  }
+}
+@media only screen and (max-width:630px){
+  .banner-header{
+    display:none;
+  }
+  .banner-info{
+    flex-wrap:wrap;
+  }
+  .site-banner .button-container{
+    margin-left:0;
+    margin-top:15px;
+  }
+
+  /* footer bottom */
+  .footer-bottom-container{
+    flex-wrap:wrap;
+  }
+  #footer-bottom-info-container{
+    margin-right:0;
+    margin-bottom:15px;
+  }
+}
+@media only screen and (max-width:525px){
+  .footer-top-container{
+    flex-wrap:wrap;
+    justify-content:center
+  }
+  #footer-logo-container{
+    justify-content: center;
+    margin-bottom:10px;
+  }
+  .footer-left-cols{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 0;
+    margin-bottom: 20px;
+    align-items: baseline;
+  }
+  .footer-info-col{
+    width:100%;
+    margin-right:0;
+    margin-bottom:20px;
+  }
+  #true-footer hr{
+    margin-top:50px;
+  }
+  .footer-badges-container{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .website-carbon-badge{
+    width:100%;
+    margin-right:0;
+  }
+
+}

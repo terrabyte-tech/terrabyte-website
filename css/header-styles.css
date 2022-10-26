@@ -1,0 +1,94 @@
+header{
+  /* padding:20px; */
+}
+
+/* banner image */
+#banner-image{
+  width:100%;
+  max-width:200px;
+  height:50px;
+}
+
+/* main nav */
+nav{
+  font-family: 'Rubik', sans-serif;
+  font-weight:800;
+  text-transform:uppercase;
+  letter-spacing:.5em;
+  position:relative;
+  user-select: none;
+}
+nav .nav-item-container{
+  padding:20px;
+  position:relative;
+  transition:.35s;
+  user-select: none;
+}
+.nav-item-container:after{
+  content:"";
+  position:absolute;
+  bottom:0;
+  left:0;
+  width:0;
+  height:4px;
+  border-radius:1px;
+  /* background-color:dodgerblue; */
+  background-color:#0A8C61;
+  transition:.35s width, .25s opacity;
+}
+.nav-item-container:hover{
+  /* color:#43dd97; */
+}
+.nav-item-container:hover:after{
+  /* width:100%; */
+}
+/* selected */
+.selected.nav-item-container:after{
+  opacity:.25;
+  width:100%;
+}
+/* active */
+.nav-item-container:active:after{
+  /* opacity:1; */
+}
+
+/* hover/select bar */
+/* #nav-select-bar, */
+.nav-select-bar{
+  background-color:#0A8C61;
+  height:4px;
+  border-radius:1px;
+  position:absolute;
+  bottom:0;
+  /* left:0; */
+  /* width:100px; */
+  transition:.35s;
+}
+
+
+/* secondary pages, showing the back button */
+.back-button-container{
+  margin-left:10px;
+}
+.back-button-icon{
+  width: 15px;
+  height: 15px;
+  margin-right: 15px;
+  position:relative;
+  left:0;
+  transition:left .25s, color .25s;
+}
+.back-button-container:hover{
+  /* color:#0A8C61; */
+}
+.back-button-container:hover .back-button-icon{
+  left:-9px;
+  /* color:#0A8C61; */
+}
+
+/* responsive styles */
+@media only screen and (max-width:650px){
+  header > .flex-container{
+    flex-wrap:wrap;
+  }
+}

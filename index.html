@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<!-- <html> -->
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="graphic design, environment, climate change, climate crisis, go green, ecology, conservation, carbon footprint, carbon, enviroaction, enviroart, ecoart, global warming, save the planet, plastic pollution, pixel planet, pixel planet today, pinekeepers, canapi, api, creative, nebraska, omaha, green tech, climate tech">
+  <meta name="description" content="Terrabyte is a tech company focused on providing solutions to existential environmental crises. By using everyday technology, we are powering the shift towards a greener future.">
+  
+  <meta name="author" content="Terrabyte">
+  <link rel="shortcut icon" type="image/png" href="favicon.ico"/>
+  <title>Terrabyte: Technology for a Greener Tomorrow</title>
+
+
+  <!-- favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!-- fonts -->
+  <!-- friendly -->
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&family=Open+Sans&display=swap" rel="stylesheet"> -->
+  <!-- broken future -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Rubik:wght@300&display=swap" rel="stylesheet">
+
+  <!-- stylesheets -->
+  <link href="https://www.goldenharpmedia.com/css/layout-styles.css" rel="stylesheet">
+
+  <link href="./css/site-styles.css" rel="stylesheet">
+  <link href="./css/header-styles.css" rel="stylesheet">
+  <link href="./css/footer-styles.css" rel="stylesheet">
+
+  <!-- page styles -->
+  <link href="./css/home-styles.css" rel="stylesheet">
+
+
+  <!-- initial load transition -->
+  <style>
+    .loading{
+      opacity:0;
+      background-color:#222222;
+    }
+  </style>
+  <script>
+    window.addEventListener("load", function(){
+      console.log("loaded");
+      document.body.classList.remove("loading");
+    })
+  </script>
+
+  <noscript>
+    <style>
+      .loading{
+        opacity:1;
+      }
+      .faq-item-content{
+        display:block;
+        opacity:1;
+      }
+    </style>
+  </noscript>
+
+  <!-- <script type="text/javascript" src="https://goldenharpmedia.com/js/shared-scripts.js"></script> -->
+  <script type="text/javascript" src="./js/shared-scripts.js"></script>
+  <script type="text/javascript" src="./js/site-scripts.js"></script>
+
+  <script data-host="https://microanalytics.io" data-dnt="false" src="https://microanalytics.io/js/script.js" id="ZwSg9rf6GA" async defer></script>
+</head>
+
+<body class="loadingx">
+  <svg class="hide" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+    <defs>
+      <!-- <g id="x-icon">
+        <path d="M25,0A25,25,0,1,0,50,25,25,25,0,0,0,25,0Zm8.65,37.38L25,28.84,16.44,37.5l-3.82-3.82L21.17,25,12.5,16.44l3.82-3.82L25,21.17l8.55-8.67,3.85,3.85L28.84,25l8.66,8.55Z"/>
+      </g> -->
+      <g id="logo">
+        <path class="a" d="M401.37,63.23l-7.55,15.92a2.72,2.72,0,0,0-.22,1,1.65,1.65,0,0,0,.67,1.3,2.41,2.41,0,0,0,1.58.55h2.26a2.65,2.65,0,0,0,1.74-.51,2.14,2.14,0,0,0,.74-.88l8.24-17.4Z"/><path class="a" d="M461.24,79.15,432.72,19a3.28,3.28,0,0,0-1.19-1.39,3.86,3.86,0,0,0-2.08-.47h-3.83a3.9,3.9,0,0,0-2.09.47A3.27,3.27,0,0,0,422.35,19l-15.61,32.9h7.48l13.31-28.18,27,56.9a4.14,4.14,0,0,0,.79.88A2.44,2.44,0,0,0,457,82h2.26a2.43,2.43,0,0,0,1.58-.55,1.68,1.68,0,0,0,.67-1.3A2.75,2.75,0,0,0,461.24,79.15Z"/><path class="a" d="M647.16,17.71a2.4,2.4,0,0,0-1.58-.56h-2.25a2.94,2.94,0,0,0-1.41.33,3.59,3.59,0,0,0-1.18,1.06L616.27,45.88,591.81,18.54a2.72,2.72,0,0,0-1.13-1.06,3.3,3.3,0,0,0-1.47-.33H587a2.4,2.4,0,0,0-1.58.56,1.65,1.65,0,0,0-.68,1.3,1.29,1.29,0,0,0,.17.65,3.17,3.17,0,0,1,.28.55l27.51,31.7h7.22l27.51-31.7a2.57,2.57,0,0,0,.34-.55,1.88,1.88,0,0,0,.11-.65A1.65,1.65,0,0,0,647.16,17.71Z"/><path class="a" d="M612.66,63.23V80a1.84,1.84,0,0,0,.68,1.49,2.74,2.74,0,0,0,1.8.55h2.15a2.94,2.94,0,0,0,1.91-.55,1.84,1.84,0,0,0,.68-1.49V63.23Z"/><path class="a" d="M166.75,51.91a3,3,0,0,0,1.92-.56,1.81,1.81,0,0,0,.67-1.48V48.48a1.93,1.93,0,0,0-.67-1.58,3,3,0,0,0-1.92-.55h-44v5.56Z"/><path class="a" d="M129.88,76.46V63.23h-7.1V80a1.83,1.83,0,0,0,.67,1.49,2.77,2.77,0,0,0,1.81.55h44a3,3,0,0,0,1.92-.55,1.83,1.83,0,0,0,.67-1.49V76.46Z"/><path class="a" d="M171.82,22.71V19.29a1.92,1.92,0,0,0-.67-1.58,3,3,0,0,0-1.92-.56h-44a2.78,2.78,0,0,0-1.81.56,1.92,1.92,0,0,0-.67,1.58v3.42Z"/><path class="a" d="M814.36,51.91a3,3,0,0,0,1.92-.56,1.82,1.82,0,0,0,.68-1.48V48.48a1.94,1.94,0,0,0-.68-1.58,3,3,0,0,0-1.92-.55h-44v5.56Z"/><path class="a" d="M777.5,76.46V63.23h-7.11V80a1.84,1.84,0,0,0,.68,1.49,2.74,2.74,0,0,0,1.8.55h44a2.94,2.94,0,0,0,1.91-.55,1.84,1.84,0,0,0,.68-1.49V76.46Z"/><path class="a" d="M819.44,22.71V19.29a1.92,1.92,0,0,0-.68-1.58,2.94,2.94,0,0,0-1.91-.56h-44a2.75,2.75,0,0,0-1.8.56,1.92,1.92,0,0,0-.68,1.58v3.42Z"/><path class="a" d="M306.78,63.23V80a1.84,1.84,0,0,0,.68,1.49,2.74,2.74,0,0,0,1.8.55h2a3,3,0,0,0,1.92-.55,1.83,1.83,0,0,0,.67-1.49V63.23Z"/><path class="a" d="M362.59,79.15,343,51.78c9.73-1,17.36-8.37,17.36-17.25,0-9.56-8.82-17.38-19.6-17.38H309.26a2.75,2.75,0,0,0-1.8.56,1.92,1.92,0,0,0-.68,1.58v3.42h34c7.38,0,13.38,5.28,13.38,11.82s-6,11.82-13.38,11.82h-34v5.56h28.41L355,79.52a10.57,10.57,0,0,0,1.57,1.72,4.08,4.08,0,0,0,2.71.78h1.35a2.41,2.41,0,0,0,1.58-.55,1.66,1.66,0,0,0,.68-1.3A2,2,0,0,0,362.59,79.15Z"/><path class="a" d="M212.07,63.23V80a1.84,1.84,0,0,0,.68,1.49,2.74,2.74,0,0,0,1.8.55h2a3,3,0,0,0,1.92-.55,1.84,1.84,0,0,0,.68-1.49V63.23Z"/><path class="a" d="M267.88,79.15,248.32,51.78c9.73-1,17.35-8.37,17.35-17.25,0-9.56-8.82-17.38-19.59-17.38H214.55a2.75,2.75,0,0,0-1.8.56,1.92,1.92,0,0,0-.68,1.58v3.42h34c7.37,0,13.37,5.28,13.37,11.82s-6,11.82-13.37,11.82h-34v5.56h28.41l19.85,27.61a10.21,10.21,0,0,0,1.58,1.72,4,4,0,0,0,2.7.78H266a2.39,2.39,0,0,0,1.57-.55,1.63,1.63,0,0,0,.68-1.3A2,2,0,0,0,267.88,79.15Z"/><path class="a" d="M542.91,48.5a16.83,16.83,0,0,0,8-14c0-9.56-8.82-17.38-19.59-17.38H499.8a2.75,2.75,0,0,0-1.8.56,1.92,1.92,0,0,0-.68,1.58v3.42h34c7.37,0,13.37,5.28,13.37,11.82,0,6.39-5.74,11.58-12.88,11.82h-34.5v5.56h36c7.66,0,14,5.48,14,12.27S541,76.46,533.35,76.46H504.43V63.23h-7.11V80a1.84,1.84,0,0,0,.68,1.49,2.74,2.74,0,0,0,1.8.55h33.55c11.07,0,20.12-8,20.12-17.84C553.47,57.43,549.18,51.53,542.91,48.5Z"/><path class="a" d="M731.61,22.71a3,3,0,0,0,1.92-.55,1.83,1.83,0,0,0,.67-1.49V19.29a1.92,1.92,0,0,0-.67-1.58,3,3,0,0,0-1.92-.56H680a2.75,2.75,0,0,0-1.8.56,1.92,1.92,0,0,0-.68,1.58v1.38a1.84,1.84,0,0,0,.68,1.49,2.74,2.74,0,0,0,1.8.55Z"/><path class="a" d="M702.3,46.35V80a1.83,1.83,0,0,0,.67,1.49,2.75,2.75,0,0,0,1.81.55h2a3,3,0,0,0,1.92-.55A1.84,1.84,0,0,0,709.4,80V46.35Z"/><path class="a" d="M84,22.71a3,3,0,0,0,1.92-.55,1.84,1.84,0,0,0,.68-1.49V19.29a1.92,1.92,0,0,0-.68-1.58A3,3,0,0,0,84,17.15H32.36a2.76,2.76,0,0,0-1.81.56,1.92,1.92,0,0,0-.67,1.58v1.38a1.83,1.83,0,0,0,.67,1.49,2.75,2.75,0,0,0,1.81.55Z"/><path class="a" d="M54.68,46.35V80a1.84,1.84,0,0,0,.68,1.49,2.74,2.74,0,0,0,1.8.55h2a2.94,2.94,0,0,0,1.91-.55A1.81,1.81,0,0,0,61.78,80V46.35Z"/><path class="a" d="M833.61,82a.24.24,0,0,1-.15,0,.17.17,0,0,1-.05-.13V76.94h-1.86a.25.25,0,0,1-.15,0,.14.14,0,0,1-.06-.12v-.12a.17.17,0,0,1,.06-.14.25.25,0,0,1,.15-.05h4.29a.23.23,0,0,1,.16.05.17.17,0,0,1,.06.14v.12a.14.14,0,0,1-.06.12.23.23,0,0,1-.16,0H834v4.91a.18.18,0,0,1-.06.13.25.25,0,0,1-.16,0Z"/><path class="a" d="M837.41,82a.25.25,0,0,1-.16,0,.18.18,0,0,1-.06-.13v-5.2a.17.17,0,0,1,.06-.14.25.25,0,0,1,.16-.05h.23a.26.26,0,0,1,.14,0l.06.07L840,80.08l2.13-3.51.06-.07a.26.26,0,0,1,.14,0h.23a.23.23,0,0,1,.15.05.17.17,0,0,1,.06.14v5.2a.18.18,0,0,1-.06.13.22.22,0,0,1-.15,0h-.17a.21.21,0,0,1-.15,0,.18.18,0,0,1-.06-.13V77.54l-1.79,3a.32.32,0,0,1-.11.12.34.34,0,0,1-.18,0h-.21a.34.34,0,0,1-.18,0,.43.43,0,0,1-.11-.12l-1.79-3v4.31a.21.21,0,0,1,0,.13.24.24,0,0,1-.15,0Z"/>
+      </g>
+      <g id="a-mountain-logo">
+        <path d="M129.26,693.32,22.21,919A38.67,38.67,0,0,0,19,933.43c0,7,3.19,13.16,9.59,18.4A34.23,34.23,0,0,0,51,959.7H83c10.62,0,18.9-2.39,24.77-7.22s9.29-9,10.37-12.49L235,693.32Z"/><path d="M977.77,919,573.52,66.57c-4.3-8.75-9.86-15.31-16.83-19.71S540,40.3,527.19,40.3H472.87q-19.25,0-29.58,6.56c-7,4.4-12.53,11-16.75,19.71L205.37,532.84h106L500,133.54,881.89,940c2.11,3.51,5.87,7.67,11.19,12.49s13.31,7.22,23.95,7.22h32a34.33,34.33,0,0,0,22.39-7.87c6.34-5.24,9.55-11.39,9.55-18.4A39.12,39.12,0,0,0,977.77,919Z"/>
+      </g>
+      <g id="instagram-icon">
+        <path d="M25,6.57c6,0,6.71,0,9.09.13C40.18,7,43,9.87,43.3,15.92c.11,2.37.13,3.08.13,9.08s0,6.72-.13,9.09c-.28,6-3.12,8.93-9.21,9.21-2.38.11-3.08.13-9.09.13s-6.71,0-9.08-.13C9.81,43,7,40.12,6.7,34.08,6.59,31.71,6.57,31,6.57,25s0-6.71.13-9.08C7,9.87,9.82,7,15.92,6.7,18.29,6.59,19,6.57,25,6.57Zm0-4.05c-6.11,0-6.87,0-9.27.13C7.57,3,3,7.56,2.66,15.73c-.11,2.4-.14,3.16-.14,9.27s0,6.87.13,9.27C3,42.43,7.56,47,15.73,47.35c2.4.1,3.16.13,9.27.13s6.87,0,9.27-.13C42.43,47,47,42.44,47.34,34.27c.11-2.4.14-3.16.14-9.27s0-6.87-.13-9.27C47,7.58,42.44,3,34.27,2.66,31.87,2.55,31.11,2.52,25,2.52Zm0,10.94A11.55,11.55,0,1,0,36.54,25,11.53,11.53,0,0,0,25,13.46Zm0,19A7.49,7.49,0,1,1,32.49,25,7.49,7.49,0,0,1,25,32.49ZM37,10.3A2.7,2.7,0,1,0,39.7,13,2.7,2.7,0,0,0,37,10.3Z"/>
+      </g>
+      <g id="twitter-icon">
+        <path d="M50,9.49a20.48,20.48,0,0,1-5.89,1.62,10.29,10.29,0,0,0,4.51-5.68A20.42,20.42,0,0,1,42.1,7.92a10.26,10.26,0,0,0-17.48,9.36A29.12,29.12,0,0,1,3.48,6.56a10.28,10.28,0,0,0,3.17,13.7A10.29,10.29,0,0,1,2,19a10.26,10.26,0,0,0,8.23,10.19,10.46,10.46,0,0,1-4.64.18,10.28,10.28,0,0,0,9.59,7.12A20.64,20.64,0,0,1,0,40.71a29,29,0,0,0,15.73,4.61c19,0,29.8-16.09,29.15-30.52A20.52,20.52,0,0,0,50,9.49Z"/>
+      </g>
+      <g id="youtube-icon">
+        <path d="M40.86,6.15c-7.51-.51-24.23-.51-31.73,0C1.02,6.71,.06,11.61,0,24.52c.06,12.89,1.01,17.81,9.14,18.37,7.5,.51,24.22,.51,31.73,0,8.12-.55,9.08-5.46,9.14-18.37-.06-12.89-1.01-17.81-9.14-18.37Zm-22.11,26.7V16.19l16.67,8.32-16.67,8.35Z"/>
+      </g>
+      <g id="eco-profile-icon">
+        <path d="M12.75,2.52A10.55,10.55,0,1,0,23.3,13.07,10.55,10.55,0,0,0,12.75,2.52Z"/><path d="M37.05,26.49A10.55,10.55,0,1,0,47.6,37,10.55,10.55,0,0,0,37.05,26.49Zm0,16.3A5.77,5.77,0,1,1,42.81,37h0a5.76,5.76,0,0,1-5.75,5.77h0Z"/><path d="M18.3,38.61a5.76,5.76,0,1,1,0-3.23h4.89a10.56,10.56,0,1,0,0,3.22Z"/><path d="M41.88,16.39a5.76,5.76,0,0,1-10.12-1.66H47.65a10.6,10.6,0,1,0-.43,1.66ZM37.25,7.21a5.75,5.75,0,0,1,5.12,3.12H32.12A5.77,5.77,0,0,1,37.25,7.21Z"/>
+      </g>
+      <g id="wdht-icon">
+        <path d="M20.28,7.2a20,20,0,0,1,3.61-1.58L22,1.18a2,2,0,0,0-1.09-1,2,2,0,0,0-1.5,0,2,2,0,0,0-1,2.6Z"/><path d="M42,47.24l-1.94-4.45a19.92,19.92,0,0,1-3.61,1.57l1.94,4.46a2,2,0,0,0,1.08,1A2,2,0,0,0,42,48.75,2,2,0,0,0,42,47.24Z"/><path d="M30.17,47.31a22.32,22.32,0,1,1,8.9-42.79A1.84,1.84,0,0,1,39.7,5a1.88,1.88,0,0,1,.55,1.4,1.94,1.94,0,0,1-.16.75,1.94,1.94,0,0,1-1.09,1,1.76,1.76,0,0,1-.75.14,1.9,1.9,0,0,1-.75-.16,18.38,18.38,0,1,0,0,33.72,1.91,1.91,0,0,1,.75-.17,2,2,0,0,1,.76.14,1.93,1.93,0,0,1,.65.41,2.16,2.16,0,0,1,.44.63,2,2,0,0,1,.16.76,1.78,1.78,0,0,1-.14.75,1.93,1.93,0,0,1-.41.65,1.88,1.88,0,0,1-.64.44A22.35,22.35,0,0,1,30.17,47.31Z"/><path d="M30.17,27a2,2,0,0,1-2-2V15.5a2,2,0,0,1,3.94,0V25a2,2,0,0,1-2,2Z"/><path d="M30.17,27a2,2,0,0,1-1.08-.32,2,2,0,0,1-.73-.86l-5.19-12a2,2,0,0,1,1-2.59,2,2,0,0,1,2.59,1l5.19,12a2,2,0,0,1-1,2.59A1.91,1.91,0,0,1,30.17,27Z"/>
+      </g>
+      <g id="info-icon">
+        <path d="M30.89,13.13c-1.53-.07-2-.08-5.89-.08s-4.35,0-5.89.08c-4,.18-5.8,2-6,6-.07,1.54-.09,2-.09,5.89s0,4.35.09,5.89c.18,3.92,2,5.8,6,6,1.53.07,2,.09,5.89.09s4.36,0,5.89-.09c4-.18,5.8-2.06,6-6,.07-1.53.09-2,.09-5.89s0-4.35-.09-5.89C36.69,15.19,34.85,13.31,30.89,13.13ZM25,32.49A7.49,7.49,0,1,1,32.49,25,7.49,7.49,0,0,1,25,32.49ZM32.79,19a1.75,1.75,0,1,1,1.75-1.75A1.75,1.75,0,0,1,32.79,19Zm-2.93,6A4.86,4.86,0,1,1,25,20.14,4.86,4.86,0,0,1,29.86,25ZM25,0A25,25,0,1,0,50,25,25,25,0,0,0,25,0ZM39.5,31c-.24,5.3-3.2,8.24-8.49,8.49-1.55.07-2.05.08-6,.08s-4.46,0-6-.08c-5.3-.25-8.24-3.19-8.49-8.49-.07-1.55-.08-2.05-.08-6s0-4.46.08-6c.25-5.3,3.19-8.24,8.49-8.48,1.55-.08,2.05-.09,6-.09s4.46,0,6,.09c5.31.24,8.25,3.19,8.49,8.48.07,1.55.08,2.05.08,6S39.57,29.46,39.5,31Z"/>
+      </g>
+      <g id="email-icon">
+        <path d="M25,26.46.46,6.57H49.54Zm0,5.27L.43,11.82V43.43H49.57V11.82Z"/>
+      </g>
+      <g id="ext-link-icon">
+        <path d="M43.51,27.06V47.63H.32V8.54H25v4.12H4.43V43.51h35V27.06ZM49.68,2.37H27.08l8.3,8.23L21,25.14,26.85,31,41.2,16.42,49.68,25Z"/>
+      </g>
+    </defs>
+  </svg>
+
+  <a name="top"></a>
+  <!-- header -->
+  <header class="padded-section">
+    <div class="max-width flex-container align-center">
+      <div class="banner-image-container flex-width flex-container align-center">
+        <div id="banner-image" class="set-width flex-container align-center">
+          <svg viewBox="0 0 850 100">
+            <use href="#logo"/>
+          </svg>
+        </div>
+      </div>
+      <div class="nav-container set-width flex-container align-center hide-on-mobile">
+        <nav class="flex-container align-center">
+          <a class="nav-item-container selected" href="index.html">
+            <span>Home</span>
+          </a>
+          <!-- <a class="nav-item-container" href="https://www.blog.terrabyte.eco">
+            <span>Blog</span>
+          </a> -->
+          <a class="nav-item-container" href="#projects">
+            <span>Projects</span>
+          </a>
+          <a class="nav-item-container" href="https://terrabyte.eco/about-us">
+            <span>About Us</span>
+          </a>
+          <!-- <a class="nav-item-container" href="#faqs">
+            <span>FAQ<span class="force-small-text">s</span></span>
+          </a> -->
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- content sections -->
+  <a name="hero"></a>
+  <section id="hero" class="padded-section full-section flex-container flex-vertical">
+    <div class="section-col-container flex-width max-width flex-container align-center">
+      <div class="illustration-col section-col flex-width flex-container all-center">
+        <div class="hero-code-container text-center">
+          <!-- we are -->
+          <h3 class="code-text hide-on-mobile">01110111 01100101 00100000 01100001 01110010 01100101</h3>
+          <!-- saving the planet byte by byte -->
+          <h3 class="code-text">
+            <span class="hide-on-mobile">01110011 01100001 01110110 01101001 01101110 01100111 00100000 01110100 01101000 01100101 00100000 01110000 01101100 01100001 01101110 01100101 01110100 00100000 </span>01100010 01111001 01110100 01100101 00100000 01100010 01111001 00100000 01100010 01111001 01110100 01100101</h3>
+          <!-- u in?! -->
+          <h3 class="code-text hide-on-mobile">01110101 00100000 01101001 01101110 00111111 00100001</h3>
+        </div>
+        <div class="a-mountain-logo set-width">
+          <svg viewBox="0 0 1000 1000">
+            <use href="#a-mountain-logo"/>
+          </svg>
+        </div>
+      </div>
+      <div class="text-col section-col set-width">
+        <h1>technology for a <br class="hide-on-tablet">greener tomorrow</b></h1>
+        <!-- <h1>saving the planet<br> -->
+        <!-- byte by byte</h1> -->
+        <p>We turn pixels and bytes into positive environmental change.</p>
+        <div class="button-container">
+          <a href="#about-us">
+            <button>see what we do</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <a name="about-us"></a>
+  <section id="about-us" class="padded-section full-section flex-container all-center">
+    <div class="flex-container flex-vertical">
+      <div class="section-col-container max-width flex-container">
+        <!-- venn text col -->
+        <div class="section-col flex-width">
+          <h3 class="section-col-title">
+            "Where <span class="highlight-container">technology</span>, <span class="highlight-container">design</span>, and <span class="highlight-container">environmentalism</span> combine &mdash; we thrive."</span>
+          </h2>
+          <div class="col-content">
+            <p>Terrabyte is a green tech company focused on combining creativity and technology to provide solutions for the ongoing environmental crises. Our team is made up of passionate people that not only want to change the world for the better, but find creative ways to the means. We don't build carbon vacuums, microplastic filters, or even biodegradable cutlery &mdash; but we do develop projects for the digital world in order to create change in the real one.</p>
+          </div>
+          <div class="col-footer">
+            <a class="standard-link ext-link" href="https://terrabyte.eco/about-us">Learn more about us</a>
+          </div>
+        </div>
+        <!-- venn diagram col -->
+        <div class="section-col flex-width flex-container all-center hide-on-tablet hide-on-mobile">
+          <div class="venn-container set-width">
+            <div id="venn-circle-1" class="venn-circle"></div>
+            <div id="venn-circle-2" class="venn-circle"></div>
+            <div id="venn-circle-3" class="venn-circle"></div>
+
+            <div id="venn-guide-circle" class="venn-circle flex-container all-center">
+              <!-- <div class="venn-logo">
+                <svg viewBox="0 0 1000 1000">
+                  <use href="#a-mountain-logo"/>
+                </svg>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="set-width button-container all-center flex-container">
+        <a href="#projects">
+          <button>Our Projects</button>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <a name="projects"></a>
+  <section id="projects" class="padded-section full-section flex-container all-center">
+    <div class="flex-container flex-vertical">
+      <div class="section-col-container max-width flex-container">
+        <!-- pixel planet today -->
+        <div class="section-col flex-width flex-container flex-vertical">
+          <div id="pixel-planet-today-img" class="col-img set-height"></div>
+          <div class="col-content flex-height">
+            <p>Pixel Planet Today is a creative venture that pairs facts about the planet with pixel art designs. What started as a Design-365 project has since spun into a fully-fledged environmental-awareness endeavor, aiming to raise an appreciation for the planet using the power of nostalgia.</p>
+          </div>
+          <div class="col-footer set-height">
+            <a class="standard-link ext-link" href="https://www.pixelplanettoday.com" target="_blank">
+              <div class="flex-container align-center">
+                <span class="set-width">Learn More</span>
+                <div class="icon set-width">
+                  <svg viewBox="0 0 50 50">
+                    <use href="#ext-link-icon"/>
+                  </svg>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- pinekeepers -->
+        <div class="section-col flex-width flex-container flex-vertical">
+          <div id="pinekeepers-img" class="col-img set-height"></div>
+          <div class="col-content flex-height">
+            <p>Pinekeepers is a retro-inspired game that turns trees saved in the digital world into real-life saplings!  This game is in the early stages of development, but will feature trees, wildfires, and of course, pixel art. Stay tuned for more information as we release it on our social media channels!</p>
+          </div>
+          <div class="col-footer set-height">
+            <a class="standard-link ext-link" href="https://www.pinekeepers.com" target="_blank">
+              <div class="flex-container align-center">
+                <span class="set-width">Learn More</span>
+                <div class="icon set-width">
+                  <svg viewBox="0 0 50 50">
+                    <use href="#ext-link-icon"/>
+                  </svg>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- canapi -->
+        <!-- <div class="section-col flex-width flex-container flex-vertical">
+          <div id="canapi-img" class="col-img set-height"></div>
+          <div class="col-content flex-height">
+            <p>Canapi is a API that aims to get your existing site/service/game to the next level of sustainability.</p>
+            <p>Pixel Planet Today is a creative venture that pairs facts about the planet with pixel art designs. What started as a Design-365 project has since spun into a fully-fledged environmental-awareness endeavor, aiming to raise an appreciation for the planet using the power of nostalgia.</p>
+          </div>
+          <div class="col-footer set-height">
+            <a class="standard-link" href="https://www.pinekeepers.com">Learn More</a>
+          </div>
+        </div> -->
+      </div>
+      <!-- <div class="set-width button-container all-center flex-container">
+        <a href="#bio">
+          <button>The faces behind the projects</button>
+        </a>
+      </div> -->
+      <div class="set-width button-container all-center flex-container">
+        <a href="#faqs">
+          <button>Questions?</button>
+        </a>
+      </div>
+    </div>
+    
+  </section>
+
+  <a name="faqs"></a>
+  <section id="faqs" class="padded-section full-section flex-container all-center">
+    <div class="section-col-container max-width flex-container align-top">
+      <div class="accordion-col section-col flex-width">
+        <h2 class="section-col-title">
+          <span class="highlight-container">FAQ<span class="force-small-text">s</span></span>
+        </h2>
+        <!-- <div class="accordion-item-container" data-accordion-container>
+          <div class="accordion-item-header">
+            <a class="standard-link" data-accordion-trigger>What does 'Terrabyte' mean?</a>
+          </div>
+          <div class="accordion-item-content-container" data-accordion-content-container>
+            <div class="accordion-item-content" data-accordion-content>
+              <p>The name 'Terrabyte' is a play on 'terabyte' - a unit of measurement of data equal to 1,024 gigabytes. By changing the first part of the word, we can reflect that not only are we a tech company, but a green tech company.</p>
+              <p>For those that are fans of our initial project, Pixel Planet Today, you may be asking, "Why not name the company Pixel Planet?" While this was under consideration, we finally decided to go with 'Terrabyte' sheerly for the fact that not all of our projects will be based on pixel art (just some).</p>
+            </div>
+          </div>
+        </div> -->
+        <div class="accordion-item-container" data-accordion-container>
+          <div class="accordion-item-header">
+            <a class="standard-link" data-accordion-trigger>What does the 'A' logo mean?</a>
+          </div>
+          <div class="accordion-item-content-container" data-accordion-content-container>
+            <div class="accordion-item-content" data-accordion-content>
+              <p>There is a lot of symbolism behind choosing the 'A' for our standalone logo, but to sum it up: it encompasses everything this company stands for and represents. The triangular 'A' is reminiscent of a tall mountain (many people think of mountains when they think of nature and the Earth), but it is also missing a piece (referencing the second part of our name, 'byte'). The letter 'A' also sits perfectly in the middle of our name, representing our goal to bring a new kind of balance between nature and human-created technology.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item-container" data-accordion-container>
+          <div class="accordion-item-header">
+            <a class="standard-link" data-accordion-trigger>Is it all pixel art?</a>
+          </div>
+          <div class="accordion-item-content-container" data-accordion-content-container>
+            <div class="accordion-item-content" data-accordion-content>
+              <p>Just for now. Our first two projects are created using pixel art purely because it matches what those brands are about, but some planned future projects won't use pixel art at all (as it won't make sense in those contexts).</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item-container" data-accordion-container>
+          <div class="accordion-item-header">
+            <a class="standard-link" data-accordion-trigger>Is Terrabyte a business? Or is it a non-profit?</a>
+          </div>
+          <div class="accordion-item-content-container" data-accordion-content-container>
+            <div class="accordion-item-content" data-accordion-content>
+              <p>Terrabyte is a for-profit business, but like other purpose-driven companies, we do a lot more than push out products and take your money. While we are in our infancy, we strive to create environmentally-friendly products while being environmentally-conscious ourselves. Our project websites are hosted using green energy, and our operations are entirely plastic-free! As we grow, we will continue making eco-conscious steps for the company, including become a B Corp, help employees lead sustainable lives, and get all of our energy from renewable sources.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item-container" data-accordion-container>
+          <div class="accordion-item-header">
+            <a class="standard-link" data-accordion-trigger>What makes Terrabyte unique?</a>
+          </div>
+          <div class="accordion-item-content-container" data-accordion-content-container>
+            <div class="accordion-item-content" data-accordion-content>
+              <p>Terrabyte isn't your average green tech company. While some green tech companies focus on bringing revolutionary devices and machinery to market, we are more focused on the tech that's already widely used today. We're not in the business of building carbon vacuums (as honorable as a profession that is), we're in the business of making it easier for the little guy to become more environmentally-conscious and actually become more environmentally friendly.</p>
+              <p>But even on the surface, it shouldn't take long to see what sets us apart. Since the beginning of Pixel Planet Today, we've been focused on using art and design to communicate climate challenges. We're artists first - the rest is just to make it more impactful.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item-container" data-accordion-container>
+          <div class="accordion-item-header">
+            <a class="standard-link" data-accordion-trigger>What is a '.eco' domain?</a>
+          </div>
+          <div class="accordion-item-content-container" data-accordion-content-container>
+            <div class="accordion-item-content" data-accordion-content>
+              <p>Like other, newer TLDs (the ending of a web address like .com, .net, etc.), .eco domains help communicate the website's focus, even as someone is typing the URL. But unlike other TLDs like .shop, .website, or even .pizza - .eco is backed by a multitude of environmental organizations. World Wildlife Fund, Ocean Conservancy, IUCN, and over 50 others advise policies for .eco.</p>
+
+              <a class="standard-link ext-link" href="https://www.go.eco" target="_blank">
+                <div class="flex-container align-center">
+                  <span class="set-width">Learn More about Eco domains</span>
+                  <div class="icon set-width">
+                    <svg viewBox="0 0 50 50">
+                      <use href="#ext-link-icon"/>
+                    </svg>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-col flex-width">
+        <h2 class="section-col-title">
+          <span class="highlight-container">Have another question?</span><br>
+          
+          Ask us on:</h2>
+
+        <div class="socials-container">
+          <!-- instagram -->
+          <a class="ques-item-container flex-container align-center" href="https://instagram.com/terrabyte_tech" target="_blank">
+            <div class="icon set-width">
+              <svg viewBox="0 0 50 50">
+                <use href="#instagram-icon"/>
+              </svg>
+            </div>
+            <div class="flex-width hide-on-mobile">
+              <h3>@terrabyte_tech</h3>
+            </div>
+          </a>
+          <!-- twitter -->
+          <a class="ques-item-container flex-container align-center" href="https://twitter.com/terrabyte_tech" target="_blank">
+            <div class="icon set-width">
+              <svg viewBox="0 0 50 50">
+                <use href="#twitter-icon"/>
+              </svg>
+            </div>
+            <div class="flex-width hide-on-mobile">
+              <h3>@terrabyte_tech</h3>
+            </div>
+          </a>
+          <!-- email -->
+          <a class="ques-item-container flex-container align-center" href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#110;&#102;&#111;&#64;&#116;&#101;&#114;&#114;&#97;&#98;&#121;&#116;&#101;&#46;&#101;&#99;&#111;" target="_blank">
+            <div class="icon set-width">
+              <svg viewBox="0 0 50 50">
+                <use href="#email-icon"/>
+              </svg>
+            </div>
+            <div class="flex-width hide-on-mobile">
+              <h3>&#105;&#110;&#102;&#111;&#64;&#116;&#101;&#114;&#114;&#97;&#98;&#121;&#116;&#101;&#46;&#101;&#99;&#111;</h3>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- footer -->
+  <a id="footer-anchor" name="footer"></a>
+  <footer data-footer>
+    <div id="cookie-banner" class="site-banner bottom-banner">
+      <div class="max-width flex-container align-center">
+        <div class="banner-content flex-width">
+          <div class="flex-container banner-header">
+            <h3 class="flex-width">Cookies &amp; Your Privacy</h3>
+          </div>
+          <div class="banner-info flex-container">
+            <div class="flex-width">
+              <p class="subtext">Being a responsible company doesn't end with being environmentally conscious. We limit the amount and types of cookies and similar technologies our site uses, but we still rely on them to provide stellar web experiences. <a class="standard-link current-color-link" href="https://terrabyte.eco/legal/privacy-policy.html">Learn More</a></p>
+            </div>
+            <div class="set-width button-container">
+              <!-- <h3>Accept:</h3> -->
+              <button class="" data-cookie-button="accept-all">All</button>
+              <button class="primary" data-cookie-button="accept-min">Essential</button>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <!-- <div id="carbon-footer" class="padded-section">
+      <div class="max-width flex-container align-center">
+        <p class="code-text">Loading this webpage produced an estimated 0.02 grams of CO2. Amount may vary depending on user region, time of day, and internet connection method. Estimate provided by <a class="standard-link current-color-link" href="https://www.websitecarbon.com" target="_blank">Website Carbon</a></p>
+      </div>
+    </div> -->
+    <div id="true-footer" class="padded-section">
+      <div class="footer-top-container max-width flex-container">
+        <div id="footer-logo-container" class="flex-width flex-container align-center">
+          <div id="footer-logo" class="set-width flex-container align-center">
+            <svg viewBox="0 0 850 100">
+              <use href="#logo"/>
+            </svg>
+          </div>
+        </div>
+        
+        <div id="footer-socials-container" class="set-width flex-container">
+          <!-- instagram -->
+          <a class="footer-social icon-container" href="https://instagram.com/terrabyte_tech" target="_blank">
+            <div class="icon">
+              <svg viewBox="0 0 50 50">
+                <use href="#instagram-icon"/>
+              </svg>
+            </div>
+          </a>
+          <!-- twitter -->
+          <a class="footer-social icon-container" href="https://twitter.com/terrabyte_tech" target="_blank">
+            <div class="icon">
+              <svg viewBox="0 0 50 50">
+                <use href="#twitter-icon"/>
+              </svg>
+            </div>
+          </a>
+          <!-- https://www.youtube.com/channel/UCyOoLyf8iXNEvGGdampKeLQ -->
+          <!-- youtube -->
+          <a class="footer-social icon-container" href="https://www.youtube.com/channel/UCyOoLyf8iXNEvGGdampKeLQ" target="_blank">
+            <div class="icon">
+              <svg viewBox="0 0 50 50">
+                <use href="#youtube-icon"/>
+              </svg>
+            </div>
+          </a>
+          <!-- github -->
+          <a class="footer-social icon-container" href="https://github.com/terrabyte-tech" target="_blank">
+            <div class="icon">
+              <svg viewBox="0 0 50 50">
+                <use href="#github-icon"/>
+              </svg>
+            </div>
+          </a>
+          <!-- we dont have time -->
+          <!-- <a class="footer-item-container icon-container" href="https://wedonthavetime.org" target="_blank">
+            <div class="icon">
+              <svg viewBox="0 0 50 50">
+                <use href="#wdht-icon"/>
+              </svg>
+            </div>
+          </a> -->
+          <!-- dot.eco profile -->
+          <a class="footer-social icon-container" href="https://profiles.eco/terrabyte" target="_blank">
+            <div class="icon">
+              <svg viewBox="0 0 50 50">
+                <use href="#eco-profile-icon"/>
+              </svg>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="footer-cols-container max-width flex-container">
+        <div class="footer-left-cols flex-container flex-width">
+          <div class="footer-info-col set-width">
+            <h3>Legal</h3>
+            <div class="footer-link-container">
+              <a class="standard-link" href="https://terrabyte.eco/legal/privacy-policy.html">Privacy Policy</a>
+            </div>
+            <div class="footer-link-container">
+              <a class="standard-link" href="https://terrabyte.eco/legal/cookie-policy.html">Cookie Policy</a>
+            </div>
+          </div>
+          <div class="footer-info-col set-width">
+            <h3>Company</h3>
+            <div class="footer-link-container">
+              <a class="standard-link" href="https://terrabyte.eco/about-us">About Us</a>
+            </div>
+            <!-- <div class="footer-link-container">
+              <a class="standard-link" href="https://blog.terrabyte.eco">Blog</a>
+            </div> -->
+            <div class="footer-link-container">
+              <a class="standard-link" href="#faqs">FAQ<span class="force-small-text">s</span></a>
+            </div>
+            <div class="footer-link-container">
+              <a class="standard-link" href="https://terrabyte.eco/get-involved">Get Involved</a>
+            </div>
+            <div class="footer-link-container">
+              <a class="standard-link" href="https://terrabyte.eco/donate">Donate</a>
+            </div>
+            
+
+            <!-- <div class="footer-link-container">
+              <a class="standard-link" href="https://terrabyte.eco/our-work">Our Work</a>
+            </div> -->
+            <!-- <div class="footer-link-container">
+              <a class="standard-link" href="https://terrabyte.eco/our-impact">Our Impact</a>
+            </div> -->
+            
+          </div>
+          <div class="footer-info-col set-width">
+            <h3>Projects</h3>
+            <div class="footer-link-container">
+              <a class="standard-link" href="https://www.pixelplanettoday.com" target="_blank">Pixel Planet Today</a>
+            </div>
+            <div class="footer-link-container">
+              <a class="standard-link" href="https://www.pinekeepers.com" target="_blank">Pinekeepers</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="footer-right-col flex-width">
+          <!-- newsletter -->
+          <h3>Sign up for the newsletter, <span class="little-bytes-text">&lt;little-bytes&gt;</span></h3>
+
+          <form
+  action="https://buttondown.email/api/emails/embed-subscribe/terrabyte"
+  method="post"
+  target="popupwindow"
+  onsubmit="window.open('https://buttondown.email/terrabyte', 'popupwindow')"
+  class="embeddable-buttondown-form">
+    <!-- <label for="bd-email">Enter your email</label> -->
+    <div class="footer-form-rows flex-container">
+      <div id="email-row" class="form-row set-width flex-container">
+        <span class="custom-input-container flex-width">
+          <input type="email" name="email" id="bd-email" placeholder="name@email.com"/>
+        </span>
+      </div>
+    </div>
+
+    <div class="flex-container align-center">
+      <div class="form-button-container set-width">
+        <input type="submit" value="Subscribe" />
+        <input type="hidden" name="tag" value="Terrabyte Subscribers" />
+      </div>
+      <p class="flex-width">Powered by 
+        <a class="standard-link" href="https://buttondown.email" target="_blank">Buttondown</a>
+      </p>
+    </div>
+  </form>
+
+        </div>
+      </div>
+
+      <div class="max-width">
+        <hr>
+      </div>
+      
+
+      <div class="footer-bottom-container max-width flex-container align-center">
+        <div id="footer-bottom-info-container" class="flex-width">
+          <div id="footer-copyright">
+            &copy; <span id="current-year-text"></span> Terrabyte, LLC. All Rights Reserved.
+          </div>
+          <div id="made-by">
+            <span>Website designed &amp; hosted by <a class="standard-link" href="https://www.goldenharpmedia.com" target="_blank">Golden Harp Media</a></span>
+          </div>
+        </div>
+        
+
+        <div class="set-width footer-badges-container flex-container align-center">
+          <!-- website carbon -->
+          <div class="website-carbon-badge footer-badge">
+            <div id="wcb" class="carbonbadge wcb-d"></div>
+            <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
+          </div>
+          <!-- clean creatives -->
+          <div class="clean-creatives-badge footer-badge">
+            <a href="https://www.cleancreatives.org" target="_blank">
+              <div id="clean-creatives-img"></div>
+            </a>
+            
+          </div>
+        </div>
+      </div>
+
+
+      
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,168 @@
+/* ************** */
+#hero.full-section{
+  height:calc(100vh - 140px);
+  min-height:0;
+}
+/* hero, left col (illustration) */
+.a-mountain-logo{
+  width:100%;
+  max-width:200px;
+  position:absolute;
+}
+.hero-code-container{}
+.hero-code-container .code-text{
+  opacity:.35;
+  color: #0A8C61;
+  margin-bottom:20px;
+}
+.hero-code-container .code-text:last-child{
+  margin-bottom:0px;
+}
+/* hero, right col (text) */
+#hero .text-col{
+  width:100%;
+  max-width:435px;
+}
+#hero h1{
+  margin-bottom:40px;
+  font-size:24px;
+}
+.button-container{
+  margin-top:40px;
+}
+/* ********* */
+
+
+/* about us, venn diagram */
+.venn-container{
+  position:relative;
+  margin: 35px 0;
+  border: 50px solid transparent;
+}
+.venn-circle{
+  position:absolute;
+  width:250px;
+  height:250px;
+  border-radius:50%;
+  background-color:rgba(10, 140, 97,.33);
+  top:0;
+  left:0;
+}
+#venn-guide-circle{
+  position:relative;
+  background-color:transparent;
+  border:none;
+}
+#venn-circle-1{
+  transform:translateY(-33.33%);
+}
+#venn-circle-2{
+  transform:translate(-33.33%, 33.33%);
+}
+#venn-circle-3{
+  transform:translate(33.33%, 33.33%);
+}
+.venn-circle-label{
+  position:relative;
+  margin-top:10px;
+}
+.venn-logo{
+  width:30px;
+  height:30px;
+  margin-top:35px;
+}
+/* ********* */
+
+
+/* projects */
+.col-img{
+  width:100%;
+  max-width:300px;
+  min-height:200px;
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size:contain;
+  margin:0 auto 20px auto;
+}
+#pixel-planet-today-img{
+  background-image:url("../img/pixel-planet-lettering-tight-crop.png");
+}
+#pinekeepers-img{
+  background-image:url("../img/pine-keepers-title-image-trans.png");
+}
+#canapi-img{
+  background-image:url("../img/canapi-code-logo-cropped-white-trans.png");
+}
+/* ************* */
+
+
+/* faqs */
+.accordion-col.section-col{
+  /* margin-bottom:50px; */
+}
+.ques-item-container .icon{
+  width:50px;
+  height:50px;
+  margin-right:35px;
+}
+.ques-item-container{
+  transition:.25s;
+  margin-bottom:20px;
+}
+.ques-item-container:hover{
+  color:rgba(10, 140, 97,1);
+}
+.ques-item-container:active{
+  color:rgba(10, 140, 97,.45);
+}
+.ques-icon-container:last-child{
+  /* margin-right:0; */
+}
+/* ************* */
+
+
+
+/* ************* */
+/* responsive styles */
+@media only screen and (max-width:930px){
+  #hero .a-mountain-logo{
+    display:none;
+  }
+  #hero .text-col{
+    position:absolute;
+    width: 80%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #faqs .accordion-col.section-col{
+    margin-bottom:100px;
+  }
+  #faqs .accordion-item-content{
+    padding:20px;
+  }
+  
+}
+@media only screen and (max-width: 800px){
+  #faqs .icons-container{
+    /* justify-content:space-between; */
+  }
+}
+@media only screen and (max-width: 600px){
+  #hero .code-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    word-wrap: break-word;
+  }
+  #faqs .socials-container{
+    display:flex;
+    justify-content:space-around;
+  }
+  .ques-item-container .icon{
+    margin-right:0px;
+  }
+}

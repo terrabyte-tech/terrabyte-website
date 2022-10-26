@@ -1,0 +1,73 @@
+/* hero */
+#hero.full-section{
+  height:calc(100vh - 140px);
+  min-height:0;
+}
+#hero h1{
+  margin-bottom:40px;
+  font-size:24px;
+}
+#hero .button-container{
+  margin-top:40px;
+}
+
+/* the team */
+#the-team{
+  max-height:unset;
+}
+.team-row{
+  margin-bottom:50px;
+}
+.team-row:last-child{
+  margin-bottom:0px;
+}
+
+.team-avatar{
+  margin-right:30px;
+  width:150px;
+  height:150px;
+  border-radius:50%;
+  background-size:cover;
+  /* background-color: currentColor; */
+}
+
+.team-row-name{
+  margin-bottom:5px;
+}
+.team-links{
+  margin-bottom:20px;
+}
+.team-link{
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+.team-link:last-child{
+  margin-right: 0px;
+}
+
+/* avatars */
+#sammyharper-row .team-avatar{
+  background-image:url(../img/team-avatars/sammy-harper-crop.jpg);
+}
+#ashleyflorer-row .team-avatar{
+  background-image:url(../img/team-avatars/sammy-harper-crop.jpg);
+}
+#pablomorales-row .team-avatar{
+  background-image:url(../img/team-avatars/pablo-morales-crop.jpg);
+}
+
+/* UN SDGs */
+.sdg-container{
+  border:2px solid currentColor;
+  border-radius:2px;
+  width:125px;
+  height:125px;
+  transition:.35s;
+}
+.sdg-container:hover{
+  background-color:#0A8C61;
+}
+.sdg-container:active{
+  background-color:rgba(10, 140, 97,.45);
+}

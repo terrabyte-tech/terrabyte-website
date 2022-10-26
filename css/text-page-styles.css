@@ -1,0 +1,24 @@
+section{
+  min-height:auto;
+}
+
+.subsection-col{
+  margin-right:15px;
+}
+.subsection-col:last-child{
+  margin-right:0;
+}
+
+
+/* responsive styles */
+@media only screen and (max-width:930px){
+  .subsection-col-container{
+    flex-wrap:wrap;
+  }
+  .subsection-col{
+    margin-right:0;
+    margin-bottom:20px;
+    flex:auto;
+    width:100%;
+  }
+}
