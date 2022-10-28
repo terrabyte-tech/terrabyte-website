@@ -57,6 +57,10 @@
   background-image:url(../img/team-avatars/pablo-morales-crop.jpg);
 }
 
+
+#our-org .section-col:last-child{
+  padding-left:50px
+}
 /* UN SDGs */
 .sdg-container{
   border:2px solid currentColor;
@@ -70,4 +74,25 @@
 }
 .sdg-container:active{
   background-color:rgba(10, 140, 97,.45);
+}
+
+.checkbox-row{
+  margin-bottom:10px;
+}
+.checkbox-container{
+  width:20px;
+  height:20px;
+  margin-right:20px;
+  border:2px solid currentColor;
+  border-radius: 2px;
+}
+.checkbox-container svg{
+  display:none;
+}
+/* checked checkbox */
+.checked.checkbox-container{
+  background-color:#0A8C61;
+}
+.checked.checkbox-container svg{
+  display:block;
 }
