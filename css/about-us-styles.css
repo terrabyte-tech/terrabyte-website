@@ -1,3 +1,8 @@
+/* overwrite shared */
+.full-section{
+  max-height:unset;
+}
+
 /* hero */
 #hero.full-section{
   height:calc(100vh - 140px);
@@ -13,7 +18,7 @@
 
 /* the team */
 #the-team{
-  max-height:unset;
+  /* max-height:unset; */
 }
 .team-row{
   margin-bottom:50px;
@@ -68,6 +73,7 @@
   width:125px;
   height:125px;
   transition:.35s;
+  margin-bottom:10px;
 }
 .sdg-container:hover{
   background-color:#0A8C61;
@@ -95,4 +101,41 @@
 }
 .checked.checkbox-container svg{
   display:block;
+}
+
+/* responsive styles */
+/* tablet */
+@media only screen and (max-width: 930px){
+  #our-org .section-col:last-child{
+    padding-left:0px;
+  }
+  .read-more-content{
+    display:none;
+  }
+  .show.read-more-content{
+    display:inline;
+  }
+  .hide.read-more-trigger{
+    display:none;
+  }
+}
+
+/* mobile */
+@media only screen and (max-width: 600px){
+  .sdg-container{
+    width:100px;
+    height:100px;
+  }
+  .team-row{
+    flex-wrap: wrap;
+  }
+  .team-avatar{
+    margin-right:0;
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 500px){
+  #sdg-col .col-content{
+    /* display:none; */
+  }
 }

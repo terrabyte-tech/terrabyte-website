@@ -19,12 +19,11 @@ body::-webkit-scrollbar-track{
 }
 *::-webkit-scrollbar{
   width: 10px;
-  /* background-color: #ffffff; */
+  height: 10px;
   background-color:transparent;
   transition:.15s;
 }
 *::-webkit-scrollbar-thumb{
-  /* background-color: #ffffff; */
   background-color:#0A8C61;
   border-radius:2px;
   transition:.15s;

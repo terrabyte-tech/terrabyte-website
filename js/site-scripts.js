@@ -180,5 +180,21 @@ window.addEventListener("load", function(){
     }
   }
 ///////////////
+
+///////////////
+// read more of our story (on mobile)
+  var readMoreTrigger = document.querySelectorAll("[data-read-more-trigger]");
+  if(readMoreTrigger.length > 0){
+    readMoreTrigger[0].addEventListener("click", function(){
+      this.classList.add("hide");
+      
+      var readMoreContent = document.querySelectorAll("[data-read-more-content]");
+
+      for(let x = 0; x < readMoreContent.length; x++){
+        readMoreContent[x].classList.add("show");
+      }
+    })
+  }
+///////////////
   
 }, false);
