@@ -16,6 +16,28 @@
   margin-top:40px;
 }
 
+.hero-content{
+  position:relative;
+}
+#hero .graphic-container{
+  position:absolute;
+  max-width:800px;
+  right:0;
+  top:-200px;
+}
+#hero .code-text{
+  opacity:.35;
+  color: #0A8C61;
+  margin-bottom:20px;
+}
+.terrabyte-earth-graphic{
+  width: 100%;
+  max-width: 200px;
+  position: absolute;
+  top:-30px;
+  right:0;
+}
+
 /* the team */
 #the-team{
   /* max-height:unset; */
@@ -107,6 +129,42 @@
 }
 
 /* responsive styles */
+/* weird desktop hero styles */
+@media only screen and (max-height: 650px){
+  .terrabyte-earth-graphic{
+    display:none;
+  }
+}
+@media only screen and (max-height: 820px) and (max-width:880px){
+  .terrabyte-earth-graphic{
+    display:none;
+  }
+}
+@media only screen and (max-height: 750px){
+  #hero .graphic-container{
+    top:-150px;
+  }
+}
+@media only screen and (max-width: 600px){
+  #hero .code-text.text-right{
+    text-align:center;
+  }
+}
+@media only screen and (max-width: 600px){
+  #hero .graphic-container{
+    top: 50%;
+    width: 80%;
+    right: 50%;
+    transform: translate(50%, -50%);
+  }
+}
+@media only screen and (max-width: 400px){
+  #hero .code-text.text-right{
+    /* display:none; */
+  }
+}
+
+
 /* tablet */
 @media only screen and (max-width: 930px){
   #our-org .section-col:last-child{
