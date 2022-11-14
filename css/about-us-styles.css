@@ -19,6 +19,10 @@
 .hero-content{
   position:relative;
 }
+.hero-content > :not(.graphic-container){
+  z-index:2;
+  position:relative;
+}
 #hero .graphic-container{
   position:absolute;
   max-width:800px;
@@ -36,6 +40,13 @@
   position: absolute;
   top:-30px;
   right:0;
+}
+
+/* our story */
+@media only screen and (min-width: 930px){
+  .standard-link.read-more-trigger{
+    display:none;
+  }
 }
 
 /* the team */
@@ -148,6 +159,7 @@
 @media only screen and (max-width: 600px){
   #hero .code-text.text-right{
     text-align:center;
+    z-index:1;
   }
 }
 @media only screen and (max-width: 600px){
@@ -169,6 +181,9 @@
 @media only screen and (max-width: 930px){
   #our-org .section-col:last-child{
     padding-left:0px;
+  }
+  .read-more-trigger{
+    display:inline-block;
   }
   .read-more-content{
     display:none;
