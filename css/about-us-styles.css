@@ -98,6 +98,13 @@
   background-image:url(../img/team-avatars/mikayla-biggers-crop.jpg);
 }
 
+#wanttobehere-row{
+  padding:100px 0;
+  /* margin-bottom:50px; */
+}
+#wanttobehere-row h3{
+  margin-bottom:50px;
+}
 
 #our-org .section-col:last-child{
   padding-left:50px
