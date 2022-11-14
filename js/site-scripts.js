@@ -89,6 +89,7 @@ window.addEventListener("load", function(){
   function createNavSelectBar(){
     var navSelectBar = document.createElement("div");
     navSelectBar.classList.add("nav-select-bar");
+    navSelectBar.classList.add("hide-on-mobile");
 
     var navElement = document.querySelector("nav");
 
@@ -109,7 +110,13 @@ window.addEventListener("load", function(){
   function navSelectBarWidth(elem){
     var navSelectBar = document.querySelector(".nav-select-bar");
     // get width
-    var navItemWidth = elem.offsetWidth;
+    if(elem == null){
+      var navItemWidth = 0;
+    }
+    else{
+      var navItemWidth = elem.offsetWidth;
+    }
+    
     // set width
     navSelectBar.style.width = navItemWidth + "px";
   }
@@ -121,9 +128,16 @@ window.addEventListener("load", function(){
     // nav elements coords
     var navRect = navElement.getBoundingClientRect();
     // parameter element's coords
-    var newRect = elem.getBoundingClientRect();
-    // difference between the two
-    var offset = newRect.left - navRect.left;
+    var newRect, offset;
+    if(elem == null){
+      offset = 0;
+    }
+    else{
+      newRect = elem.getBoundingClientRect();
+      // difference between the two
+      offset = newRect.left - navRect.left;
+    }
+
     // move nav bar accordingly
     navSelectBar.style.left = offset + "px";
   }
@@ -144,6 +158,25 @@ window.addEventListener("load", function(){
   navElement.addEventListener("mouseleave", function(){
     navSelectBarDefault();
   })
+///////////////
+
+///////////////
+// nav bar scripts
+var navTriggers = document.querySelectorAll("[data-nav-toggle]");
+// var navElement = document.querySelector("nav");
+
+if(navTriggers.length > 0){
+  navTriggers[0].addEventListener("click", function(){
+
+    this.classList.toggle("show");
+    // var triggeredNav = this.closest("[data-nav]");
+    // console.log(triggeredNav);
+
+    // triggeredNav.classList.add("show");
+
+  })
+}
+
 ///////////////
 
 
