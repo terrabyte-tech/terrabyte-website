@@ -74,6 +74,10 @@
         <path d="M25,0A25,25,0,1,0,50,25,25,25,0,0,0,25,0Zm8.65,37.38L25,28.84,16.44,37.5l-3.82-3.82L21.17,25,12.5,16.44l3.82-3.82L25,21.17l8.55-8.67,3.85,3.85L28.84,25l8.66,8.55Z"/>
       </g> -->
 
+      <g id="hamburger-menu-icon">
+        <path d="M46.93,41.72c0-1.38-.74-2.51-1.64-2.51H4.71c-.91,0-1.64,1.12-1.64,2.51s.74,2.51,1.64,2.51H45.29c.91,0,1.64-1.12,1.64-2.51Zm0-16.72c0-1.38-.74-2.51-1.64-2.51H4.71c-.91,0-1.64,1.12-1.64,2.51s.74,2.51,1.64,2.51H45.29c.91,0,1.64-1.12,1.64-2.51Zm0-16.72c0-1.38-.74-2.51-1.64-2.51H4.71c-.91,0-1.64,1.12-1.64,2.51s.74,2.51,1.64,2.51H45.29c.91,0,1.64-1.12,1.64-2.51Z"/>
+      </g>
+
       <g id="left-arrow-icon">
         <path d="M18.07,6.38S5.73,18.74,.92,23.55c-.4,.4-.6,.93-.6,1.45s.2,1.05,.6,1.45c4.81,4.81,17.15,17.16,17.15,17.16,.4,.4,.92,.6,1.45,.6,.52,0,1.05-.2,1.45-.61,.8-.8,.81-2.1,.01-2.9L7.33,27.06H47.63c1.14,0,2.06-.92,2.06-2.06s-.92-2.06-2.06-2.06H7.33l13.65-13.66c.79-.79,.79-2.09-.02-2.89-.4-.4-.93-.61-1.45-.61-.52,0-1.04,.19-1.44,.59Z"/>
       </g>
@@ -129,23 +133,29 @@
           </svg>
         </div>
       </div>
-    </div>
-  </header>
-
-  <div class="sub-page-nav">
-    <div class="max-width">
-      <a class="back-button-container set-width flex-container align-center" href="https://terrabyte.eco">
-        <div class="back-button-icon set-width flex-container align-center">
-          <!-- svg -->
+      <div class="nav-container set-width flex-container align-center">
+        <div class="hamburger-menu-icon clickable" data-nav-toggle>
           <svg viewBox="0 0 50 50">
-            <use href="#left-arrow-icon"/>
+            <use href="#hamburger-menu-icon"/>
           </svg>
         </div>
-        <span class="set-width">Back to Home</span>
-      </a>
+        <nav data-nav class="flex-container align-center">
+          <a class="nav-item-container" href="https://terrabyte.eco">
+            <span>Home</span>
+          </a>
+          <!-- <a class="nav-item-container" href="https://www.blog.terrabyte.eco">
+            <span>Blog</span>
+          </a> -->
+          <a class="nav-item-container" href="https://terrabyte.eco#projects">
+            <span>Projects</span>
+          </a>
+          <a class="nav-item-container" href="https://terrabyte.eco/about">
+            <span>About Us</span>
+          </a>
+        </nav>
+      </div>
     </div>
-    
-  </div>
+  </header>
 
 
   <section class="padded-section">
