@@ -1,5 +1,6 @@
 window.addEventListener("load", function(){
 
+  console.log("shared-scripts.js loaded");
 
   //change copyright date  
   var currentDate = new Date();
@@ -9,4 +10,4 @@ window.addEventListener("load", function(){
   copyrightSpan.appendChild(document.createTextNode(currentYear));
   // 
   
-  }, false);
+}, false);
