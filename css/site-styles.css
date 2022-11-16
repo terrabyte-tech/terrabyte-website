@@ -51,6 +51,7 @@ body{
   /* font-family: 'Rubik', sans-serif; */
   font-family: 'Roboto Mono', Courier, monospace;
   letter-spacing:1px;
+  min-height:100vh;
 }
 
 h1, h2, h3, h4, h5, h6, button, input[type='submit']{
