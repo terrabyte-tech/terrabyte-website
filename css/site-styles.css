@@ -207,6 +207,13 @@ a.standard-link{
 	display:inline-block;
 	transition: .35s;
   margin-bottom:6px;
+
+  /* manage word wrap on long URLs */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  -ms-word-break: break-all;
+  word-break: break-word;
 }
 /* link underlines */
 a.standard-link:before,
