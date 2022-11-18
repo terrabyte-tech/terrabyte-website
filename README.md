@@ -1,6 +1,6 @@
 # terrabyte-website
 
-The official Terrabyte website [terrabyte.eco](https://terrabyte.eco).
+The official Terrabyte website [terrabyte.eco](https://terrabyte.eco). See our products, get in touch, and learn more about us.
 
 Sitemap:
 - Main Pages
