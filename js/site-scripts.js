@@ -1,6 +1,7 @@
 window.addEventListener("load", function(){
 
   // localStorage.clear();
+  // console.log("cleared local storage")
   console.log("site-scripts.js loaded");
 
 
@@ -12,17 +13,20 @@ window.addEventListener("load", function(){
   // hide if already accepted/understood
   if (localStorage.getItem("storeData") == "accept-all" || localStorage.getItem("storeData") == "accept-min"){
     console.log("previously acknowledged data policy");
-    cookieBanner.classList.add("hide");
+    // cookieBanner.classList.add("hide");
+  }
+  else{
+    cookieBanner.classList.add("show");
   }
 
   // set correct position on page load
-  if(cookieBanner !== null && !cookieBanner.classList.contains("minimize") && !cookieBanner.classList.contains("hide")){
+  if(cookieBanner !== null && cookieBanner.classList.contains("show")){
     stickNav(cookieBanner);
   }
 
 
   // on click, set policy acknowledgement (if not minimized)
-  if(cookieBanner != null && !cookieBanner.classList.contains("hide")){
+  if(cookieBanner != null && cookieBanner.classList.contains("show")){
     var cookieButtons = document.querySelectorAll("[data-cookie-button]");
 
     for(let x = 0; x < cookieButtons.length; x++){
@@ -46,7 +50,8 @@ window.addEventListener("load", function(){
   }
 
   function closeCookieBanner(cookieBanner){
-    cookieBanner.classList.add("minimize");
+    cookieBanner.classList.remove("show");
+    cookieBanner.classList.remove("stick");
     cookieBanner.style.bottom = (cookieBanner.offsetHeight * -1) + "px";
 
     var pageFooter = document.querySelector("[data-footer]");
@@ -76,7 +81,7 @@ window.addEventListener("load", function(){
     
     var cookieBanner = document.getElementById("cookie-banner");
 
-    if(cookieBanner !== null && !cookieBanner.classList.contains("minimize") && !cookieBanner.classList.contains("hide")){
+    if(cookieBanner !== null && cookieBanner.classList.contains("show")){
       stickNav(cookieBanner);
     }
   });
