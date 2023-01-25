@@ -1,7 +1,6 @@
 window.addEventListener("load", function(){
 
   // localStorage.clear();
-  // console.log("cleared local storage")
   console.log("site-scripts.js loaded");
 
 
@@ -13,40 +12,41 @@ window.addEventListener("load", function(){
   // hide if already accepted/understood
   if (localStorage.getItem("storeData") == "accept-all" || localStorage.getItem("storeData") == "accept-min"){
     console.log("previously acknowledged data policy");
-    // cookieBanner.classList.add("hide");
   }
   else{
     cookieBanner.classList.add("show");
   }
+
+  updateAgreedToText();
 
   // set correct position on page load
   if(cookieBanner !== null && cookieBanner.classList.contains("show")){
     stickNav(cookieBanner);
   }
 
-
   // on click, set policy acknowledgement (if not minimized)
   if(cookieBanner != null && cookieBanner.classList.contains("show")){
     var cookieButtons = document.querySelectorAll("[data-cookie-button]");
 
     for(let x = 0; x < cookieButtons.length; x++){
-      cookieButtons[x].addEventListener("click", function(){
-        var cookieButtonAction = this.getAttribute("data-cookie-button");
-        if(cookieButtonAction == "accept-all"){
-          closeCookieBanner(cookieBanner);
-          localStorage.setItem("storeData", "accept-all");
-          console.log("data policy acknowledged, accepted all");
-        }else if(cookieButtonAction == "accept-min"){
-          closeCookieBanner(cookieBanner);
-          localStorage.setItem("storeData", "accept-min");
-          console.log("data policy acknowledged, accepted essential");
-        }else{
-          closeCookieBanner(cookieBanner);
-          localStorage.setItem("storeData", "declined");
-          console.log("ERROR: nothing to decline");
-        }
-      })
+      cookieButtons[x].addEventListener("click", function(){clickedCookieButton(this)});
     }
+  }
+
+  function clickedCookieButton(buttonClicked){
+    var cookieButtonAction = buttonClicked.getAttribute("data-cookie-button");
+    if(cookieButtonAction == "accept-all"){
+      localStorage.setItem("storeData", "accept-all");
+      console.log("data policy acknowledged, accepted all");
+    }else if(cookieButtonAction == "accept-min"){
+      localStorage.setItem("storeData", "accept-min");
+      console.log("data policy acknowledged, accepted essential");
+    }else{
+      localStorage.setItem("storeData", "declined");
+      console.log("ERROR: nothing to decline");
+    }
+    closeCookieBanner(cookieBanner);
+    updateAgreedToText();
   }
 
   function closeCookieBanner(cookieBanner){
@@ -85,22 +85,58 @@ window.addEventListener("load", function(){
       stickNav(cookieBanner);
     }
   });
+
+
+  // reset when revisiting
+  var revisitCookiePolicyLink = document.querySelectorAll("[data-revisit-cookie-policy]");
+
+  if(revisitCookiePolicyLink.length > 0){
+    revisitCookiePolicyLink[0].addEventListener("click", function(){
+
+      var cookieBanner = document.getElementById("cookie-banner");
+
+      // reset cookiebanner
+      cookieBanner.classList.add("show");
+      cookieBanner.style.bottom = "0px";
+      // listen for scrolling again
+      stickNav(cookieBanner);
+
+    })
+  }
+
+  // update text on the Privacy Policy page
+  function updateAgreedToText(){
+    var agreedToText = document.querySelector("[data-cookie-agreed-text]");
+
+    if(agreedToText != null){
+      var revisitCookiePolicyLink = document.querySelector("[data-revisit-cookie-policy]");
+
+      if(localStorage.getItem("storeData") == "accept-all"){
+        agreedToText.innerHTML = "You previously accepted all cookies.";
+
+        revisitCookiePolicyLink.classList.remove("hide");
+      }else if(localStorage.getItem("storeData") == "accept-min"){
+        agreedToText.innerHTML = "You previously accepted only essential cookies.";
+
+        revisitCookiePolicyLink.classList.remove("hide");
+      }else{
+        agreedToText.innerHTML = "You have yet to select which cookies you would like to accept. You can make this selection on the banner below.";
+
+        revisitCookiePolicyLink.classList.add("hide");
+      }
+    }
+  }
 ///////////////
 
 
 ///////////////
 // nav bar scripts
 var navTriggers = document.querySelectorAll("[data-nav-toggle]");
-// var navElement = document.querySelector("nav");
 
 if(navTriggers.length > 0){
   navTriggers[0].addEventListener("click", function(){
 
     this.classList.toggle("show");
-    // var triggeredNav = this.closest("[data-nav]");
-    // console.log(triggeredNav);
-
-    // triggeredNav.classList.add("show");
 
   })
 }
