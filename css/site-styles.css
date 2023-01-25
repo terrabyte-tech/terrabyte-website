@@ -205,7 +205,7 @@ a.standard-link{
   transform:scale(1);
 	position:relative;
 	display:inline-block;
-	transition: .35s;
+	transition: color .35s;
   margin-bottom:6px;
 
   /* manage word wrap on long URLs */
@@ -257,6 +257,11 @@ a.standard-link:active:after{
 }
 .standard-link.ext-link .icon:first-child{
   margin-right:10px;
+}
+
+/* override force hiding links */
+a.standard-link.hide{
+  pointer-events: none;
 }
 
 /* override for forcing white links */

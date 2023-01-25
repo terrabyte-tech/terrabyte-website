@@ -17,6 +17,8 @@ window.addEventListener("load", function(){
     cookieBanner.classList.add("show");
   }
 
+  updateAgreedToText();
+
   // set correct position on page load
   if(cookieBanner !== null && cookieBanner.classList.contains("show")){
     stickNav(cookieBanner);
@@ -34,21 +36,21 @@ window.addEventListener("load", function(){
   function clickedCookieButton(buttonClicked){
     var cookieButtonAction = buttonClicked.getAttribute("data-cookie-button");
     if(cookieButtonAction == "accept-all"){
-      closeCookieBanner(cookieBanner);
+      // closeCookieBanner(cookieBanner);
       localStorage.setItem("storeData", "accept-all");
       console.log("data policy acknowledged, accepted all");
-      updateAgreedToText();
+      // updateAgreedToText();
     }else if(cookieButtonAction == "accept-min"){
-      closeCookieBanner(cookieBanner);
+      // closeCookieBanner(cookieBanner);
       localStorage.setItem("storeData", "accept-min");
       console.log("data policy acknowledged, accepted essential");
-      updateAgreedToText();
+      // updateAgreedToText();
     }else{
-      closeCookieBanner(cookieBanner);
       localStorage.setItem("storeData", "declined");
       console.log("ERROR: nothing to decline");
-      updateAgreedToText();
     }
+    closeCookieBanner(cookieBanner);
+    updateAgreedToText();
   }
 
   function closeCookieBanner(cookieBanner){
@@ -110,13 +112,23 @@ window.addEventListener("load", function(){
   function updateAgreedToText(){
     var agreedToText = document.querySelector("[data-cookie-agreed-text]");
 
-    // if button clicked OR on a page with this text on it (not sure how to check if this needs updated or not...)
-    if(agreedToText.length > 0){
-      // on page with agreedToText
+    if(agreedToText != null){
+      var revisitCookiePolicyLink = document.querySelector("[data-revisit-cookie-policy]");
 
-      // update text to match what
+      if(localStorage.getItem("storeData") == "accept-all"){
+        agreedToText.innerHTML = "You previously selected to accept all cookies.";
+
+        revisitCookiePolicyLink.classList.remove("hide");
+      }else if(localStorage.getItem("storeData") == "accept-min"){
+        agreedToText.innerHTML = "You previously selected to accept only essential cookies.";
+
+        revisitCookiePolicyLink.classList.remove("hide");
+      }else{
+        agreedToText.innerHTML = "You have yet to select which cookies you would like to accept. You can make this selection on the banner below.";
+
+        revisitCookiePolicyLink.classList.add("hide");
+      }
     }
-
   }
 ///////////////
 
