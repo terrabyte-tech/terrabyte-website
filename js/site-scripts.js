@@ -1,6 +1,6 @@
 window.addEventListener("load", function(){
 
-  localStorage.clear();
+  // localStorage.clear();
   console.log("site-scripts.js loaded");
 
 
@@ -36,15 +36,11 @@ window.addEventListener("load", function(){
   function clickedCookieButton(buttonClicked){
     var cookieButtonAction = buttonClicked.getAttribute("data-cookie-button");
     if(cookieButtonAction == "accept-all"){
-      // closeCookieBanner(cookieBanner);
       localStorage.setItem("storeData", "accept-all");
       console.log("data policy acknowledged, accepted all");
-      // updateAgreedToText();
     }else if(cookieButtonAction == "accept-min"){
-      // closeCookieBanner(cookieBanner);
       localStorage.setItem("storeData", "accept-min");
       console.log("data policy acknowledged, accepted essential");
-      // updateAgreedToText();
     }else{
       localStorage.setItem("storeData", "declined");
       console.log("ERROR: nothing to decline");
@@ -116,11 +112,11 @@ window.addEventListener("load", function(){
       var revisitCookiePolicyLink = document.querySelector("[data-revisit-cookie-policy]");
 
       if(localStorage.getItem("storeData") == "accept-all"){
-        agreedToText.innerHTML = "You previously selected to accept all cookies.";
+        agreedToText.innerHTML = "You previously accepted all cookies.";
 
         revisitCookiePolicyLink.classList.remove("hide");
       }else if(localStorage.getItem("storeData") == "accept-min"){
-        agreedToText.innerHTML = "You previously selected to accept only essential cookies.";
+        agreedToText.innerHTML = "You previously accepted only essential cookies.";
 
         revisitCookiePolicyLink.classList.remove("hide");
       }else{
@@ -141,10 +137,6 @@ if(navTriggers.length > 0){
   navTriggers[0].addEventListener("click", function(){
 
     this.classList.toggle("show");
-    // var triggeredNav = this.closest("[data-nav]");
-    // console.log(triggeredNav);
-
-    // triggeredNav.classList.add("show");
 
   })
 }
