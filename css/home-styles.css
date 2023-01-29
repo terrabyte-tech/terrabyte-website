@@ -93,8 +93,48 @@
 #canapi-img{
   background-image:url("../img/canapi-code-logo-cropped-white-trans.png");
 }
+#wasted-space-img{
+  background-image:url("../img/wasted-space-logo-title-white-large.png");
+}
 /* ************* */
 
+/* social proof */
+.social-proof-col{
+  margin:80px 15px;
+}
+.social-proof-img{
+  width:100px;
+  height:100px;
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size:contain;
+  
+  /* margin:0 auto 20px auto; */
+}
+#carbonii-img{
+  background-image:url("../img/social-proof/carbonii-logo-white.png");
+}
+#tbep-img{
+  background-image:url("../img/social-proof/tbep-logo-white.png");
+}
+#eco-earth-market-img{
+  background-image:url("../img/social-proof/eco-earth-market-logo-white.png");
+}
+#the-climate-issue-img{
+  background-image:url("../img/social-proof/the-climate-issue-logo-white.png");
+}
+#earth-hacks-img{
+  background-image:url("../img/social-proof/earth-hacks-logo-white.png");
+}
+#ecta-img{
+  background-image:url("../img/social-proof/ecta-logo-white.png");
+}
+#eco-earth-market-img{
+  background-image:url("../img/social-proof/eco-earth-market-logo-white.png");
+}
+#wherefrom-img{
+  background-image:url("../img/social-proof/wherefrom-logo-white.png");
+}
 
 /* faqs */
 .accordion-col.section-col{
@@ -164,5 +204,11 @@
   }
   .ques-item-container .icon{
     margin-right:0px;
+  }
+}
+
+@media only screen and (max-width: 440px){
+  .social-proof-col{
+    margin:20px 15px;
   }
 }
