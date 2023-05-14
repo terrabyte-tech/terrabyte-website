@@ -99,8 +99,13 @@
 /* ************* */
 
 /* social proof */
+.social-proof-col-container{
+  flex-wrap: wrap;
+  max-width: 765px;
+  padding:80px 0;
+}
 .social-proof-col{
-  margin:80px 15px;
+  margin:10px 15px;
 }
 .social-proof-img{
   width:100px;
@@ -134,6 +139,12 @@
 }
 #wherefrom-img{
   background-image:url("../img/social-proof/wherefrom-logo-white.png");
+}
+#humans-for-earth-img{
+  background-image:url("../img/social-proof/humans-for-earth-logo-white.png");
+}
+#pixel-art-mag-img{
+  background-image:url("../img/social-proof/pixel-art-mag-logo-white.png");
 }
 
 /* faqs */
