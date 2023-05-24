@@ -102,22 +102,41 @@
 .social-proof-col-container{
   flex-wrap: wrap;
   max-width: 765px;
-  padding:80px 0;
+  /* padding:40px 0; */
+}
+.social-proof-section{
+  margin-bottom:100px;
+}
+.social-proof-section + .button-container{
+  margin-top:0px;
 }
 .social-proof-col{
   margin:10px 15px;
 }
 .social-proof-img{
-  width:100px;
-  height:100px;
+  width:90px;
+  height:90px;
   background-repeat: no-repeat;
   background-position:center;
   background-size:contain;
   
   /* margin:0 auto 20px auto; */
 }
+.partner-img{
+  width:250px;
+  height:100px;
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size:contain;
+}
+/* partners */
 #carbonii-img{
+  /* for better sizing with other partner logos */
+  /* border:30px solid transparent; */
   background-image:url("../img/social-proof/carbonii-logo-white.png");
+}
+#wrd-img{
+  background-image:url("../img/social-proof/wrd-logo-white.png");
 }
 #tbep-img{
   background-image:url("../img/social-proof/tbep-logo-white.png");
