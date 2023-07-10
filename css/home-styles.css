@@ -114,7 +114,8 @@
   margin:10px 15px;
 }
 .social-proof-img{
-  width:90px;
+  /* width:90px; */
+  width:120px;
   height:90px;
   background-repeat: no-repeat;
   background-position:center;
@@ -140,6 +141,9 @@
 }
 #tbep-img{
   background-image:url("../img/social-proof/tbep-logo-white.png");
+}
+#pfj-img{
+  background-image:url("../img/social-proof/pfj-logo-white.png");
 }
 #eco-earth-market-img{
   background-image:url("../img/social-proof/eco-earth-market-logo-white.png");
@@ -212,7 +216,6 @@
   #faqs .accordion-item-content{
     padding:20px;
   }
-  
 }
 @media only screen and (max-width: 800px){
   #faqs .icons-container{
