@@ -284,6 +284,25 @@ svg{
 
 /* ********************* */
 /*  */
+/*when javascript isn't enabled, toast message*/
+.toast-message{
+  z-index:900;
+  position:absolute;
+  top:10px;
+  left:50%;
+  transform:translateX(-50%);
+  background-color:#db2a2a;
+  color:white;
+  padding:10px 20px 12px 20px;
+  border-radius:2px;
+  opacity:1;
+  transition:.35s;
+  user-select: none;
+}
+.toast-message:hover{
+  opacity:.2;
+}
+
 .force-small-text{
   text-transform:lowercase;
 }
