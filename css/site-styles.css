@@ -226,6 +226,9 @@ a.link-row{
   padding:10px 20px;
   margin-bottom:10px;
 }
+.link-row:last-child{
+  margin-bottom:0;
+}
 a.standard-link,
 a.text-link{
 	display:inline-block;
