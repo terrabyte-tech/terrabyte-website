@@ -219,12 +219,15 @@ a.link-row{
 /* link rows */
 a.link-row{
   /* may be flex container... */
-  /* display:block; */
+  display:block;
   overflow:hidden;
   background-color:#ffffff07;
   border-radius:2px;
   padding:10px 20px;
   margin-bottom:10px;
+}
+a.link-row.flex-container{
+  display:flex;
 }
 .link-row:last-child{
   margin-bottom:0;
@@ -422,7 +425,7 @@ section{
 
 /* faqs */
 .accordion-item-container{
-  margin-bottom:30px;
+  /* margin-bottom:30px; */
   transition:.25s;
   position:relative;
 }
@@ -478,17 +481,11 @@ section{
 }
 
 /* .show accordion styles */
-.show.accordion-item-container{
-  padding-top:20px;
-}
-.show.accordion-item-container:first-child{
-  padding-top:0px;
-}
-.show.accordion-item-container:after{
-  opacity:1;
-}
-.show .accordion-item-header:after{
+.show .link-row:after{
   width:100%;
+}
+.show .link-row{
+  background-color:rgba(10, 140, 97,.25);
 }
 .show .accordion-item-content-container{
   opacity:1;
