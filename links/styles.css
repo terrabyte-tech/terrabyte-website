@@ -1,0 +1,32 @@
+/* Styles unique to the links page */
+
+/* main content section */
+main{
+  width:100%;
+  max-width:800px;
+  padding:40px 20px;
+}
+
+/* header */
+header{
+  text-align:center;
+  margin-bottom:60px;
+}
+#header-img{
+  background-image:url("../img/terrabyte-wordmark-logo-white-trans-cropped.png");
+  width:100%;
+  max-width:300px;
+  height:70px;
+  display:inline-block;
+  margin-bottom:10px;
+}
+
+/* top socials */
+.top-social{
+  width:32px;
+  height:32px;
+  margin-right:32px;
+}
+.top-social:last-child{
+  margin-right:0;
+}
