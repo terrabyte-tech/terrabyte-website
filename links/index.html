@@ -102,13 +102,53 @@
     <main>
       <header>
         <div id="header-img"></div>
+        <div id="top-socials-container" class="set-width flex-container justify-center">
+          <!-- instagram -->
+          <a class="top-social icon-container" href="https://instagram.com/terrabyte_tech" target="_blank">
+            <div class="icon">
+              <svg viewBox="0 0 50 50">
+                <use href="#instagram-icon"/>
+              </svg>
+            </div>
+          </a>
+          <!-- mastodon -->
+          <a rel="me" href="https://mastodon.eco/@terrabyte" class="top-social icon-container" target="_blank">
+            <div class="icon">
+              <svg viewBox="0 0 50 50">
+                <use href="#mastodon-icon"/>
+              </svg>
+            </div>
+          </a>
+          <!-- we dont have time -->
+          <a class="top-social icon-container" href="https://app.wedonthavetime.org/profile/Terrabyte" target="_blank">
+            <div class="icon">
+              <svg viewBox="0 0 50 50">
+                <use href="#wdht-icon"/>
+              </svg>
+            </div>
+          </a>
+          <!-- youtube -->
+          <a class="top-social icon-container" href="https://www.youtube.com/@TerrabyteEco" target="_blank">
+            <div class="icon">
+              <svg viewBox="0 0 50 50">
+                <use href="#youtube-icon"/>
+              </svg>
+            </div>
+          </a>
+
+        </div>
       </header>
       
   
       <!-- link template -->
       <template id="link-template">
-        <a data-link-row class="link-row" href="">
-          <button data-link-label></button>
+        <a data-link-row class="link-row ext-link flex-container align-center flex-horizontal" href="" target="_blank">
+          <span class="flex-width" data-link-label></span>
+          <div class="icon set-width">
+            <svg viewBox="0 0 50 50">
+              <use href="#ext-link-icon"/>
+            </svg>
+          </div>
         </a>
       </template>
   
@@ -163,16 +203,6 @@
               </svg>
             </div>
           </a>
-          <!-- twitter -->
-          <!-- no longer highlighting -->
-          <!-- <a class="footer-social icon-container" href="https://twitter.com/TerrabyteEco" target="_blank">
-            <div class="icon">
-              <svg viewBox="0 0 50 50">
-                <use href="#twitter-icon"/>
-              </svg>
-            </div>
-          </a> -->
-
           <!-- mastodon -->
           <!-- rel="me" on homepage -->
           <a rel="me" href="https://mastodon.eco/@terrabyte" class="footer-social icon-container" target="_blank">
