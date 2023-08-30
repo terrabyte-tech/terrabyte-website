@@ -1,11 +1,34 @@
 {"linkItems": [
-  {"label": "Website", "href": "https://terrabyte.eco"},
-  {"label": "GitHub", "href": "https://github.com"},
-  {"label": ".Eco Profile", "href": "https://profiles.eco/terrabyte"},
-  {"label": "Etsy", "href": "https://www.etsy.com/shop/TerrabyteLLC"},
-  {"label": "Pixel Planet Today: Website", "href": "https://pixelplanettoday.com"},
-  {"label": "Pixel Planet Today: Shop", "href": "https://shop.pixelplanettoday.com"},
-  {"label": "Pixel Planet Today: Giphy", "href": "https://giphy.com/pixelplanettoday"},
-  {"label": "Pinekeepers: Website", "href": "https://pinekeepers.com"}
-  
+  {
+    "label": "Website",
+    "href": "https://terrabyte.eco"
+  },
+  {
+    "label": "Etsy",
+    "href": "https://www.etsy.com/shop/TerrabyteLLC"
+  },
+  {
+    "label": "GitHub",
+    "href": "https://github.com/terrabyte-tech"
+  },
+  {
+    "label": ".Eco Profile",
+    "href": "https://profiles.eco/terrabyte"
+  },
+  {
+    "label": "Pixel Planet Today: Website",
+    "href": "https://pixelplanettoday.com"
+  },
+  {
+    "label": "Pixel Planet Today: Shop",
+    "href": "https://shop.pixelplanettoday.com"
+  },
+  {
+    "label": "Pixel Planet Today: Giphy",
+    "href": "https://giphy.com/pixelplanettoday"
+  },
+  {
+    "label": "Pinekeepers: Website",
+    "href": "https://pinekeepers.com"
+  }
 ]}
