@@ -2,7 +2,9 @@
 
 The official Terrabyte website [terrabyte.eco](https://terrabyte.eco). See our products, get in touch, and learn more about us.
 
-Sitemap:
+<br>
+
+## Sitemap
 - Main Pages
   - Home - [index.html](index.html)
   - About Us - [/about-us/index.html](./about-us/index.html)
@@ -14,3 +16,9 @@ Sitemap:
   - New Subscriber - [/newsletter/new-subscriber.html](./newsletter/new-subscriber.html)
   - Unsubscriber - [/newsletter/unsubscriber.html](./newsletter/new-subscriber.html)
   - Donate (Redirect) - [/donate/index.html](./donate/index.html)
+
+<br>
+
+## Sitemap Overview
+
+The pages above are pretty self-explanatory, will expand on them as more pages are added and need more clarification.
