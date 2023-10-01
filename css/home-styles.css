@@ -192,6 +192,23 @@
 .ques-icon-container:last-child{
   /* margin-right:0; */
 }
+
+/* press */
+/* more styles specific to the link are in site-styles.css */
+a.press-card{
+  width:300px;
+  margin-bottom:0;
+  margin-right:10px;
+}
+a.press-card:last-child{
+  margin-right:0;
+}
+.card-title{
+  margin-bottom:10px;
+}
+.card-caption{
+  margin-bottom:20px;
+}
 /* ************* */
 
 

@@ -193,5 +193,46 @@ if(navTriggers.length > 0){
     })
   }
 ///////////////
+
+///////////////
+// build press cards
+// created card
+var createdCard;
+
+// where the cards will go
+var cardsContainer = document.querySelector("[data-press-cards-container]");
+
+// card template
+var itemTemplate = document.getElementById("press-card-template");
+var itemTemplateElem = itemTemplate.content.querySelector("[data-press-card]");
+
+// get JSON data
+fetch("/js/press.json")
+  .then(response => response.json())
+    .then(data => {
+
+      for(let x = 0; x < data.pressItems.length; x++){
+
+        createdCard = document.importNode(itemTemplateElem, true);
+
+        // set innerHTML of title
+        createdCard.querySelector("[data-press-title]").innerHTML = data.pressItems[x].pressTitle;
+
+        createdCard.querySelector("[data-press-caption]").innerHTML = data.pressItems[x].pressCaption;
+
+        // set href of card
+        createdCard.href = data.pressItems[x].pressLinkHref;
+
+        // set link
+        createdCard.querySelector("[data-press-link]").innerHTML = data.pressItems[x].pressLinkTitle;
+        // createdCard.querySelector("[data-press-link]").href = data.pressItems[x].pressLinkHref;
+
+        // append to card container
+        cardsContainer.appendChild(createdCard);
+      }
+    })
+
+///////////////
+
   
 }, false);

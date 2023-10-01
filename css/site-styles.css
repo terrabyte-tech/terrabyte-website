@@ -205,7 +205,8 @@ a[name]{
 /* text links & link rows*/
 a.standard-link,
 a.text-link,
-a.link-row{
+a.link-row,
+a.press-card{
   transform:scale(1);
 	position:relative;
 	transition: all .35s;
@@ -217,7 +218,8 @@ a.link-row{
   word-break: break-word;
 }
 /* link rows */
-a.link-row{
+a.link-row,
+a.press-card{
   /* may be flex container... */
   display:block;
   overflow:hidden;
@@ -241,7 +243,9 @@ a.text-link{
 a.standard-link:before,
 a.standard-link:after,
 a.link-row:before,
-a.link-row:after{
+a.link-row:after,
+a.press-card:before,
+a.press-card:after{
 	content:"";
   pointer-events: none;
 	opacity:1;
@@ -254,37 +258,45 @@ a.link-row:after{
 }
 /* move link row underlines up */
 a.link-row:before,
-a.link-row:after{
+a.link-row:after,
+a.press-card:before,
+a.press-card:after{
   bottom:0px;
 }
 /* link underline, before hover */
 a.standard-link:before,
-a.link-row:before{
+a.link-row:before,
+a.press-card:before{
   opacity:.25;
   width:100%;
 }
 /* link underline, shown after hover */
 a.standard-link:after,
-a.link-row:after{
+a.link-row:after,
+a.press-card:after{
   opacity:1;
   width:0;
 }
 /* hover */
-a.link-row:hover{
+a.link-row:hover,
+a.press-card:hover{
   /* background-color:#ffffff11; */
   background-color:rgba(10, 140, 97,.25);
 }
 a.standard-link:hover:after,
-a.link-row:hover:after{
+a.link-row:hover:after,
+a.press-card:hover:after{
   width:100%;
 }
 /* active */
 a.standard-link:active:before,
-a.link-row:active:before{
+a.link-row:active:before,
+a.press-card:active:before{
   opacity:0;
 }
 a.standard-link:active:after,
-a.link-row:active:after{
+a.link-row:active:after,
+a.press-card:active:after{
   opacity:.45;
 }
 .standard-link.ext-link .icon,
