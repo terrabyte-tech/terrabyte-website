@@ -183,8 +183,10 @@
   transition:.25s;
   margin-bottom:20px;
 }
-.ques-item-container:hover{
-  color:rgba(10, 140, 97,1);
+@media (hover: hover) and (pointer: fine) {
+  .ques-item-container:hover{
+    color:rgba(10, 140, 97,1);
+  }
 }
 .ques-item-container:active{
   color:rgba(10, 140, 97,.45);

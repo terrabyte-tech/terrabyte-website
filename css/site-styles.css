@@ -150,8 +150,10 @@ input{
 }
 
 /* hover */
-.custom-input-container:hover:after{
-  width:100%;
+@media (hover: hover) and (pointer: fine) {
+  .custom-input-container:hover:after{
+    width:100%;
+  }
 }
 
 /* active */
@@ -186,9 +188,11 @@ input[type='submit']{
 button.primary{
   /* border-color:rgba(10, 140, 97,1); */
 }
-button:hover,
-input[type='submit']:hover{
-  background-color:rgba(10, 140, 97,1);
+@media (hover: hover) and (pointer: fine) {
+  button:hover,
+  input[type='submit']:hover{
+    background-color:rgba(10, 140, 97,1);
+  }
 }
 button:active,
 input[type='submit']:active{
@@ -281,15 +285,17 @@ a.press-card:after{
   width:0;
 }
 /* hover */
-a.link-row:hover,
-a.press-card:hover{
-  /* background-color:#ffffff11; */
-  background-color:rgba(10, 140, 97,.25);
-}
-a.standard-link:hover:after,
-a.link-row:hover:after,
-a.press-card:hover:after{
-  width:100%;
+@media (hover: hover) and (pointer: fine) {
+  a.link-row:hover,
+  a.press-card:hover{
+    /* background-color:#ffffff11; */
+    background-color:rgba(10, 140, 97,.25);
+  }
+  a.standard-link:hover:after,
+  a.link-row:hover:after,
+  a.press-card:hover:after{
+    width:100%;
+  }
 }
 /* active */
 a.standard-link:active:before,
@@ -353,8 +359,10 @@ svg{
   transition:.35s;
   user-select: none;
 }
-.toast-message:hover{
-  opacity:.2;
+@media (hover: hover) and (pointer: fine) {
+  .toast-message:hover{
+    opacity:.2;
+  }
 }
 
 .force-small-text{
@@ -386,8 +394,10 @@ h1 .highlight-container{
 .icon-container{
   transition:.25s;
 }
-.icon-container:hover{
-  color:rgba(10, 140, 97,1);
+@media (hover: hover) and (pointer: fine) {
+  .icon-container:hover{
+    color:rgba(10, 140, 97,1);
+  }
 }
 .icon-container:active{
   color:rgba(10, 140, 97,.45);
