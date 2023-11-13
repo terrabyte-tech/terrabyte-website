@@ -142,6 +142,18 @@
         </div>
       </header>
       
+      <!-- links section template -->
+      <template id="links-section-template">
+        <div class="links-section" data-links-section>
+          <div class="section-header">
+            <h3 data-header-label></h3>
+          </div>
+
+          <div data-section-content>
+            <!-- links are injected here -->
+          </div>
+        </div>
+      </template>
   
       <!-- link template -->
       <template id="link-template">
@@ -154,10 +166,16 @@
           </div>
         </a>
       </template>
-  
-      <!-- container where links will be populated -->
-      <div data-links-container>
-        <!-- links populate here -->
+
+      <div data-links-section-container>
+        <!-- link sections injected here -->
+      </div>
+
+      <div class="links-section devlog-section">
+        <div class="section-header">
+          <h3 data-header-label>Updates (via <a class="standard-link" href="https://mastodon.eco/@terrabyte">Mastodon</a>)</h3>
+        </div>
+        <iframe allowfullscreen sandbox="allow-top-navigation allow-scripts allow-popups allow-popups-to-escape-sandbox" width="500" height="800" src="https://mastofeed.com/apiv2/feed?userurl=https%3A%2F%2Fmastodon.eco%2Fusers%2Fterrabyte&theme=dark&size=100&header=false&replies=false&boosts=false"></iframe>
       </div>
     </main>
   </section>

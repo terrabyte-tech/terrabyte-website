@@ -1,34 +1,54 @@
 window.addEventListener("load", function(){
 
-  console.log("links/scripts.js loaded");
+  console.log("/links/scripts.js loaded");
 
-  // created link row
-  var createdLink;
+  // created link section & row
+  var createdSection, createdLink;
 
-  // where the links will go
-  var linksContainer = document.querySelector("[data-links-container]");
+  // where the link sections will go
+  var linkSectionsContainer = document.querySelector("[data-links-section-container]");
+
+  // link section template
+  var linkSectionTemplate = document.getElementById("links-section-template");
+  var linkSectionElem = linkSectionTemplate.content.querySelector("[data-links-section]");
 
   // link template
-  var itemTemplate = document.getElementById("link-template");
-  var itemTemplateElem = itemTemplate.content.querySelector("[data-link-row]");
+  var linkTemplate = document.getElementById("link-template");
+  var linkTemplateElem = linkTemplate.content.querySelector("[data-link-row]");
 
   // get JSON data
   fetch("links.json")
     .then(response => response.json())
       .then(data => {
 
-        for(let x = 0; x < data.linkItems.length; x++){
+        for(let x = 0; x < data.linkSections.length; x++){
 
-          createdLink = document.importNode(itemTemplateElem, true);
+          createdSection = document.importNode(linkSectionElem, true);
 
           // set innerHTML of label
-          createdLink.querySelector("[data-link-label]").innerHTML = data.linkItems[x].label;
+          createdSection.querySelector("[data-header-label]").innerHTML = data.linkSections[x].label;
 
-          // set href of a tag
-          createdLink.href = data.linkItems[x].href;
+          // append to link section container
+          linkSectionsContainer.appendChild(createdSection);
 
-          // append to link container
-          linksContainer.appendChild(createdLink);
+          // get where the links will go (inside section)
+          var linksContainer = createdSection.querySelector("[data-section-content]");
+
+          // build links inside sections
+          for(let y = 0; y < data.linkSections[x].linkItems.length; y++){
+
+            createdLink = document.importNode(linkTemplateElem, true);
+
+            // set link label
+            createdLink.querySelector("[data-link-label]").innerHTML = data.linkSections[x].linkItems[y].label;
+
+            // set href of a tag
+            createdLink.href = data.linkSections[x].linkItems[y].href;
+
+            // append to links section
+            linksContainer.appendChild(createdLink);
+          }
+
         }
       })
 

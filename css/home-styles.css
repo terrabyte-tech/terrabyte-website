@@ -183,14 +183,37 @@
   transition:.25s;
   margin-bottom:20px;
 }
-.ques-item-container:hover{
-  color:rgba(10, 140, 97,1);
+@media (hover: hover) and (pointer: fine) {
+  .ques-item-container:hover{
+    color:rgba(10, 140, 97,1);
+  }
 }
 .ques-item-container:active{
   color:rgba(10, 140, 97,.45);
 }
 .ques-icon-container:last-child{
   /* margin-right:0; */
+}
+
+/* press */
+/* more styles specific to the link are in site-styles.css */
+.press-cards-container.col-content{
+  max-height: 800px;
+  overflow-y: auto;
+}
+a.press-card{
+  /* width:300px; */
+  /* margin-bottom:10px; */
+  /* margin-right:10px; */
+}
+a.press-card:last-child{
+  /* margin-right:0; */
+}
+.card-title{
+  margin-bottom:10px;
+}
+.card-caption{
+  margin-bottom:20px;
 }
 /* ************* */
 
