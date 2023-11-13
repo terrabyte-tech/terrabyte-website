@@ -142,6 +142,18 @@
         </div>
       </header>
       
+      <!-- links section template -->
+      <template id="links-section-template">
+        <div class="links-section" data-links-section>
+          <div class="section-header">
+            <h3 data-header-label></h3>
+          </div>
+
+          <div data-section-content>
+            <!-- links are injected here -->
+          </div>
+        </div>
+      </template>
   
       <!-- link template -->
       <template id="link-template">
@@ -154,10 +166,16 @@
           </div>
         </a>
       </template>
+
+      
   
       <!-- container where links will be populated -->
-      <div data-links-container>
+      <!-- <div data-links-container> -->
         <!-- links populate here -->
+      <!-- </div> -->
+
+      <div data-links-section-container>
+        <!-- link sections injected here -->
       </div>
     </main>
   </section>

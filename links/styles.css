@@ -30,3 +30,14 @@ header{
 .top-social:last-child{
   margin-right:0;
 }
+
+/* link sections */
+.links-section{
+  margin-bottom:50px;
+}
+.links-section:last-child{
+  margin-bottom:0px;
+}
+.links-section .section-header{
+  margin-bottom:10px;
+}
