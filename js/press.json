@@ -1,14 +1,39 @@
 {"pressItems": [
   {
-    "pressTitle": "Keep Nebraska Beautiful 2023 Sustainability Awards",
-    "pressCaption": "Text text text.",
-    "pressLinkTitle": "See all 2023 Award Recipients",
-    "pressLinkHref": "https://knb.org/awards"
+    "label": "Keep Nebraska Beautiful 2023 Sustainability Awards",
+    "caption": "We are incredibly honored to have received the Business/Industry Award in Sustainability by Keep Nebraska Beautiful! Our project, Pixel Planet Today, gathered the interest of many organizations at the ceremony.",
+    "linkLabel": "See all 2023 Award Recipients",
+    "linkHref": "https://knb.org/awards"
   },
   {
-    "pressTitle": "Bored Panda",
-    "pressCaption": "Text text text.",
-    "pressLinkTitle": "See the full article",
-    "pressLinkHref": "https://www.boredpanda.com/pixel-art-and-environmental-facts-sammy-harper"
+    "label": "Environmental Justice in Tech Zine",
+    "caption": "Every year, Environmental Justice in Tech/Earth Hacks release a webzine that takes on a particular topic in the world of Environmental Justice and technology. We are incredibly thankful to have our work featured in both the 2022 and 2023 editions on the webzine!",
+    "linkLabel": "Read the zine",
+    "linkHref": "https://www.environmentaljustice.tech/zine"
+  },
+  {
+    "label": "Humans for Earth Mini-Documentary",
+    "caption": "Humans for Earth periodically features interviews of people around the globe helping make the planet a greener place, and we were thankful to not only be interviewed, but appear in their first mini-documentary!",
+    "linkLabel": "Watch the mini-doc",
+    "linkHref": "https://www.youtube.com/watch?v=QKjT-EEikvM"
+  },
+  {
+    "label": "The Climate Issue",
+    "caption": "The Climate Issue is a recurring webzine that takes contributions from eco-creators from all around the world. We've contributed to the Issue 6 in 2022, and designed the cover for Issue 7 in 2023!",
+    "linkLabel": "Read past issues",
+    "linkHref": "https://theclimateissue.com/digital-magazine/"
+  },
+  {
+    "label": ".Eco Champion",
+    "caption": "We were incredibly thrilled to learn that we made the list of .Eco Champions (curated by the .Eco domain itself). We love the features and purpose of the .eco domain, so to be on their radar as well is astonishing.",
+    "linkLabel": "See all of the .Eco Champions",
+    "linkHref": "https://go.eco/champions/"
+  },
+  {
+    "label": "Bored Panda",
+    "caption": "In reaching 1,000 posts, an overview of Pixel Planet Today was featured on Bored Panda. We shared some of our favorite posts, as well as some background on the project, only to have it resurface on their site as a 'Year in Review' collection.",
+    "linkLabel": "See the full article",
+    "linkHref": "https://www.boredpanda.com/pixel-art-and-environmental-facts-sammy-harper"
   }
+  
 ]}

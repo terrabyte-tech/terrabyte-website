@@ -218,16 +218,15 @@ if(cardsContainer !== null){
           createdCard = document.importNode(itemTemplateElem, true);
 
           // set innerHTML of title
-          createdCard.querySelector("[data-press-title]").innerHTML = data.pressItems[x].pressTitle;
+          createdCard.querySelector("[data-press-title]").innerHTML = data.pressItems[x].label;
 
-          createdCard.querySelector("[data-press-caption]").innerHTML = data.pressItems[x].pressCaption;
+          createdCard.querySelector("[data-press-caption]").innerHTML = data.pressItems[x].caption;
 
           // set href of card
-          createdCard.href = data.pressItems[x].pressLinkHref;
+          createdCard.href = data.pressItems[x].linkHref;
 
           // set link
-          createdCard.querySelector("[data-press-link]").innerHTML = data.pressItems[x].pressLinkTitle;
-          // createdCard.querySelector("[data-press-link]").href = data.pressItems[x].pressLinkHref;
+          createdCard.querySelector("[data-press-link]").innerHTML = data.pressItems[x].linkLabel;
 
           // append to card container
           cardsContainer.appendChild(createdCard);
