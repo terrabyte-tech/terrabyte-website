@@ -94,7 +94,10 @@ ol{
   list-style-position: inside;
 }
 
-
+iframe{
+  width: 100%;
+  border:none;
+}
 input{
   font-family: inherit;
   font-size:inherit;

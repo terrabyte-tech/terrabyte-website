@@ -3,13 +3,17 @@
     {
       "label": "Highlights", "linkItems": [
         {
+          "label": "Website",
+          "href": "https://terrabyte.eco"
+        },
+        {
           "label": "Etsy",
           "href": "https://www.etsy.com/shop/TerrabyteLLC"
         }
       ]
     },
     {
-      "label": "More Things", "linkItems": [
+      "label": "Projects", "linkItems": [
         {
           "label": "Pixel Planet Today: Website",
           "href": "https://pixelplanettoday.com"
@@ -27,17 +31,14 @@
           "href": "https://pinekeepers.com"
         }
       ]
-    },
+    }
+  ],
+
+
+
+  "oldLinks": [
     {
       "label": "The Usual", "linkItems": [
-        {
-          "label": "Website",
-          "href": "https://terrabyte.eco"
-        },
-        {
-          "label": "Etsy",
-          "href": "https://www.etsy.com/shop/TerrabyteLLC"
-        },
         {
           "label": "GitHub",
           "href": "https://github.com/terrabyte-tech"
@@ -47,22 +48,9 @@
           "href": "https://profiles.eco/terrabyte"
         }
       ]
-    }
-  ],
-
-
-
-  "oldLinks": [
+    },
     {
       "label": "Old Links", "linkItems": [
-        {
-          "label": "Website",
-          "href": "https://terrabyte.eco"
-        },
-        {
-          "label": "Etsy",
-          "href": "https://www.etsy.com/shop/TerrabyteLLC"
-        },
         {
           "label": "GitHub",
           "href": "https://github.com/terrabyte-tech"
