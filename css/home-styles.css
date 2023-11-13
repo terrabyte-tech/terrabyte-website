@@ -197,13 +197,17 @@
 
 /* press */
 /* more styles specific to the link are in site-styles.css */
+.press-cards-container.col-content{
+  max-height: 800px;
+  overflow-y: auto;
+}
 a.press-card{
-  width:300px;
-  margin-bottom:0;
-  margin-right:10px;
+  /* width:300px; */
+  /* margin-bottom:10px; */
+  /* margin-right:10px; */
 }
 a.press-card:last-child{
-  margin-right:0;
+  /* margin-right:0; */
 }
 .card-title{
   margin-bottom:10px;
