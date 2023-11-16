@@ -7,25 +7,28 @@ window.addEventListener("load", function(){
 ///////////////
 // Cookie Banner Scripts
   
+// on startup
   var cookieBanner = document.getElementById("cookie-banner");
 
-  // hide if already accepted/understood
+  // hide banner if already accepted/understood
   if (localStorage.getItem("storeData") == "accept-all" || localStorage.getItem("storeData") == "accept-min"){
     console.log("previously acknowledged data policy");
   }
+  // or show it if it hasn't
   else{
     cookieBanner.classList.add("show");
   }
 
+  // update the agreed-to text accordingly
   updateAgreedToText();
 
-  // set correct position on page load
+  // set correct position of cookie banner
   if(cookieBanner !== null && cookieBanner.classList.contains("show")){
     stickNav(cookieBanner);
   }
 
   // on click, set policy acknowledgement (if not minimized)
-  if(cookieBanner != null && cookieBanner.classList.contains("show")){
+  if(cookieBanner){
     var cookieButtons = document.querySelectorAll("[data-cookie-button]");
 
     for(let x = 0; x < cookieButtons.length; x++){
@@ -93,8 +96,10 @@ window.addEventListener("load", function(){
   if(revisitCookiePolicyLink.length > 0){
     revisitCookiePolicyLink[0].addEventListener("click", function(){
 
-      var cookieBanner = document.getElementById("cookie-banner");
+      // reset saved value
+      localStorage.removeItem("storeData");
 
+      var cookieBanner = document.getElementById("cookie-banner");
       // reset cookiebanner
       cookieBanner.classList.add("show");
       cookieBanner.style.bottom = "0px";
@@ -135,9 +140,7 @@ var navTriggers = document.querySelectorAll("[data-nav-toggle]");
 
 if(navTriggers.length > 0){
   navTriggers[0].addEventListener("click", function(){
-
     this.classList.toggle("show");
-
   })
 }
 
@@ -233,8 +236,6 @@ if(cardsContainer !== null){
         }
       })
 }
-
-
 
 ///////////////
 
