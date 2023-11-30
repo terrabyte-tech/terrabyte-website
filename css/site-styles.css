@@ -8,6 +8,7 @@
 	background-repeat:no-repeat;
 	scroll-behavior: inherit;
   line-height:1.5;
+  -webkit-tap-highlight-color: transparent;
 }
 /*  */
 
