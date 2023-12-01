@@ -26,8 +26,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Rubik:wght@300&display=swap" rel="stylesheet">
 
+  <!-- aurum framework -->
+  <link href="https://au.goldenharpmedia.com/framework/packages/v1.0/au.css" rel="stylesheet">
+
   <!-- stylesheets -->
-  <link href="/css/layout-styles.css" rel="stylesheet">
+  <!-- <link href="/css/layout-styles.css" rel="stylesheet"> -->
   <link href="/css/site-styles.css" rel="stylesheet">
   <link href="/css/header-styles.css" rel="stylesheet">
   <link href="/css/footer-styles.css" rel="stylesheet">
@@ -75,7 +78,7 @@
   <!-- <script type="text/javascript" src="https://app.canapi.io/hello.js"></script> -->
 </head>
 
-<body class="loadingx flex-container flex-vertical">
+<body class="loadingx" data-au="flex-container flex-vertical">
   <svg class="hide" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
     <defs>
       <!-- <g id="x-icon">
@@ -134,21 +137,21 @@
   <a name="top"></a>
   <!-- header -->
   <header class="padded-section">
-    <div class="max-width flex-container align-center">
-      <div class="banner-image-container flex-width flex-container align-center">
-        <a id="banner-image" href="https://terrabyte.eco" class="set-width flex-container align-center">
+    <div class="max-width" data-au="flex-container align-center">
+      <div class="banner-image-container" data-au="flex-width flex-container align-center">
+        <a id="banner-image" href="https://terrabyte.eco" data-au="set-width flex-container align-center">
           <svg viewBox="0 0 850 100">
             <use href="#logo"/>
           </svg>
         </a>
       </div>
-      <div class="nav-container set-width flex-container align-center">
+      <div class="nav-container" data-au="set-width flex-container align-center">
         <div class="hamburger-menu-icon clickable" data-nav-toggle>
           <svg viewBox="0 0 50 50">
             <use href="#hamburger-menu-icon"/>
           </svg>
         </div>
-        <nav data-nav class="flex-container align-center">
+        <nav data-nav data-au="flex-container align-center">
           <a class="nav-item-container selected" href="index.html">
             <span>Home</span>
           </a>
@@ -167,12 +170,12 @@
   </header>
 
   <!-- content sections -->
-  <main class="flex-height">
+  <main data-au="flex-height">
     <a name="hero"></a>
-    <section id="hero" class="padded-section full-section flex-container flex-vertical">
-      <div class="section-col-container flex-width max-width flex-container align-center">
-        <div class="illustration-col section-col flex-width flex-container all-center">
-          <div class="hero-code-container text-center">
+    <section id="hero" class="padded-section full-section" data-au="flex-container flex-vertical">
+      <div class="section-col-container max-width" data-au="flex-width flex-container align-center">
+        <div class="illustration-col section-col" data-au="flex-width flex-container all-center">
+          <div class="hero-code-container" data-au="text-center">
             <!-- we are -->
             <h3 class="code-text hide-on-mobile">01110111 01100101 00100000 01100001 01110010 01100101</h3>
             <!-- saving the planet byte by byte -->
@@ -181,14 +184,14 @@
             <!-- u in?! -->
             <h3 class="code-text hide-on-mobile">01110101 00100000 01101001 01101110 00111111 00100001</h3>
           </div>
-          <div class="a-mountain-logo set-width" data-canapi-click-trigger data-key="
+          <div class="a-mountain-logo" data-au="set-width" data-canapi-click-trigger data-key="
 zScg7IOJa5i18NbV45Sl">
             <svg viewBox="0 0 1000 1000">
               <use href="#a-mountain-logo"/>
             </svg>
           </div>
         </div>
-        <div class="text-col section-col set-width">
+        <div class="text-col section-col" data-au="set-width">
           <h1>technology for a <br class="hide-on-tablet">greener tomorrow</b></h1>
           <!-- <h1>saving the planet<br> -->
           <!-- byte by byte</h1> -->
@@ -204,11 +207,11 @@ zScg7IOJa5i18NbV45Sl">
 
     
     <a name="about-us"></a>
-    <section id="about-us" class="padded-section full-section flex-container all-center">
-      <div class="flex-container flex-vertical">
-        <div class="section-col-container max-width flex-container">
+    <section id="about-us" class="padded-section full-section" data-au="flex-container all-center">
+      <div data-au="flex-container flex-vertical">
+        <div class="section-col-container max-width" data-au="flex-container">
           <!-- venn text col -->
-          <div class="section-col flex-width">
+          <div class="section-col" data-au="flex-width">
             <h3 class="section-col-title">
               "Where <span class="highlight-container">technology</span>, <span class="highlight-container">design</span>, and <span class="highlight-container">environmentalism</span> combine &mdash; we thrive."</span>
             </h2>
@@ -220,13 +223,13 @@ zScg7IOJa5i18NbV45Sl">
             </div>
           </div>
           <!-- venn diagram col -->
-          <div class="section-col flex-width flex-container all-center hide-on-tablet hide-on-mobile">
-            <div class="venn-container set-width">
+          <div class="section-col hide-on-tablet hide-on-mobile" data-au="flex-width flex-container all-center">
+            <div class="venn-container" data-au="set-width">
               <div id="venn-circle-1" class="venn-circle"></div>
               <div id="venn-circle-2" class="venn-circle"></div>
               <div id="venn-circle-3" class="venn-circle"></div>
 
-              <div id="venn-guide-circle" class="venn-circle flex-container all-center">
+              <div id="venn-guide-circle" class="venn-circle" data-au="flex-container all-center">
                 <!-- <div class="venn-logo">
                   <svg viewBox="0 0 1000 1000">
                     <use href="#a-mountain-logo"/>
@@ -236,7 +239,7 @@ zScg7IOJa5i18NbV45Sl">
             </div>
           </div>
         </div>
-        <div class="set-width button-container all-center flex-container">
+        <div class="button-container" data-au="set-width all-center flex-container">
           <a href="#projects">
             <button>Our Projects</button>
           </a>
@@ -246,19 +249,19 @@ zScg7IOJa5i18NbV45Sl">
 
 
     <a name="projects"></a>
-    <section id="projects" class="padded-section full-section flex-container all-center">
-      <div class="flex-container flex-vertical">
-        <div class="section-col-container max-width flex-container">
+    <section id="projects" class="padded-section full-section" data-au="flex-container all-center">
+      <div data-au="flex-container flex-vertical">
+        <div class="section-col-container max-width" data-au="flex-container">
           <!-- pixel planet today -->
-          <div class="section-col flex-width flex-container flex-vertical">
-            <div id="pixel-planet-today-img" class="col-img set-height"></div>
-            <div class="col-content flex-height">
+          <div class="section-col" data-au="flex-width flex-container flex-vertical">
+            <div id="pixel-planet-today-img" class="col-img" data-au="set-height"></div>
+            <div class="col-content" data-au="flex-height">
               <p>Pixel Planet Today is a creative venture that pairs facts about the planet with pixel art designs. What started as a Design-365 project has since spun into a fully-fledged environmental-awareness endeavor, aiming to raise an appreciation for the planet using the power of nostalgia.</p>
             </div>
-            <div class="col-footer set-height">
+            <div class="col-footer" data-au="set-height">
               <a class="standard-link ext-link" href="https://www.pixelplanettoday.com" target="_blank">
-                <div class="flex-container align-center">
-                  <span class="set-width">Learn More</span>
+                <div data-au="flex-container align-center">
+                  <span data-au="set-width">Learn More</span>
                   <div class="icon set-width">
                     <svg viewBox="0 0 50 50">
                       <use href="#ext-link-icon"/>
@@ -269,14 +272,14 @@ zScg7IOJa5i18NbV45Sl">
             </div>
           </div>
           <!-- canapi -->
-          <div class="section-col flex-width flex-container flex-vertical">
-            <div id="canapi-img" class="col-img set-height"></div>
-            <div class="col-content flex-height">
+          <div class="section-col" data-au="flex-width flex-container flex-vertical">
+            <div id="canapi-img" class="col-img" data-au="set-height"></div>
+            <div class="col-content" data-au="flex-height">
               <p>B2B software to help your business go green. More information coming soon!</p>
               <a class="standard-link ext-link" href="https://canapi.io" target="_blank">
-                <div class="flex-container align-center">
-                  <span class="set-width">Learn More</span>
-                  <div class="icon set-width">
+                <div data-au="flex-container align-center">
+                  <span data-au="set-width">Learn More</span>
+                  <div class="icon" data-au="set-width">
                     <svg viewBox="0 0 50 50">
                       <use href="#ext-link-icon"/>
                     </svg>
@@ -285,7 +288,7 @@ zScg7IOJa5i18NbV45Sl">
               </a>
               <!-- <p>Canapi is automatic environmental contribution software. Translation: turn any type of user interaction with your product into the environmental action. Want to plant a tree with each newsletter sign up? Want to remove a pound of ocean plastic for every video view? User interaction can mean more than data on a server.</p> -->
             </div>
-            <div class="col-footer set-height">
+            <div class="col-footer" data-au="set-height">
               <!-- <a class="standard-link ext-link" href="https://canapi.io" target="_blank">
                 <div class="flex-container align-center">
                   <span class="set-width">Learn More</span>
@@ -299,18 +302,18 @@ zScg7IOJa5i18NbV45Sl">
             </div>
           </div>
         </div>
-        <div class="section-col-container max-width flex-container">
+        <div class="section-col-container max-width" data-au="flex-container">
           <!-- pinekeepers -->
-          <div class="section-col flex-width flex-container flex-vertical">
-            <div id="pinekeepers-img" class="col-img set-height"></div>
-            <div class="col-content flex-height">
+          <div class="section-col" data-au="flex-width flex-container flex-vertical">
+            <div id="pinekeepers-img" class="col-img" data-au="set-height"></div>
+            <div class="col-content" data-au="flex-height">
               <p>Pinekeepers is a retro-inspired game that turns trees saved in the digital world into real-life saplings!  This game is in the early stages of development, but will feature trees, wildfires, and of course, pixel art. Stay tuned for more information as we release it on our social media channels!</p>
             </div>
-            <div class="col-footer set-height">
+            <div class="col-footer" data-au="set-height">
               <a class="standard-link ext-link" href="https://www.pinekeepers.com" target="_blank">
-                <div class="flex-container align-center">
-                  <span class="set-width">Learn More</span>
-                  <div class="icon set-width">
+                <div data-au="flex-container align-center">
+                  <span data-au="set-width">Learn More</span>
+                  <div class="icon" data-au="set-width">
                     <svg viewBox="0 0 50 50">
                       <use href="#ext-link-icon"/>
                     </svg>
@@ -320,16 +323,16 @@ zScg7IOJa5i18NbV45Sl">
             </div>
           </div>
           <!-- wasted space -->
-          <div class="section-col flex-width flex-container flex-vertical">
-            <div id="wasted-space-img" class="col-img set-height"></div>
-            <div class="col-content flex-height">
+          <div class="section-col" data-au="flex-width flex-container flex-vertical">
+            <div id="wasted-space-img" class="col-img" data-au="set-height"></div>
+            <div class="col-content" data-au="flex-height">
               <p>Wasted Space is a classic-arcade style game that drives home the idea of reusing and recycling. Fly a spaceship through endless enemies and collect metal from destroyed ships in order to upgrade your own! The game is still in development, but we aim to launch a Pico-8 demo by Summer 2024.</p>
             </div>
-            <div class="col-footer set-height">
+            <div class="col-footer" data-au="set-height">
               <a class="standard-link ext-link" href="https://youtube.com/shorts/aPGDjK-rEZ0?feature=share" target="_blank">
-                <div class="flex-container align-center">
-                  <span class="set-width">Watch the First Look</span>
-                  <div class="icon set-width">
+                <div data-au="flex-container align-center">
+                  <span data-au="set-width">Watch the First Look</span>
+                  <div class="icon" data-au="set-width">
                     <svg viewBox="0 0 50 50">
                       <use href="#ext-link-icon"/>
                     </svg>
@@ -345,21 +348,21 @@ zScg7IOJa5i18NbV45Sl">
 
 
     <a name="press"></a>
-    <section id="press" class="padded-section full-section flex-container justify-center flex-vertical">
-      <div class="flex-container flex-vertical">
-        <div class="section-col-container flex-width max-width flex-container">
+    <section id="press" class="padded-section" data-au="full-section flex-container justify-center flex-vertical">
+      <div data-au="flex-container flex-vertical">
+        <div class="section-col-container max-width" data-au="flex-width flex-container">
           <!-- venn text col -->
-          <div class="section-col flex-width flex-container flex-vertical">
+          <div class="section-col" data-au="flex-width flex-container flex-vertical">
             <h3 class="section-col-title">As seen in:</h3>
             <!-- card template -->
             <template id="press-card-template">
-              <a data-press-card class="press-card standard-link ext-link set-width" href="" target="_blank">
+              <a data-press-card class="press-card standard-link ext-link" data-au="set-width" href="" target="_blank">
                 <p data-press-title class="card-title"></p>
                 <p data-press-caption class="card-caption subtext"></p>
 
-                <div class="flex-container align-center">
+                <div data-au="flex-container align-center">
                   <span data-press-link class="standard-link subtext"></span>
-                  <div class="icon set-width">
+                  <div class="icon" data-au="set-width">
                     <svg viewBox="0 0 50 50">
                       <use href="#ext-link-icon"/>
                     </svg>
@@ -369,7 +372,7 @@ zScg7IOJa5i18NbV45Sl">
             </template>
 
             <!-- container where cards will be populated -->
-            <div data-press-cards-container class="press-cards-container col-content flex-height flex-container flex-vertical">
+            <div data-press-cards-container class="press-cards-container col-content" data-au="flex-height flex-container flex-vertical">
               <!-- cards populate here -->
             </div>
 
@@ -378,9 +381,9 @@ zScg7IOJa5i18NbV45Sl">
             </div> -->
           </div>
           <!-- venn diagram col -->
-          <div class="section-col flex-width flex-container flex-vertical">
+          <div class="section-col" data-au="flex-width flex-container flex-vertical">
             <h3 class="section-col-title">Updates (via <a class="standard-link" href="https://mastodon.eco/@terrabyte">Mastodon</a>):</h3>
-            <div class="col-content flex-height">
+            <div class="col-content" data-au="flex-height">
               <iframe allowfullscreen sandbox="allow-top-navigation allow-scripts allow-popups allow-popups-to-escape-sandbox" width="" height="" src="https://mastofeed.com/apiv2/feed?userurl=https%3A%2F%2Fmastodon.eco%2Fusers%2Fterrabyte&theme=dark&size=100&header=false&replies=false&boosts=false"></iframe>
             </div>
             
@@ -398,43 +401,43 @@ zScg7IOJa5i18NbV45Sl">
 
 
     <a name="social-proof"></a>
-    <section id="social-proof" class="padded-section full-section flex-container all-center flex-vertical">
-      <div class="social-proof-section flex-container flex-vertical">
-        <h3 class="section-col-title text-center">Our Partners:</h3>
+    <section id="social-proof" class="padded-section full-section" data-au="flex-container all-center flex-vertical">
+      <div class="social-proof-section" data-au="flex-container flex-vertical">
+        <h3 class="section-col-title" data-au="text-center">Our Partners:</h3>
 
-        <div class="social-proof-col-container section-col-container max-width flex-container all-center space-between">
-          <div class="social-proof-col section-col set-width">
-            <a id="carbonii-img" class="partner-img set-height" href="https://www.carbonii.com" target="_blank"></a>
+        <div class="social-proof-col-container section-col-container max-width" data-au="flex-container all-center space-between">
+          <div class="social-proof-col section-col" data-au="set-width">
+            <a id="carbonii-img" class="partner-img" data-au="set-height" href="https://www.carbonii.com" target="_blank"></a>
           </div>
 
-          <div class="social-proof-col section-col set-width">
-            <a id="wrd-img" class="partner-img set-height" href="https://www.worldrainforestday.org/" target="_blank"></a>
+          <div class="social-proof-col section-col" data-au="set-width">
+            <a id="wrd-img" class="partner-img" data-au="set-height" href="https://www.worldrainforestday.org/" target="_blank"></a>
           </div>
         </div>
       </div>
       
-      <div class="social-proof-section flex-container flex-vertical">
-        <h4 class="section-col-title text-center">Some of the other wonderful people we've worked with:</h4>
+      <div class="social-proof-section" data-au="flex-container flex-vertical">
+        <h4 class="section-col-title" data-au="text-center">Some of the other wonderful people we've worked with:</h4>
 
-        <div class="social-proof-col-container section-col-container max-width flex-container all-center space-between">
-          <div class="social-proof-col section-col set-width">
-            <a id="tbep-img" class="social-proof-img set-height" href="https://www.tbep.org" target="_blank"></a>
+        <div class="social-proof-col-container section-col-container max-width" data-au="flex-container all-center space-between">
+          <div class="social-proof-col section-col" data-au="set-width">
+            <a id="tbep-img" class="social-proof-img" data-au="set-height" href="https://www.tbep.org" target="_blank"></a>
           </div>
           
-          <div class="social-proof-col section-col set-width">
-            <a id="the-climate-issue-img" class="social-proof-img set-height" href="https://www.theclimateissue.com" target="_blank"></a>
+          <div class="social-proof-col section-col" data-au="set-width">
+            <a id="the-climate-issue-img" class="social-proof-img" data-au="set-height" href="https://www.theclimateissue.com" target="_blank"></a>
           </div>
-          <div class="social-proof-col section-col set-width">
-            <a id="ecta-img" class="social-proof-img set-height" href="https://usaniivillageafrica.org" target="_blank"></a>
+          <div class="social-proof-col section-col" data-au="set-width">
+            <a id="ecta-img" class="social-proof-img" data-au="set-height" href="https://usaniivillageafrica.org" target="_blank"></a>
           </div>
-          <div class="social-proof-col section-col set-width">
-            <a id="eco-earth-market-img" class="social-proof-img set-height" href="https://www.ecoearthmarket.com" target="_blank"></a>
+          <div class="social-proof-col section-col" data-au="set-width">
+            <a id="eco-earth-market-img" class="social-proof-img" data-au="set-height" href="https://www.ecoearthmarket.com" target="_blank"></a>
           </div>
-          <div class="social-proof-col section-col set-width">
-            <a id="pfj-img" class="social-proof-img set-height" href="https://www.plasticfreejuly.org" target="_blank"></a>
+          <div class="social-proof-col section-col" data-au="set-width">
+            <a id="pfj-img" class="social-proof-img" data-au="set-height" href="https://www.plasticfreejuly.org" target="_blank"></a>
           </div>
-          <div class="social-proof-col section-col set-width">
-            <a id="earth-hacks-img" class="social-proof-img set-height" href="https://www.earthhacks.io" target="_blank"></a>
+          <div class="social-proof-col section-col" data-au="set-width">
+            <a id="earth-hacks-img" class="social-proof-img" data-au="set-height" href="https://www.earthhacks.io" target="_blank"></a>
           </div>
 
           <!-- <div class="social-proof-col section-col set-width">
@@ -443,13 +446,13 @@ zScg7IOJa5i18NbV45Sl">
           <!-- <div class="social-proof-col section-col set-width">
             <a id="humans-for-earth-img" class="social-proof-img set-height" href="https://humansforearth.weebly.com/" target="_blank"></a>
           </div> -->
-          <div class="social-proof-col section-col set-width">
-            <a id="pixel-art-mag-img" class="social-proof-img set-height" href="https://www.instagram.com/pixelartmag" target="_blank"></a>
+          <div class="social-proof-col section-col" data-au="set-width">
+            <a id="pixel-art-mag-img" class="social-proof-img" data-au="set-height" href="https://www.instagram.com/pixelartmag" target="_blank"></a>
           </div>
         </div>
       </div>
 
-      <div class="set-width button-container all-center flex-container hide-on-mobile">
+      <div class="button-container hide-on-mobile" data-au="set-width all-center flex-container">
         <a href="#faqs">
           <button>Have a question?</button>
         </a>
@@ -458,9 +461,9 @@ zScg7IOJa5i18NbV45Sl">
 
 
     <a name="faqs"></a>
-    <section id="faqs" class="padded-section full-section flex-container all-center">
-      <div class="section-col-container max-width flex-container align-top">
-        <div class="accordion-col section-col flex-width">
+    <section id="faqs" class="padded-section full-section" data-au="flex-container all-center">
+      <div class="section-col-container max-width" data-au="flex-container align-top">
+        <div class="accordion-col section-col" data-au="flex-width">
           <h2 class="section-col-title">
             <span class="highlight-container">FAQ<span class="force-small-text">s</span></span>
           </h2>
@@ -525,9 +528,9 @@ zScg7IOJa5i18NbV45Sl">
                 <p>Like other, newer TLDs (the ending of a web address like .com, .net, etc.), .eco domains help communicate the website's focus, even as someone is typing the URL. But unlike other TLDs like .shop, .website, or even .pizza - .eco is backed by a multitude of environmental organizations. World Wildlife Fund, Ocean Conservancy, IUCN, and over 50 others advise policies for .eco.</p>
 
                 <a class="standard-link ext-link" href="https://www.go.eco" target="_blank">
-                  <div class="flex-container align-center">
+                  <div data-au="flex-container align-center">
                     <span class="set-width">Learn More about .Eco domains</span>
-                    <div class="icon set-width">
+                    <div class="icon" data-au="set-width">
                       <svg viewBox="0 0 50 50">
                         <use href="#ext-link-icon"/>
                       </svg>
@@ -548,7 +551,7 @@ zScg7IOJa5i18NbV45Sl">
             </div>
           </div>
         </div>
-        <div class="section-col flex-width">
+        <div class="section-col" data-au="flex-width">
           <h2 class="section-col-title">
             <span class="highlight-container">Have another question?</span><br>
             
@@ -556,46 +559,46 @@ zScg7IOJa5i18NbV45Sl">
 
           <div class="socials-container">
             <!-- instagram -->
-            <a class="ques-item-container flex-container align-center" href="https://instagram.com/terrabyte_tech" target="_blank">
-              <div class="icon set-width">
+            <a class="ques-item-container" data-au="flex-container align-center" href="https://instagram.com/terrabyte_tech" target="_blank">
+              <div class="icon" data-au="set-width">
                 <svg viewBox="0 0 50 50">
                   <use href="#instagram-icon"/>
                 </svg>
               </div>
-              <div class="flex-width hide-on-mobile">
+              <div class="hide-on-mobile" data-au="flex-width ">
                 <h3>@terrabyte_tech</h3>
               </div>
             </a>
             <!-- twitter -->
-            <a class="ques-item-container flex-container align-center" href="https://twitter.com/TerrabyteEco" target="_blank">
-              <div class="icon set-width">
+            <!-- <a class="ques-item-container" data-au="flex-container align-center" href="https://twitter.com/TerrabyteEco" target="_blank">
+              <div class="icon" data-au="set-width">
                 <svg viewBox="0 0 50 50">
                   <use href="#twitter-icon"/>
                 </svg>
               </div>
-              <div class="flex-width hide-on-mobile">
+              <div class="hide-on-mobile" data-au="flex-width">
                 <h3>@TerrabyteEco</h3>
               </div>
-            </a>
+            </a> -->
             <!-- mastodon -->
-            <a class="ques-item-container flex-container align-center" href="https://mastodon.eco/@terrabyte" target="_blank">
-              <div class="icon set-width">
+            <a class="ques-item-container" data-au="flex-container align-center" href="https://mastodon.eco/@terrabyte" target="_blank">
+              <div class="icon" data-au="set-width">
                 <svg viewBox="0 0 50 50">
                   <use href="#mastodon-icon"/>
                 </svg>
               </div>
-              <div class="flex-width hide-on-mobile">
+              <div class="hide-on-mobile" data-au="flex-width">
                 <h3>terrabyte@mastodon.eco</h3>
               </div>
             </a>
             <!-- email -->
-            <a class="ques-item-container flex-container align-center" href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#110;&#102;&#111;&#64;&#116;&#101;&#114;&#114;&#97;&#98;&#121;&#116;&#101;&#46;&#101;&#99;&#111;" target="_blank">
-              <div class="icon set-width">
+            <a class="ques-item-container" data-au="flex-container align-center" href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#110;&#102;&#111;&#64;&#116;&#101;&#114;&#114;&#97;&#98;&#121;&#116;&#101;&#46;&#101;&#99;&#111;" target="_blank">
+              <div class="icon" data-au="set-width">
                 <svg viewBox="0 0 50 50">
                   <use href="#email-icon"/>
                 </svg>
               </div>
-              <div class="flex-width hide-on-mobile">
+              <div class="hide-on-mobile" data-au="flex-width">
                 <h3>&#105;&#110;&#102;&#111;&#64;&#116;&#101;&#114;&#114;&#97;&#98;&#121;&#116;&#101;&#46;&#101;&#99;&#111;</h3>
               </div>
             </a>
@@ -609,16 +612,16 @@ zScg7IOJa5i18NbV45Sl">
   <a id="footer-anchor" name="footer"></a>
   <footer data-footer>
     <div id="cookie-banner" class="site-banner bottom-banner">
-      <div class="max-width flex-container align-center">
-        <div class="banner-content flex-width">
-          <div class="flex-container banner-header">
-            <h3 class="flex-width">Cookies &amp; Your Privacy</h3>
+      <div class="max-width" data-au="flex-container align-center">
+        <div class="banner-content" data-au="flex-width">
+          <div class="banner-header" data-au="flex-container">
+            <h3 data-au="flex-width">Cookies &amp; Your Privacy</h3>
           </div>
-          <div class="banner-info flex-container">
-            <div class="flex-width">
+          <div class="banner-info" data-au="flex-container">
+            <div data-au="flex-width">
               <p class="subtext">Being a responsible company doesn't end with being environmentally conscious. We limit the amount and types of cookies and similar technologies our site uses, but we still rely on them to provide stellar web experiences. <a class="standard-link current-color-link" href="https://terrabyte.eco/legal/privacy-policy.html">Learn More</a></p>
             </div>
-            <div class="set-width button-container">
+            <div data-au="set-width button-container">
               <!-- <h3>Accept:</h3> -->
               <button class="" data-cookie-button="accept-all">All</button>
               <button class="primary" data-cookie-button="accept-min">Essential</button>
@@ -631,16 +634,16 @@ zScg7IOJa5i18NbV45Sl">
 
     <a id="newsletter-anchor" name="newsletter"></a>
     <div id="true-footer" class="padded-section">
-      <div class="footer-top-container max-width flex-container">
-        <div id="footer-logo-container" class="flex-width flex-container align-center">
-          <a id="footer-logo" href="https://terrabyte.eco" class="set-width flex-container align-center">
+      <div class="footer-top-container max-width" data-au="flex-container">
+        <div id="footer-logo-container" data-au="flex-width flex-container align-center">
+          <a id="footer-logo" href="https://terrabyte.eco" data-au="set-width flex-container align-center">
             <svg viewBox="0 0 850 100">
               <use href="#logo"/>
             </svg>
           </a>
         </div>
         
-        <div id="footer-socials-container" class="set-width flex-container">
+        <div id="footer-socials-container" data-au="set-width flex-container">
           <!-- instagram -->
           <a class="footer-social icon-container" href="https://instagram.com/terrabyte_tech" target="_blank">
             <div class="icon">
@@ -703,9 +706,9 @@ zScg7IOJa5i18NbV45Sl">
           </a>
         </div>
       </div>
-      <div class="footer-cols-container max-width flex-container">
-        <div class="footer-left-cols flex-container flex-width">
-          <div class="footer-info-col set-width">
+      <div class="footer-cols-container max-width" data-au="flex-container">
+        <div class="footer-left-cols" data-au="flex-container flex-width">
+          <div class="footer-info-col" data-au="set-width">
             <h3>Legal</h3>
             <div class="footer-link-container">
               <a class="standard-link" href="https://terrabyte.eco/legal/privacy-policy.html">Privacy Policy</a>
@@ -741,7 +744,7 @@ zScg7IOJa5i18NbV45Sl">
             </div> -->
             
           </div>
-          <div class="footer-info-col set-width">
+          <div class="footer-info-col" data-au="set-width">
             <h3>Projects</h3>
             <div class="footer-link-container">
               <a class="standard-link" href="https://www.pixelplanettoday.com" target="_blank">Pixel Planet Today</a>
@@ -755,7 +758,7 @@ zScg7IOJa5i18NbV45Sl">
           </div>
         </div>
         
-        <div class="footer-right-col flex-width">
+        <div class="footer-right-col" data-au="flex-width">
           <!-- newsletter -->
           <h3>Sign up for the newsletter, <span class="little-bytes-text">&lt;little-bytes&gt;</span></h3>
 
@@ -766,20 +769,20 @@ zScg7IOJa5i18NbV45Sl">
   onsubmit="window.open('https://buttondown.email/terrabyte', 'popupwindow')"
   class="embeddable-buttondown-form">
     <!-- <label for="bd-email">Enter your email</label> -->
-    <div class="footer-form-rows flex-container">
-      <div id="email-row" class="form-row set-width flex-container">
-        <span class="custom-input-container flex-width">
+    <div class="footer-form-rows" data-au="flex-container">
+      <div id="email-row" class="form-row" data-au="set-width flex-container">
+        <span class="custom-input-container" data-au="flex-width">
           <input type="email" name="email" id="bd-email" placeholder="name@email.com"/>
         </span>
       </div>
     </div>
 
-    <div class="flex-container align-center">
-      <div class="form-button-container set-width">
+    <div data-au="flex-container align-center">
+      <div class="form-button-container" data-au="set-width">
         <input type="submit" value="Subscribe" />
         <input type="hidden" name="tag" value="Terrabyte Subscribers" />
       </div>
-      <p class="flex-width">Powered by 
+      <p data-au="flex-width">Powered by 
         <a class="standard-link" href="https://buttondown.email" target="_blank">Buttondown</a>
       </p>
     </div>
@@ -793,8 +796,8 @@ zScg7IOJa5i18NbV45Sl">
       </div>
       
 
-      <div class="footer-bottom-container max-width flex-container align-center">
-        <div id="footer-bottom-info-container" class="flex-width">
+      <div class="footer-bottom-container max-width" data-au="flex-container align-center">
+        <div id="footer-bottom-info-container" data-au="flex-width">
           <div id="footer-copyright">
             &copy; <span id="current-year-text"></span> Terrabyte, LLC. All Rights Reserved.
           </div>
@@ -804,7 +807,7 @@ zScg7IOJa5i18NbV45Sl">
         </div>
         
 
-        <div class="set-width footer-badges-container flex-container align-center">
+        <div class="footer-badges-container" data-au="set-width flex-container align-center">
           <!-- website carbon -->
           <div class="website-carbon-badge footer-badge">
             <div id="wcb" class="carbonbadge wcb-d"></div>
@@ -821,7 +824,6 @@ zScg7IOJa5i18NbV45Sl">
       </div>
 
 
-      
     </div>
   </footer>
 
