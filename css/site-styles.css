@@ -240,7 +240,8 @@ a.press-card{
   padding:10px 20px;
   margin-bottom:10px;
 }
-a.link-row.flex-container{
+a.link-row.flex-container,
+a.link-row[data-au~="flex-container"]{
   display:flex;
 }
 .link-row:last-child{
@@ -569,7 +570,7 @@ section{
   .section-col-container{
     flex-wrap:wrap;
   }
-  .section-col.flex-width{
+  .section-col:not(.social-proof-col){
     margin-right:0;
     margin-bottom:30px;
     flex:auto;
