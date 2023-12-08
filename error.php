@@ -73,6 +73,10 @@
   </head>
 
   <body class="flex-container flex-vertical">
+    <div class="sr-only">
+      <a class="standard-link" href="#top" tabindex="0">Jump to Content</a>
+    </div>
+
   <svg class="hide" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" role="presentation">
     <defs>
       <g id="logo">
@@ -108,6 +112,7 @@
       </g>
     </defs>
   </svg>
+
 
   <header class="padded-section">
     <div class="max-width flex-container align-center">
@@ -157,11 +162,11 @@
   <!-- footer -->
   <a id="footer-anchor" name="footer"></a>
   <footer data-footer>
-    <div id="cookie-banner" class="site-banner bottom-banner">
+    <div id="cookie-banner" class="site-banner bottom-banner" role="region" aria-labelledby="cookie-banner-header">
       <div class="max-width" data-au="flex-container align-center">
         <div class="banner-content" data-au="flex-width">
           <div class="banner-header" data-au="flex-container">
-            <h3 data-au="flex-width">Cookies &amp; Your Privacy</h3>
+            <h3 id="cookie-banner-header" data-au="flex-width">Cookies &amp; Your Privacy</h3>
           </div>
           <div class="banner-info" data-au="flex-container">
             <div data-au="flex-width">
@@ -193,7 +198,7 @@
           <!-- instagram -->
           <a class="footer-social icon-container" href="https://instagram.com/terrabyte_tech" target="_blank" aria-label="Terrabyte on Instagram (opens in new window)">
             <div class="icon">
-              <svg viewBox="0 0 50 50">
+              <svg viewBox="0 0 50 50" role="presentation">
                 <use href="#instagram-icon"/>
               </svg>
             </div>
@@ -213,7 +218,7 @@
           <a rel="me" href="https://mastodon.eco/@terrabyte" class="footer-social icon-container" target="_blank" aria-label="Terrabyte on Mastodon (opens in new window)">
           <!-- <a href="https://mastodon.eco/@terrabyte" class="footer-social icon-container" target="_blank"> -->
             <div class="icon">
-              <svg viewBox="0 0 50 50">
+              <svg viewBox="0 0 50 50" role="presentation">
                 <use href="#mastodon-icon"/>
               </svg>
             </div>
@@ -221,7 +226,7 @@
           <!-- github -->
           <a class="footer-social icon-container" href="https://github.com/terrabyte-tech" target="_blank" aria-label="Terrabyte on GitHub (opens in new window)">
             <div class="icon">
-              <svg viewBox="0 0 50 50">
+              <svg viewBox="0 0 50 50" role="presentation">
                 <use href="#github-icon"/>
               </svg>
             </div>
@@ -229,7 +234,7 @@
           <!-- we dont have time -->
           <a class="footer-social icon-container" href="https://app.wedonthavetime.org/profile/Terrabyte" target="_blank" aria-label="Terrabyte on We Don't Have Time (opens in new window)">
             <div class="icon">
-              <svg viewBox="0 0 50 50">
+              <svg viewBox="0 0 50 50" role="presentation">
                 <use href="#wdht-icon"/>
               </svg>
             </div>
@@ -237,7 +242,7 @@
           <!-- youtube -->
           <a class="footer-social icon-container" href="https://www.youtube.com/@TerrabyteEco" target="_blank" aria-label="Terrabyte on YouTube (opens in new window)">
             <div class="icon">
-              <svg viewBox="0 0 50 50">
+              <svg viewBox="0 0 50 50" role="presentation">
                 <use href="#youtube-icon"/>
               </svg>
             </div>
@@ -245,7 +250,7 @@
           <!-- dot.eco profile -->
           <a class="footer-social icon-container" href="https://profiles.eco/terrabyte" target="_blank" aria-label="Terrabyte on dot Eco (opens in new window)">
             <div class="icon">
-              <svg viewBox="0 0 50 50">
+              <svg viewBox="0 0 50 50" role="presentation">
                 <use href="#eco-profile-icon"/>
               </svg>
             </div>
@@ -317,14 +322,14 @@
     <div class="footer-form-rows" data-au="flex-container">
       <div id="email-row" class="form-row" data-au="set-width flex-container">
         <span class="custom-input-container" data-au="flex-width">
-          <input type="email" name="email" id="bd-email" placeholder="name@email.com"/>
+          <input type="email" name="email" id="bd-email" placeholder="name@email.com" aria-label="Email address"/>
         </span>
       </div>
     </div>
 
     <div data-au="flex-container align-center">
       <div class="form-button-container" data-au="set-width">
-        <input type="submit" value="Subscribe" />
+        <input role="button" type="submit" value="Subscribe" />
         <input type="hidden" name="tag" value="Terrabyte Subscribers" />
       </div>
       <p data-au="flex-width">Powered by 
@@ -361,7 +366,7 @@
           <!-- clean creatives -->
           <div class="clean-creatives-badge footer-badge">
             <a href="https://www.cleancreatives.org" target="_blank" aria-label="Clean Creatives website (opens in new window)">
-              <div id="clean-creatives-img"></div>
+              <div id="clean-creatives-img" role="img"></div>
             </a>
             
           </div>
