@@ -160,10 +160,10 @@
   
       <!-- link template -->
       <template id="link-template">
-        <a data-link-row class="link-row ext-link flex-container align-center flex-horizontal" href="" target="_blank">
+        <a data-link-row class="link-row ext-link flex-container align-center flex-horizontal" href="" target="_blank" aria-label="(link opens in new window)">
           <span class="flex-width" data-link-label></span>
           <div class="icon set-width">
-            <svg viewBox="0 0 50 50">
+            <svg viewBox="0 0 50 50" role="presentation">
               <use href="#ext-link-icon"/>
             </svg>
           </div>
@@ -178,7 +178,7 @@
         <div class="section-header">
           <h3 data-header-label>Updates (via <a class="standard-link" href="https://mastodon.eco/@terrabyte">Mastodon</a>)</h3>
         </div>
-        <iframe allowfullscreen sandbox="allow-top-navigation allow-scripts allow-popups allow-popups-to-escape-sandbox" width="500" height="800" src="https://mastofeed.com/apiv2/feed?userurl=https%3A%2F%2Fmastodon.eco%2Fusers%2Fterrabyte&theme=dark&size=100&header=false&replies=false&boosts=false"></iframe>
+        <iframe title="Terrabyte Mastodon feed" allowfullscreen sandbox="allow-top-navigation allow-scripts allow-popups allow-popups-to-escape-sandbox" width="500" height="800" src="https://mastofeed.com/apiv2/feed?userurl=https%3A%2F%2Fmastodon.eco%2Fusers%2Fterrabyte&theme=dark&size=100&header=false&replies=false&boosts=false"></iframe>
       </div>
     </main>
   </section>
