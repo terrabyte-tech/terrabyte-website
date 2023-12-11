@@ -26,6 +26,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Rubik:wght@300&display=swap" rel="stylesheet">
 
+  <!-- aurum framework -->
+  <link href="https://au.goldenharpmedia.com/framework/packages/v1.0/au.css" rel="stylesheet">
+
   <!-- stylesheets -->
   <link href="https://www.terrabyte.eco/css/layout-styles.css" rel="stylesheet">
   <link href="../css/site-styles.css" rel="stylesheet">
@@ -70,7 +73,11 @@
 </head>
 
 <body class="loadingx flex-container flex-vertical">
-  <svg class="hide" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+  <div class="sr-only">
+    <a class="standard-link" href="#top" tabindex="0">Jump to Content</a>
+  </div>
+
+  <svg class="hide" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" role="presentation">
     <defs>
       <!-- <g id="x-icon">
         <path d="M25,0A25,25,0,1,0,50,25,25,25,0,0,0,25,0Zm8.65,37.38L25,28.84,16.44,37.5l-3.82-3.82L21.17,25,12.5,16.44l3.82-3.82L25,21.17l8.55-8.67,3.85,3.85L28.84,25l8.66,8.55Z"/>
@@ -134,19 +141,34 @@
   </noscript>
 
   <a name="top"></a>
+  <!-- screen reader, page table of contents -->
+  <div class="sr-only sr-toc">
+    <h2>Accessibility Table of Contents</h2>
+    <a class="standard-link" tabindex="0" href="#header">Jump to Page Header</a>
+    <a class="standard-link" tabindex="0" href="#intro">Jump to Intro Section</a>
+    <a class="standard-link" tabindex="0" href="#what-are-cookies">Jump to 'What are cookies?' Section</a>
+    <a class="standard-link" tabindex="0" href="#how-we-use">Jump to 'How we use cookies?' Section</a>
+    <a class="standard-link" tabindex="0" href="#how-to-control">Jump to 'How can I control cookies?' Section</a>
+    <a class="standard-link" tabindex="0" href="#do-we-update-notice">Jump to 'Do we make updates to this notice?' Section</a>
+    <a class="standard-link" tabindex="0" href="#how-to-contact">Jump to 'How can you contact us about this policy?' Section</a>
+    <a class="standard-link" tabindex="0" href="#creidts">Jump to Additional Sources Section</a>
+
+    <a class="standard-link" tabindex="0" href="#footer">Jump to Page Footer</a>
+  </div>
+  
   <!-- header -->
-  <header class="padded-section">
+  <header id="header" class="padded-section">
     <div class="max-width flex-container align-center">
       <div class="banner-image-container flex-width flex-container align-center">
-        <a id="banner-image" href="https://terrabyte.eco" class="set-width flex-container align-center">
-          <svg viewBox="0 0 850 100">
+        <a id="banner-image" href="https://terrabyte.eco" class="set-width flex-container align-center" aria-label="Home">
+          <svg viewBox="0 0 850 100" role="presentation">
             <use href="#logo"/>
           </svg>
         </a>
       </div>
       <div class="nav-container set-width flex-container align-center">
-        <div class="hamburger-menu-icon clickable" data-nav-toggle>
-          <svg viewBox="0 0 50 50">
+        <div class="hamburger-menu-icon clickable" role="button" data-nav-toggle>
+          <svg viewBox="0 0 50 50" role="presentation">
             <use href="#hamburger-menu-icon"/>
           </svg>
         </div>
@@ -169,7 +191,7 @@
   </header>
 
   <main class="flex-height">
-    <section class="padded-section">
+    <section id="intro" class="padded-section">
       <div class="max-width">
         <div class="section-header">
           <h1>
@@ -179,7 +201,7 @@
         
         <div class="section-content">
           <div class="subsection">
-            <p><em>(Last updated November 16, 2023)</em></p>
+            <p><em>(Last updated December 8, 2023)</em></p>
           </div>
 
           <div class="subsection">
@@ -202,7 +224,7 @@
       </div>
     </section>
   
-    <section class="padded-section">
+    <section id="what-are-cookies" class="padded-section">
       <div class="max-width">
         <div class="section-header">
           <h2>
@@ -216,7 +238,7 @@
       </div>
     </section>
   
-    <section class="padded-section">
+    <section id="how-we-use" class="padded-section">
       <div class="max-width">
         <div class="section-header">
           <h2>
@@ -267,7 +289,7 @@
       </div>
     </section>
   
-    <section class="padded-section">
+    <section id="how-to-control" class="padded-section">
       <div class="max-width">
         <div class="section-header">
           <h2>
@@ -283,7 +305,7 @@
       </div>
     </section>
   
-    <section class="padded-section">
+    <section id="do-we-update-notice" class="padded-section">
       <div class="max-width">
         <div class="section-header">
           <h2>
@@ -299,7 +321,7 @@
       </div>
     </section>
   
-    <section class="padded-section">
+    <section id="how-to-contact" class="padded-section">
       <div class="max-width">
         <div class="section-header">
           <h2>
@@ -315,7 +337,7 @@
       </div>
     </section>
   
-    <section class="padded-section">
+    <section id="credits" class="padded-section">
       <div class="max-width">
         <div class="section-content">
           <p>This privacy policy was created in part by <a class="standard-link" href="https://termly.io" target="_blank">Termly.io</a>.</p>
@@ -328,17 +350,17 @@
   <!-- footer -->
   <a id="footer-anchor" name="footer"></a>
   <footer data-footer>
-    <div id="cookie-banner" class="site-banner bottom-banner">
-      <div class="max-width flex-container align-center">
-        <div class="banner-content flex-width">
-          <div class="flex-container banner-header">
-            <h3 class="flex-width">Cookies &amp; Your Privacy</h3>
+    <div id="cookie-banner" class="site-banner bottom-banner" role="region" aria-labelledby="cookie-banner-header">
+      <div class="max-width" data-au="flex-container align-center">
+        <div class="banner-content" data-au="flex-width">
+          <div class="banner-header" data-au="flex-container">
+            <h3 id="cookie-banner-header" data-au="flex-width">Cookies &amp; Your Privacy</h3>
           </div>
-          <div class="banner-info flex-container">
-            <div class="flex-width">
+          <div class="banner-info" data-au="flex-container">
+            <div data-au="flex-width">
               <p class="subtext">Being a responsible company doesn't end with being environmentally conscious. We limit the amount and types of cookies and similar technologies our site uses, but we still rely on them to provide stellar web experiences. <a class="standard-link current-color-link" href="https://terrabyte.eco/legal/privacy-policy.html">Learn More</a></p>
             </div>
-            <div class="set-width button-container">
+            <div data-au="set-width button-container">
               <!-- <h3>Accept:</h3> -->
               <button class="" data-cookie-button="accept-all">All</button>
               <button class="primary" data-cookie-button="accept-min">Essential</button>
@@ -349,21 +371,22 @@
       </div>
     </div>
 
+    <a id="newsletter-anchor" name="newsletter"></a>
     <div id="true-footer" class="padded-section">
-      <div class="footer-top-container max-width flex-container">
-        <div id="footer-logo-container" class="flex-width flex-container align-center">
-          <a id="footer-logo" href="https://terrabyte.eco" class="set-width flex-container align-center">
+      <div class="footer-top-container max-width" data-au="flex-container">
+        <div id="footer-logo-container" data-au="flex-width flex-container align-center">
+          <a id="footer-logo" href="https://terrabyte.eco" aria-label="Terrabyte homepage" data-au="set-width flex-container align-center">
             <svg viewBox="0 0 850 100">
               <use href="#logo"/>
             </svg>
           </a>
         </div>
         
-        <div id="footer-socials-container" class="set-width flex-container">
+        <div id="footer-socials-container" data-au="set-width flex-container">
           <!-- instagram -->
-          <a class="footer-social icon-container" href="https://instagram.com/terrabyte_tech" target="_blank">
+          <a class="footer-social icon-container" href="https://instagram.com/terrabyte_tech" target="_blank" aria-label="Terrabyte on Instagram (opens in new window)">
             <div class="icon">
-              <svg viewBox="0 0 50 50">
+              <svg viewBox="0 0 50 50" role="presentation">
                 <use href="#instagram-icon"/>
               </svg>
             </div>
@@ -380,51 +403,51 @@
 
           <!-- mastodon -->
           <!-- rel="me" on homepage -->
-          <!-- <a rel="me" href="https://mastodon.eco/@terrabyte" class="footer-social icon-container" target="_blank"> -->
-          <a href="https://mastodon.eco/@terrabyte" class="footer-social icon-container" target="_blank">
+          <a rel="me" href="https://mastodon.eco/@terrabyte" class="footer-social icon-container" target="_blank" aria-label="Terrabyte on Mastodon (opens in new window)">
+          <!-- <a href="https://mastodon.eco/@terrabyte" class="footer-social icon-container" target="_blank"> -->
             <div class="icon">
-              <svg viewBox="0 0 50 50">
+              <svg viewBox="0 0 50 50" role="presentation">
                 <use href="#mastodon-icon"/>
               </svg>
             </div>
           </a>
           <!-- github -->
-          <a class="footer-social icon-container" href="https://github.com/terrabyte-tech" target="_blank">
+          <a class="footer-social icon-container" href="https://github.com/terrabyte-tech" target="_blank" aria-label="Terrabyte on GitHub (opens in new window)">
             <div class="icon">
-              <svg viewBox="0 0 50 50">
+              <svg viewBox="0 0 50 50" role="presentation">
                 <use href="#github-icon"/>
               </svg>
             </div>
           </a>
           <!-- we dont have time -->
-          <a class="footer-social icon-container" href="https://app.wedonthavetime.org/profile/Terrabyte" target="_blank">
+          <a class="footer-social icon-container" href="https://app.wedonthavetime.org/profile/Terrabyte" target="_blank" aria-label="Terrabyte on We Don't Have Time (opens in new window)">
             <div class="icon">
-              <svg viewBox="0 0 50 50">
+              <svg viewBox="0 0 50 50" role="presentation">
                 <use href="#wdht-icon"/>
               </svg>
             </div>
           </a>
           <!-- youtube -->
-          <a class="footer-social icon-container" href="https://www.youtube.com/@TerrabyteEco" target="_blank">
+          <a class="footer-social icon-container" href="https://www.youtube.com/@TerrabyteEco" target="_blank" aria-label="Terrabyte on YouTube (opens in new window)">
             <div class="icon">
-              <svg viewBox="0 0 50 50">
+              <svg viewBox="0 0 50 50" role="presentation">
                 <use href="#youtube-icon"/>
               </svg>
             </div>
           </a>
           <!-- dot.eco profile -->
-          <a class="footer-social icon-container" href="https://profiles.eco/terrabyte" target="_blank">
+          <a class="footer-social icon-container" href="https://profiles.eco/terrabyte" target="_blank" aria-label="Terrabyte on dot Eco (opens in new window)">
             <div class="icon">
-              <svg viewBox="0 0 50 50">
+              <svg viewBox="0 0 50 50" role="presentation">
                 <use href="#eco-profile-icon"/>
               </svg>
             </div>
           </a>
         </div>
       </div>
-      <div class="footer-cols-container max-width flex-container">
-        <div class="footer-left-cols flex-container flex-width">
-          <div class="footer-info-col set-width">
+      <div class="footer-cols-container max-width" data-au="flex-container">
+        <div class="footer-left-cols" data-au="flex-container flex-width">
+          <div class="footer-info-col" data-au="set-width">
             <h3>Legal</h3>
             <div class="footer-link-container">
               <a class="standard-link" href="https://terrabyte.eco/legal/privacy-policy.html">Privacy Policy</a>
@@ -450,7 +473,6 @@
             <div class="footer-link-container">
               <a class="standard-link" href="https://terrabyte.eco/donate">Donate</a>
             </div>
-            
 
             <!-- <div class="footer-link-container">
               <a class="standard-link" href="https://terrabyte.eco/our-work">Our Work</a>
@@ -460,18 +482,21 @@
             </div> -->
             
           </div>
-          <div class="footer-info-col set-width">
+          <div class="footer-info-col" data-au="set-width">
             <h3>Projects</h3>
             <div class="footer-link-container">
-              <a class="standard-link" href="https://www.pixelplanettoday.com" target="_blank">Pixel Planet Today</a>
+              <a class="standard-link" href="https://www.pixelplanettoday.com" target="_blank" aria-label="Pixel Planet Today website (opens in new window)">Pixel Planet Today</a>
             </div>
             <div class="footer-link-container">
-              <a class="standard-link" href="https://www.pinekeepers.com" target="_blank">Pinekeepers</a>
+              <a class="standard-link" href="https://www.pinekeepers.com" target="_blank" aria-label="Pinekeepers website (opens in new window)">Pinekeepers</a>
+            </div>
+            <div class="footer-link-container">
+              <a class="standard-link" href="https://www.canapi.io" target="_blank" aria-label="Canapi website (opens in new window)">Canapi</a>
             </div>
           </div>
         </div>
         
-        <div class="footer-right-col flex-width">
+        <div class="footer-right-col" data-au="flex-width">
           <!-- newsletter -->
           <h3>Sign up for the newsletter, <span class="little-bytes-text">&lt;little-bytes&gt;</span></h3>
 
@@ -482,21 +507,21 @@
   onsubmit="window.open('https://buttondown.email/terrabyte', 'popupwindow')"
   class="embeddable-buttondown-form">
     <!-- <label for="bd-email">Enter your email</label> -->
-    <div class="footer-form-rows flex-container">
-      <div id="email-row" class="form-row set-width flex-container">
-        <span class="custom-input-container flex-width">
-          <input type="email" name="email" id="bd-email" placeholder="name@email.com"/>
+    <div class="footer-form-rows" data-au="flex-container">
+      <div id="email-row" class="form-row" data-au="set-width flex-container">
+        <span class="custom-input-container" data-au="flex-width">
+          <input type="email" name="email" id="bd-email" placeholder="name@email.com" aria-label="Email address"/>
         </span>
       </div>
     </div>
 
-    <div class="flex-container align-center">
-      <div class="form-button-container set-width">
-        <input type="submit" value="Subscribe" />
+    <div data-au="flex-container align-center">
+      <div class="form-button-container" data-au="set-width">
+        <input role="button" type="submit" value="Subscribe" />
         <input type="hidden" name="tag" value="Terrabyte Subscribers" />
       </div>
-      <p class="flex-width">Powered by 
-        <a class="standard-link" href="https://buttondown.email" target="_blank">Buttondown</a>
+      <p data-au="flex-width">Powered by 
+        <a class="standard-link" href="https://buttondown.email" target="_blank" aria-label="Buttondown website (opens in new window)">Buttondown</a>
       </p>
     </div>
   </form>
@@ -509,18 +534,18 @@
       </div>
       
 
-      <div class="footer-bottom-container max-width flex-container align-center">
-        <div id="footer-bottom-info-container" class="flex-width">
+      <div class="footer-bottom-container max-width" data-au="flex-container align-center">
+        <div id="footer-bottom-info-container" data-au="flex-width">
           <div id="footer-copyright">
             &copy; <span id="current-year-text"></span> Terrabyte, LLC. All Rights Reserved.
           </div>
           <div id="made-by">
-            <span>Website designed &amp; hosted by <a class="standard-link" href="https://www.goldenharpmedia.com" target="_blank">Golden Harp Media</a></span>
+            <span>Website designed &amp; hosted by <a class="standard-link" href="https://www.goldenharpmedia.com" target="_blank" aria-label="Golden Harp Media website (opens in new window)">Golden Harp Media</a></span>
           </div>
         </div>
         
 
-        <div class="set-width footer-badges-container flex-container align-center">
+        <div class="footer-badges-container" data-au="set-width flex-container align-center">
           <!-- website carbon -->
           <div class="website-carbon-badge footer-badge">
             <div id="wcb" class="carbonbadge wcb-d"></div>
@@ -528,8 +553,8 @@
           </div>
           <!-- clean creatives -->
           <div class="clean-creatives-badge footer-badge">
-            <a href="https://www.cleancreatives.org" target="_blank">
-              <div id="clean-creatives-img"></div>
+            <a href="https://www.cleancreatives.org" target="_blank" aria-label="Clean Creatives website (opens in new window)">
+              <div id="clean-creatives-img" role="img"></div>
             </a>
             
           </div>
@@ -537,7 +562,6 @@
       </div>
 
 
-      
     </div>
   </footer>
 </body>

@@ -24,6 +24,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Rubik:wght@300&display=swap" rel="stylesheet">
 
+  <!-- aurum framework -->
+  <link href="https://au.goldenharpmedia.com/framework/packages/v1.0/au.css" rel="stylesheet">
+
   <!-- stylesheets -->
   <link href="/css/layout-styles.css" rel="stylesheet">
   <link href="/css/site-styles.css" rel="stylesheet">
@@ -66,7 +69,11 @@
 </head>
 
 <body class="loadingx flex-container flex-vertical">
-  <svg class="hide" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+  <div class="sr-only">
+    <a class="standard-link" href="#top" tabindex="0">Jump to Content</a>
+  </div>
+
+  <svg class="hide" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" role="presentation">
     <defs>
       <!-- <g id="x-icon">
         <path d="M25,0A25,25,0,1,0,50,25,25,25,0,0,0,25,0Zm8.65,37.38L25,28.84,16.44,37.5l-3.82-3.82L21.17,25,12.5,16.44l3.82-3.82L25,21.17l8.55-8.67,3.85,3.85L28.84,25l8.66,8.55Z"/>
@@ -153,19 +160,30 @@
   </noscript>
 
   <a name="top"></a>
+  <!-- screen reader, page table of contents -->
+  <div class="sr-only sr-toc">
+    <h2>Accessibility Table of Contents</h2>
+    <a class="standard-link" tabindex="0" href="#header">Jump to Page Header</a>
+    <a class="standard-link" tabindex="0" href="#hero">Jump to Page Hero</a>
+    <a class="standard-link" tabindex="0" href="#our-org">Jump to Our Organization Section</a>
+    <a class="standard-link" tabindex="0" href="#our-story">Jump to Our Story Section</a>
+    <a class="standard-link" tabindex="0" href="#the-team">Jump to The Team Section</a>
+    <a class="standard-link" tabindex="0" href="#footer">Jump to Page Footer</a>
+  </div>
+  
   <!-- header -->
-  <header class="padded-section">
+  <header id="header" class="padded-section">
     <div class="max-width flex-container align-center">
       <div class="banner-image-container flex-width flex-container align-center">
-        <a id="banner-image" href="https://terrabyte.eco" class="set-width flex-container align-center">
+        <a id="banner-image" href="https://terrabyte.eco" class="set-width flex-container align-center" aria-label="Home">
           <svg viewBox="0 0 850 100">
             <use href="#logo"/>
           </svg>
         </a>
       </div>
       <div class="nav-container set-width flex-container align-center">
-        <div class="hamburger-menu-icon clickable" data-nav-toggle>
-          <svg viewBox="0 0 50 50">
+        <div class="hamburger-menu-icon clickable" role="button" data-nav-toggle>
+          <svg viewBox="0 0 50 50" role="presentation">
             <use href="#hamburger-menu-icon"/>
           </svg>
         </div>
@@ -201,13 +219,13 @@
             </a>
           </div>
   
-          <div class="graphic-container">
+          <div class="graphic-container" role="presentation">
 
             <h3 class="code-text text-right">01110100 01101000 01100101<br class="hide-on-mobile"> 00100000 01100010<br class="hide-on-mobile"> 01111001 01110100 01100101 <span class="hide-on-mobile">01110011<br class="hide-on-mobile"> 01100100 01101111 01101110 00100111 01110100 00100000 01110111 01110010 01101001 01110100 01100101
             01110100 01101000 01100101 01101101 01110011 01100101 01101100<br class="hide-on-mobile"> 01110110<br class="hide-on-mobile"> 01100101 01110011</span>
             </h3>
             <div class="terrabyte-earth-graphic hide-on-mobile">
-              <svg viewBox="0 0 1000 1000">
+              <svg viewBox="0 0 1000 1000" role="presentation">
                 <use href="#terrabyte-earth-missing-top"/>
               </svg>
             </div>
@@ -232,23 +250,23 @@
                   <h3><Our class="highlight-container">Commitments</span></h3>
                 </div>
                 <div class="subsection-content col-content">
-                  <p>We're here to change the world for the better. And while there are plenty of global issues that need fixing, in looking at the United Nation's Sustainable Development Goals, our work most closely aligns with <a class="standard-link" href="https://sdgs.un.org/goals/goal13" target="_blank">Climate Action (13)</a>, <a class="standard-link" href="https://sdgs.un.org/goals/goal14" target="_blank">Life Below Water (14)</a>, and <a class="standard-link" href="https://sdgs.un.org/goals/goal15" target="_blank">Life on Land (15)</a>. Each project fits within the UN's SDGs a bit differently, but these three are at the base of everything we do.</p>
+                  <p>We're here to change the world for the better. And while there are plenty of global issues that need fixing, in looking at the United Nation's Sustainable Development Goals, our work most closely aligns with <a class="standard-link" href="https://sdgs.un.org/goals/goal13" target="_blank" aria-label="SDG 13 (opens in new window)">Climate Action (13)</a>, <a class="standard-link" href="https://sdgs.un.org/goals/goal14" target="_blank" aria-label="SDG 14 (opens in new window)">Life Below Water (14)</a>, and <a class="standard-link" href="https://sdgs.un.org/goals/goal15" target="_blank" aria-label="SDG 15 (opens in new window)">Life on Land (15)</a>. Each project fits within the UN's SDGs a bit differently, but these three are at the base of everything we do.</p>
                 </div>
               </div>
               <div id="sdg-col" class="section-col flex-width">
                 <div class="col-content">
-                  <a class="sdg-container" href="https://sdgs.un.org/goals/goal13" target="_blank">
-                    <svg viewBox="0 0 150 150">
+                  <a class="sdg-container" href="https://sdgs.un.org/goals/goal13" target="_blank" role="button" aria-label="SDG 13 (opens in new window)">
+                    <svg viewBox="0 0 150 150" role="presentation">
                       <use href="#sdg-13-icon"/>
                     </svg>
                   </a>
-                  <a class="sdg-container" href="https://sdgs.un.org/goals/goal14" target="_blank">
-                    <svg viewBox="0 0 150 150">
+                  <a class="sdg-container" href="https://sdgs.un.org/goals/goal14" target="_blank" role="button" aria-label="SDG 14 (opens in new window)">
+                    <svg viewBox="0 0 150 150" role="presentation">
                       <use href="#sdg-14-icon"/>
                     </svg>
                   </a>
-                  <a class="sdg-container" href="https://sdgs.un.org/goals/goal15" target="_blank">
-                    <svg viewBox="0 0 150 150">
+                  <a class="sdg-container" href="https://sdgs.un.org/goals/goal15" target="_blank" role="button" aria-label="SDG 15 (opens in new window)">
+                    <svg viewBox="0 0 150 150" role="presentation">
                       <use href="#sdg-15-icon"/>
                     </svg>
                   </a>
@@ -264,14 +282,14 @@
               <div class="section-col flex-width">
                 <div class="subsection-content col-content">
                   <p>Most of our goals revolve around getting X project done by Y, but we are committed to running our company sustainably, as well. Our largest goal is to run entirely on renewable energy (and effectively, being carbon-free) by 2035, but even now, we are taking steps to limiting our impact. All of our websites are hosted using renewable energy providers, our merch is entirely plastic-free, and we donate a portion of our revenue to environmental organizations such as the World Wildlife Fund.</p>
-                  <p>To see a full list of our corporate sustainability goals, visit our <a class="standard-link" href="https://profiles.eco/terrabyte" target="_blank">.Eco Profile</a>.</p>
+                  <p>To see a full list of our corporate sustainability goals, visit our <a class="standard-link" href="https://profiles.eco/terrabyte" target="_blank" aria-label="Terrabyte dot Eco profile (opens in new window)">.Eco Profile</a>.</p>
                 </div>
               </div>
               <div class="section-col flex-width hide-on-mobile hide-on-tablet">
                 <div class="col-content">
-                  <div class="checkbox-row flex-container align-center">
+                  <div class="checkbox-row flex-container align-center" aria-label="our websites are all green-hosted!">
                     <div class="checked checkbox-container set-width flex-container all-center">
-                      <svg viewBox="0 0 50 50">
+                      <svg viewBox="0 0 50 50" role="presentation">
                         <use href="#checkmark-icon"/>
                       </svg>
                     </div>
@@ -279,9 +297,9 @@
                       <p>Green-hosted websites</p>
                     </div>
                   </div>
-                  <div class="checkbox-row flex-container align-center">
+                  <div class="checkbox-row flex-container align-center" aria-label="we operate plastic free!">
                     <div class="checked checkbox-container set-width flex-container all-center">
-                      <svg viewBox="0 0 50 50">
+                      <svg viewBox="0 0 50 50" role="presentation">
                         <use href="#checkmark-icon"/>
                       </svg>
                     </div>
@@ -289,9 +307,9 @@
                       <p>Operate plastic-free</p>
                     </div>
                   </div>
-                  <div class="checkbox-row flex-container align-center">
+                  <div class="checkbox-row flex-container align-center" aria-label="one of our goals is to use only renewable energy">
                     <div class="checkbox-container set-width flex-container all-center">
-                      <svg viewBox="0 0 50 50">
+                      <svg viewBox="0 0 50 50" role="presentation">
                         <use href="#checkmark-icon"/>
                       </svg>
                     </div>
@@ -344,30 +362,30 @@
           <div class="section-content">
             <a name="sammy-harper"></a>
             <div id="sammyharper-row" class="team-row flex-container align-top">
-              <div class="team-avatar set-width"></div>
+              <div class="team-avatar set-width" role="image"></div>
               <div class="flex-width">
                 <div class="team-row-header">
                   <h3 class="team-row-name"><span class="highlight-container">Sammy Harper</span> <span class="force-small-text">(he/him)</span></h3>
                   <p class="team-row-title">Founder &amp; Creator</p>
                 </div>
                 <div class="team-links flex-container align-center">
-                  <a class="team-link icon-container" href="https://sammyharper.com" target="_blank">
+                  <a class="team-link icon-container" href="https://sammyharper.com" target="_blank" aria-label="Sammy's website (opens in new window)">
                     <div class="icon">
-                      <svg viewBox="0 0 50 50">
+                      <svg viewBox="0 0 50 50" role="presentation">
                         <use href="#globe-icon"/>
                       </svg>
                     </div>
                   </a>
-                  <a class="team-link icon-container" href="https://instagram.com/officialsamharp" target="_blank">
+                  <a class="team-link icon-container" href="https://instagram.com/officialsamharp" target="_blank" aria-label="Sammy's Instagram (opens in new window)">
                     <div class="icon">
-                      <svg viewBox="0 0 50 50">
+                      <svg viewBox="0 0 50 50" role="presentation">
                         <use href="#instagram-icon"/>
                       </svg>
                     </div>
                   </a>
-                  <a class="team-link icon-container" href="https://github.com/samharp" target="_blank">
+                  <a class="team-link icon-container" href="https://github.com/samharp" target="_blank" aria-label="Sammy's GitHub (opens in new window)">
                     <div class="icon">
-                      <svg viewBox="0 0 50 50">
+                      <svg viewBox="0 0 50 50" role="presentation">
                         <use href="#github-icon"/>
                       </svg>
                     </div>
@@ -390,23 +408,23 @@
                   <p class="team-row-title">Project Coordinator</p>
                 </div>
                 <div class="team-links flex-container align-center">
-                  <a class="team-link icon-container" href="https://poshmark.com/closet/sistersthriftin" target="_blank">
+                  <a class="team-link icon-container" href="https://poshmark.com/closet/sistersthriftin" target="_blank" aria-label="Ashley's Poshmark (opens in new window)">
                     <div class="icon">
-                      <svg viewBox="0 0 50 50">
+                      <svg viewBox="0 0 50 50" role="presentation">
                         <use href="#poshmark-icon"/>
                       </svg>
                     </div>
                   </a>
-                  <a class="team-link icon-container" href="https://instagram.com/ashleyflorer" target="_blank">
+                  <a class="team-link icon-container" href="https://instagram.com/ashleyflorer" target="_blank" aria-label="Ashley's Instagram (opens in new window)">
                     <div class="icon">
-                      <svg viewBox="0 0 50 50">
+                      <svg viewBox="0 0 50 50" role="presentation">
                         <use href="#instagram-icon"/>
                       </svg>
                     </div>
                   </a>
                 </div>
                 <div class="team-row-content">
-                  <p>The first 'helper' on board, Ashley has been integral to post-planning, source-gathering, and editing of Pixel Planet Today posts. Her keen sense of organization and time-management have helped the team succeed &mdash; especially when the project was operating on a 'post each day' basis.</p>
+                  <p>The first 'helper' on board, Ashley has been integral to post-planning, source-gathering, and planning timelines of in-progress projects. Her keen sense of organization and time-management have helped the team immensely!</p>
                   <p><b>Fact:</b> "Green is ironically my favorite color, and I take great pride in my thrifted finds."</p>
                 </div>
               </div>
@@ -422,23 +440,23 @@
                 </div>
 
                 <div class="team-links flex-container align-center">
-                  <a class="team-link icon-container" href="https://lifeofpablo.com" target="_blank">
+                  <a class="team-link icon-container" href="https://lifeofpablo.com" target="_blank" aria-label="Pablo's website (opens in new window)">
                     <div class="icon">
-                      <svg viewBox="0 0 50 50">
+                      <svg viewBox="0 0 50 50" role="presentation">
                         <use href="#globe-icon"/>
                       </svg>
                     </div>
                   </a>
-                  <a class="team-link icon-container" href="https://instagram.com/thepablomorales" target="_blank">
+                  <a class="team-link icon-container" href="https://instagram.com/thepablomorales" target="_blank" aria-label="Pablo's Instagram (opens in new window)">
                     <div class="icon">
-                      <svg viewBox="0 0 50 50">
+                      <svg viewBox="0 0 50 50" role="presentation">
                         <use href="#instagram-icon"/>
                       </svg>
                     </div>
                   </a>
-                  <a class="team-link icon-container" href="https://github.com/pmoralesgarcia" target="_blank">
+                  <a class="team-link icon-container" href="https://github.com/pmoralesgarcia" target="_blank" aria-label="Pablo's GitHub (opens in new window)">
                     <div class="icon">
-                      <svg viewBox="0 0 50 50">
+                      <svg viewBox="0 0 50 50" role="presentation">
                         <use href="#github-icon"/>
                       </svg>
                     </div>
@@ -462,16 +480,16 @@
                 </div>
 
                 <div class="team-links flex-container align-center">
-                  <a class="team-link icon-container" href="https://biggersdev.com" target="_blank">
+                  <a class="team-link icon-container" href="https://biggersdev.com" target="_blank" aria-label="Mikayla's website (opens in new window)">
                     <div class="icon">
-                      <svg viewBox="0 0 50 50">
+                      <svg viewBox="0 0 50 50" role="presentation">
                         <use href="#globe-icon"/>
                       </svg>
                     </div>
                   </a>
-                  <a class="team-link icon-container" href="https://github.com/heckayla" target="_blank">
+                  <a class="team-link icon-container" href="https://github.com/heckayla" target="_blank" aria-label="Mikayla's GitHub (opens in new window)">
                     <div class="icon">
-                      <svg viewBox="0 0 50 50">
+                      <svg viewBox="0 0 50 50" role="presentation">
                         <use href="#github-icon"/>
                       </svg>
                     </div>
@@ -487,7 +505,7 @@
 
             <div id="wanttobehere-row" class="team-row flex-container align-top">
               <div class="team-avatar set-width">
-                <svg viewBox="0 0 50 50">
+                <svg viewBox="0 0 50 50" role="presentation">
                   <use href="#person-icon"/>
                 </svg>
               </div>
@@ -513,16 +531,17 @@
   <a id="footer-anchor" name="footer"></a>
   <footer data-footer>
     <div id="cookie-banner" class="site-banner bottom-banner">
-      <div class="max-width flex-container align-center">
-        <div class="banner-content flex-width">
-          <div class="flex-container banner-header">
-            <h3 class="flex-width">Cookies &amp; Your Privacy</h3>
+      <div class="max-width" data-au="flex-container align-center">
+        <div class="banner-content" data-au="flex-width">
+          <div class="banner-header" data-au="flex-container">
+            <h3 data-au="flex-width">Cookies &amp; Your Privacy</h3>
           </div>
-          <div class="banner-info flex-container">
-            <div class="flex-width">
+          <div class="banner-info" data-au="flex-container">
+            <div data-au="flex-width">
               <p class="subtext">Being a responsible company doesn't end with being environmentally conscious. We limit the amount and types of cookies and similar technologies our site uses, but we still rely on them to provide stellar web experiences. <a class="standard-link current-color-link" href="https://terrabyte.eco/legal/privacy-policy.html">Learn More</a></p>
             </div>
-            <div class="set-width button-container">
+            <div data-au="set-width button-container">
+              <!-- <h3>Accept:</h3> -->
               <button class="" data-cookie-button="accept-all">All</button>
               <button class="primary" data-cookie-button="accept-min">Essential</button>
             </div>
@@ -531,19 +550,21 @@
         
       </div>
     </div>
+
+    <a id="newsletter-anchor" name="newsletter"></a>
     <div id="true-footer" class="padded-section">
-      <div class="footer-top-container max-width flex-container">
-        <div id="footer-logo-container" class="flex-width flex-container align-center">
-          <a id="footer-logo" href="https://terrabyte.eco" class="set-width flex-container align-center">
+      <div class="footer-top-container max-width" data-au="flex-container">
+        <div id="footer-logo-container" data-au="flex-width flex-container align-center">
+          <a id="footer-logo" href="https://terrabyte.eco" aria-label="Terrabyte homepage" data-au="set-width flex-container align-center">
             <svg viewBox="0 0 850 100">
               <use href="#logo"/>
             </svg>
           </a>
         </div>
         
-        <div id="footer-socials-container" class="set-width flex-container">
+        <div id="footer-socials-container" data-au="set-width flex-container">
           <!-- instagram -->
-          <a class="footer-social icon-container" href="https://instagram.com/terrabyte_tech" target="_blank">
+          <a class="footer-social icon-container" href="https://instagram.com/terrabyte_tech" target="_blank" aria-label="Terrabyte on Instagram (opens in new window)">
             <div class="icon">
               <svg viewBox="0 0 50 50">
                 <use href="#instagram-icon"/>
@@ -562,8 +583,8 @@
 
           <!-- mastodon -->
           <!-- rel="me" on homepage -->
-          <!-- <a rel="me" href="https://mastodon.eco/@terrabyte" class="footer-social icon-container" target="_blank"> -->
-          <a href="https://mastodon.eco/@terrabyte" class="footer-social icon-container" target="_blank">
+          <a rel="me" href="https://mastodon.eco/@terrabyte" class="footer-social icon-container" target="_blank" aria-label="Terrabyte on Mastodon (opens in new window)">
+          <!-- <a href="https://mastodon.eco/@terrabyte" class="footer-social icon-container" target="_blank"> -->
             <div class="icon">
               <svg viewBox="0 0 50 50">
                 <use href="#mastodon-icon"/>
@@ -571,7 +592,7 @@
             </div>
           </a>
           <!-- github -->
-          <a class="footer-social icon-container" href="https://github.com/terrabyte-tech" target="_blank">
+          <a class="footer-social icon-container" href="https://github.com/terrabyte-tech" target="_blank" aria-label="Terrabyte on GitHub (opens in new window)">
             <div class="icon">
               <svg viewBox="0 0 50 50">
                 <use href="#github-icon"/>
@@ -579,7 +600,7 @@
             </div>
           </a>
           <!-- we dont have time -->
-          <a class="footer-social icon-container" href="https://app.wedonthavetime.org/profile/Terrabyte" target="_blank">
+          <a class="footer-social icon-container" href="https://app.wedonthavetime.org/profile/Terrabyte" target="_blank" aria-label="Terrabyte on We Don't Have Time (opens in new window)">
             <div class="icon">
               <svg viewBox="0 0 50 50">
                 <use href="#wdht-icon"/>
@@ -587,7 +608,7 @@
             </div>
           </a>
           <!-- youtube -->
-          <a class="footer-social icon-container" href="https://www.youtube.com/@TerrabyteEco" target="_blank">
+          <a class="footer-social icon-container" href="https://www.youtube.com/@TerrabyteEco" target="_blank" aria-label="Terrabyte on YouTube (opens in new window)">
             <div class="icon">
               <svg viewBox="0 0 50 50">
                 <use href="#youtube-icon"/>
@@ -595,7 +616,7 @@
             </div>
           </a>
           <!-- dot.eco profile -->
-          <a class="footer-social icon-container" href="https://profiles.eco/terrabyte" target="_blank">
+          <a class="footer-social icon-container" href="https://profiles.eco/terrabyte" target="_blank" aria-label="Terrabyte on dot Eco (opens in new window)">
             <div class="icon">
               <svg viewBox="0 0 50 50">
                 <use href="#eco-profile-icon"/>
@@ -604,9 +625,9 @@
           </a>
         </div>
       </div>
-      <div class="footer-cols-container max-width flex-container">
-        <div class="footer-left-cols flex-container flex-width">
-          <div class="footer-info-col set-width">
+      <div class="footer-cols-container max-width" data-au="flex-container">
+        <div class="footer-left-cols" data-au="flex-container flex-width">
+          <div class="footer-info-col" data-au="set-width">
             <h3>Legal</h3>
             <div class="footer-link-container">
               <a class="standard-link" href="https://terrabyte.eco/legal/privacy-policy.html">Privacy Policy</a>
@@ -632,7 +653,6 @@
             <div class="footer-link-container">
               <a class="standard-link" href="https://terrabyte.eco/donate">Donate</a>
             </div>
-            
 
             <!-- <div class="footer-link-container">
               <a class="standard-link" href="https://terrabyte.eco/our-work">Our Work</a>
@@ -642,18 +662,21 @@
             </div> -->
             
           </div>
-          <div class="footer-info-col set-width">
+          <div class="footer-info-col" data-au="set-width">
             <h3>Projects</h3>
             <div class="footer-link-container">
-              <a class="standard-link" href="https://www.pixelplanettoday.com" target="_blank">Pixel Planet Today</a>
+              <a class="standard-link" href="https://www.pixelplanettoday.com" target="_blank" aria-label="Pixel Planet Today website (opens in new window)">Pixel Planet Today</a>
             </div>
             <div class="footer-link-container">
-              <a class="standard-link" href="https://www.pinekeepers.com" target="_blank">Pinekeepers</a>
+              <a class="standard-link" href="https://www.pinekeepers.com" target="_blank" aria-label="Pinekeepers website (opens in new window)">Pinekeepers</a>
+            </div>
+            <div class="footer-link-container">
+              <a class="standard-link" href="https://www.canapi.io" target="_blank" aria-label="Canapi website (opens in new window)">Canapi</a>
             </div>
           </div>
         </div>
         
-        <div class="footer-right-col flex-width">
+        <div class="footer-right-col" data-au="flex-width">
           <!-- newsletter -->
           <h3>Sign up for the newsletter, <span class="little-bytes-text">&lt;little-bytes&gt;</span></h3>
 
@@ -664,21 +687,21 @@
   onsubmit="window.open('https://buttondown.email/terrabyte', 'popupwindow')"
   class="embeddable-buttondown-form">
     <!-- <label for="bd-email">Enter your email</label> -->
-    <div class="footer-form-rows flex-container">
-      <div id="email-row" class="form-row set-width flex-container">
-        <span class="custom-input-container flex-width">
+    <div class="footer-form-rows" data-au="flex-container">
+      <div id="email-row" class="form-row" data-au="set-width flex-container">
+        <span class="custom-input-container" data-au="flex-width">
           <input type="email" name="email" id="bd-email" placeholder="name@email.com"/>
         </span>
       </div>
     </div>
 
-    <div class="flex-container align-center">
-      <div class="form-button-container set-width">
+    <div data-au="flex-container align-center">
+      <div class="form-button-container" data-au="set-width">
         <input type="submit" value="Subscribe" />
         <input type="hidden" name="tag" value="Terrabyte Subscribers" />
       </div>
-      <p class="flex-width">Powered by 
-        <a class="standard-link" href="https://buttondown.email" target="_blank">Buttondown</a>
+      <p data-au="flex-width">Powered by 
+        <a class="standard-link" href="https://buttondown.email" target="_blank" aria-label="Buttondown website (opens in new window)">Buttondown</a>
       </p>
     </div>
   </form>
@@ -691,18 +714,18 @@
       </div>
       
 
-      <div class="footer-bottom-container max-width flex-container align-center">
-        <div id="footer-bottom-info-container" class="flex-width">
+      <div class="footer-bottom-container max-width" data-au="flex-container align-center">
+        <div id="footer-bottom-info-container" data-au="flex-width">
           <div id="footer-copyright">
             &copy; <span id="current-year-text"></span> Terrabyte, LLC. All Rights Reserved.
           </div>
           <div id="made-by">
-            <span>Website designed &amp; hosted by <a class="standard-link" href="https://www.goldenharpmedia.com" target="_blank">Golden Harp Media</a></span>
+            <span>Website designed &amp; hosted by <a class="standard-link" href="https://www.goldenharpmedia.com" target="_blank" aria-label="Golden Harp Media website (opens in new window)">Golden Harp Media</a></span>
           </div>
         </div>
         
 
-        <div class="set-width footer-badges-container flex-container align-center">
+        <div class="footer-badges-container" data-au="set-width flex-container align-center">
           <!-- website carbon -->
           <div class="website-carbon-badge footer-badge">
             <div id="wcb" class="carbonbadge wcb-d"></div>
@@ -710,12 +733,15 @@
           </div>
           <!-- clean creatives -->
           <div class="clean-creatives-badge footer-badge">
-            <a href="https://www.cleancreatives.org" target="_blank">
+            <a href="https://www.cleancreatives.org" target="_blank" aria-label="Clean Creatives website (opens in new window)">
               <div id="clean-creatives-img"></div>
             </a>
+            
           </div>
         </div>
       </div>
+
+
     </div>
   </footer>
 </body>

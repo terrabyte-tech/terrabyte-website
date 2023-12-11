@@ -48,6 +48,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Rubik:wght@300&display=swap" rel="stylesheet">
 
+    <!-- aurum framework -->
+    <link href="https://au.goldenharpmedia.com/framework/packages/v1.0/au.css" rel="stylesheet">
+
     <!-- custom css stylesheets -->
     <!-- shared -->
     <link rel="stylesheet" href="https://terrabyte.eco/css/layout-styles.css">
@@ -70,7 +73,11 @@
   </head>
 
   <body class="flex-container flex-vertical">
-  <svg class="hide" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+    <div class="sr-only">
+      <a class="standard-link" href="#top" tabindex="0">Jump to Content</a>
+    </div>
+
+  <svg class="hide" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" role="presentation">
     <defs>
       <g id="logo">
         <path class="a" d="M401.37,63.23l-7.55,15.92a2.72,2.72,0,0,0-.22,1,1.65,1.65,0,0,0,.67,1.3,2.41,2.41,0,0,0,1.58.55h2.26a2.65,2.65,0,0,0,1.74-.51,2.14,2.14,0,0,0,.74-.88l8.24-17.4Z"/><path class="a" d="M461.24,79.15,432.72,19a3.28,3.28,0,0,0-1.19-1.39,3.86,3.86,0,0,0-2.08-.47h-3.83a3.9,3.9,0,0,0-2.09.47A3.27,3.27,0,0,0,422.35,19l-15.61,32.9h7.48l13.31-28.18,27,56.9a4.14,4.14,0,0,0,.79.88A2.44,2.44,0,0,0,457,82h2.26a2.43,2.43,0,0,0,1.58-.55,1.68,1.68,0,0,0,.67-1.3A2.75,2.75,0,0,0,461.24,79.15Z"/><path class="a" d="M647.16,17.71a2.4,2.4,0,0,0-1.58-.56h-2.25a2.94,2.94,0,0,0-1.41.33,3.59,3.59,0,0,0-1.18,1.06L616.27,45.88,591.81,18.54a2.72,2.72,0,0,0-1.13-1.06,3.3,3.3,0,0,0-1.47-.33H587a2.4,2.4,0,0,0-1.58.56,1.65,1.65,0,0,0-.68,1.3,1.29,1.29,0,0,0,.17.65,3.17,3.17,0,0,1,.28.55l27.51,31.7h7.22l27.51-31.7a2.57,2.57,0,0,0,.34-.55,1.88,1.88,0,0,0,.11-.65A1.65,1.65,0,0,0,647.16,17.71Z"/><path class="a" d="M612.66,63.23V80a1.84,1.84,0,0,0,.68,1.49,2.74,2.74,0,0,0,1.8.55h2.15a2.94,2.94,0,0,0,1.91-.55,1.84,1.84,0,0,0,.68-1.49V63.23Z"/><path class="a" d="M166.75,51.91a3,3,0,0,0,1.92-.56,1.81,1.81,0,0,0,.67-1.48V48.48a1.93,1.93,0,0,0-.67-1.58,3,3,0,0,0-1.92-.55h-44v5.56Z"/><path class="a" d="M129.88,76.46V63.23h-7.1V80a1.83,1.83,0,0,0,.67,1.49,2.77,2.77,0,0,0,1.81.55h44a3,3,0,0,0,1.92-.55,1.83,1.83,0,0,0,.67-1.49V76.46Z"/><path class="a" d="M171.82,22.71V19.29a1.92,1.92,0,0,0-.67-1.58,3,3,0,0,0-1.92-.56h-44a2.78,2.78,0,0,0-1.81.56,1.92,1.92,0,0,0-.67,1.58v3.42Z"/><path class="a" d="M814.36,51.91a3,3,0,0,0,1.92-.56,1.82,1.82,0,0,0,.68-1.48V48.48a1.94,1.94,0,0,0-.68-1.58,3,3,0,0,0-1.92-.55h-44v5.56Z"/><path class="a" d="M777.5,76.46V63.23h-7.11V80a1.84,1.84,0,0,0,.68,1.49,2.74,2.74,0,0,0,1.8.55h44a2.94,2.94,0,0,0,1.91-.55,1.84,1.84,0,0,0,.68-1.49V76.46Z"/><path class="a" d="M819.44,22.71V19.29a1.92,1.92,0,0,0-.68-1.58,2.94,2.94,0,0,0-1.91-.56h-44a2.75,2.75,0,0,0-1.8.56,1.92,1.92,0,0,0-.68,1.58v3.42Z"/><path class="a" d="M306.78,63.23V80a1.84,1.84,0,0,0,.68,1.49,2.74,2.74,0,0,0,1.8.55h2a3,3,0,0,0,1.92-.55,1.83,1.83,0,0,0,.67-1.49V63.23Z"/><path class="a" d="M362.59,79.15,343,51.78c9.73-1,17.36-8.37,17.36-17.25,0-9.56-8.82-17.38-19.6-17.38H309.26a2.75,2.75,0,0,0-1.8.56,1.92,1.92,0,0,0-.68,1.58v3.42h34c7.38,0,13.38,5.28,13.38,11.82s-6,11.82-13.38,11.82h-34v5.56h28.41L355,79.52a10.57,10.57,0,0,0,1.57,1.72,4.08,4.08,0,0,0,2.71.78h1.35a2.41,2.41,0,0,0,1.58-.55,1.66,1.66,0,0,0,.68-1.3A2,2,0,0,0,362.59,79.15Z"/><path class="a" d="M212.07,63.23V80a1.84,1.84,0,0,0,.68,1.49,2.74,2.74,0,0,0,1.8.55h2a3,3,0,0,0,1.92-.55,1.84,1.84,0,0,0,.68-1.49V63.23Z"/><path class="a" d="M267.88,79.15,248.32,51.78c9.73-1,17.35-8.37,17.35-17.25,0-9.56-8.82-17.38-19.59-17.38H214.55a2.75,2.75,0,0,0-1.8.56,1.92,1.92,0,0,0-.68,1.58v3.42h34c7.37,0,13.37,5.28,13.37,11.82s-6,11.82-13.37,11.82h-34v5.56h28.41l19.85,27.61a10.21,10.21,0,0,0,1.58,1.72,4,4,0,0,0,2.7.78H266a2.39,2.39,0,0,0,1.57-.55,1.63,1.63,0,0,0,.68-1.3A2,2,0,0,0,267.88,79.15Z"/><path class="a" d="M542.91,48.5a16.83,16.83,0,0,0,8-14c0-9.56-8.82-17.38-19.59-17.38H499.8a2.75,2.75,0,0,0-1.8.56,1.92,1.92,0,0,0-.68,1.58v3.42h34c7.37,0,13.37,5.28,13.37,11.82,0,6.39-5.74,11.58-12.88,11.82h-34.5v5.56h36c7.66,0,14,5.48,14,12.27S541,76.46,533.35,76.46H504.43V63.23h-7.11V80a1.84,1.84,0,0,0,.68,1.49,2.74,2.74,0,0,0,1.8.55h33.55c11.07,0,20.12-8,20.12-17.84C553.47,57.43,549.18,51.53,542.91,48.5Z"/><path class="a" d="M731.61,22.71a3,3,0,0,0,1.92-.55,1.83,1.83,0,0,0,.67-1.49V19.29a1.92,1.92,0,0,0-.67-1.58,3,3,0,0,0-1.92-.56H680a2.75,2.75,0,0,0-1.8.56,1.92,1.92,0,0,0-.68,1.58v1.38a1.84,1.84,0,0,0,.68,1.49,2.74,2.74,0,0,0,1.8.55Z"/><path class="a" d="M702.3,46.35V80a1.83,1.83,0,0,0,.67,1.49,2.75,2.75,0,0,0,1.81.55h2a3,3,0,0,0,1.92-.55A1.84,1.84,0,0,0,709.4,80V46.35Z"/><path class="a" d="M84,22.71a3,3,0,0,0,1.92-.55,1.84,1.84,0,0,0,.68-1.49V19.29a1.92,1.92,0,0,0-.68-1.58A3,3,0,0,0,84,17.15H32.36a2.76,2.76,0,0,0-1.81.56,1.92,1.92,0,0,0-.67,1.58v1.38a1.83,1.83,0,0,0,.67,1.49,2.75,2.75,0,0,0,1.81.55Z"/><path class="a" d="M54.68,46.35V80a1.84,1.84,0,0,0,.68,1.49,2.74,2.74,0,0,0,1.8.55h2a2.94,2.94,0,0,0,1.91-.55A1.81,1.81,0,0,0,61.78,80V46.35Z"/><path class="a" d="M833.61,82a.24.24,0,0,1-.15,0,.17.17,0,0,1-.05-.13V76.94h-1.86a.25.25,0,0,1-.15,0,.14.14,0,0,1-.06-.12v-.12a.17.17,0,0,1,.06-.14.25.25,0,0,1,.15-.05h4.29a.23.23,0,0,1,.16.05.17.17,0,0,1,.06.14v.12a.14.14,0,0,1-.06.12.23.23,0,0,1-.16,0H834v4.91a.18.18,0,0,1-.06.13.25.25,0,0,1-.16,0Z"/><path class="a" d="M837.41,82a.25.25,0,0,1-.16,0,.18.18,0,0,1-.06-.13v-5.2a.17.17,0,0,1,.06-.14.25.25,0,0,1,.16-.05h.23a.26.26,0,0,1,.14,0l.06.07L840,80.08l2.13-3.51.06-.07a.26.26,0,0,1,.14,0h.23a.23.23,0,0,1,.15.05.17.17,0,0,1,.06.14v5.2a.18.18,0,0,1-.06.13.22.22,0,0,1-.15,0h-.17a.21.21,0,0,1-.15,0,.18.18,0,0,1-.06-.13V77.54l-1.79,3a.32.32,0,0,1-.11.12.34.34,0,0,1-.18,0h-.21a.34.34,0,0,1-.18,0,.43.43,0,0,1-.11-.12l-1.79-3v4.31a.21.21,0,0,1,0,.13.24.24,0,0,1-.15,0Z"/>
@@ -106,10 +113,11 @@
     </defs>
   </svg>
 
+
   <header class="padded-section">
     <div class="max-width flex-container align-center">
       <div class="banner-image-container flex-width flex-container align-center">
-        <a id="banner-image" href="https://terrabyte.eco" class="set-width flex-container align-center">
+        <a id="banner-image" href="https://terrabyte.eco" class="set-width flex-container align-center" aria-label="Home">
           <svg viewBox="0 0 850 100">
             <use href="#logo"/>
           </svg>
@@ -151,24 +159,46 @@
     </section>
   </main>
 
+  <!-- footer -->
   <a id="footer-anchor" name="footer"></a>
   <footer data-footer>
+    <div id="cookie-banner" class="site-banner bottom-banner" role="region" aria-labelledby="cookie-banner-header">
+      <div class="max-width" data-au="flex-container align-center">
+        <div class="banner-content" data-au="flex-width">
+          <div class="banner-header" data-au="flex-container">
+            <h3 id="cookie-banner-header" data-au="flex-width">Cookies &amp; Your Privacy</h3>
+          </div>
+          <div class="banner-info" data-au="flex-container">
+            <div data-au="flex-width">
+              <p class="subtext">Being a responsible company doesn't end with being environmentally conscious. We limit the amount and types of cookies and similar technologies our site uses, but we still rely on them to provide stellar web experiences. <a class="standard-link current-color-link" href="https://terrabyte.eco/legal/privacy-policy.html">Learn More</a></p>
+            </div>
+            <div data-au="set-width button-container">
+              <!-- <h3>Accept:</h3> -->
+              <button class="" data-cookie-button="accept-all">All</button>
+              <button class="primary" data-cookie-button="accept-min">Essential</button>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
 
+    <a id="newsletter-anchor" name="newsletter"></a>
     <div id="true-footer" class="padded-section">
-      <div class="footer-top-container max-width flex-container">
-        <div id="footer-logo-container" class="flex-width flex-container align-center">
-          <a id="footer-logo" href="https://terrabyte.eco" class="set-width flex-container align-center">
+      <div class="footer-top-container max-width" data-au="flex-container">
+        <div id="footer-logo-container" data-au="flex-width flex-container align-center">
+          <a id="footer-logo" href="https://terrabyte.eco" aria-label="Terrabyte homepage" data-au="set-width flex-container align-center">
             <svg viewBox="0 0 850 100">
               <use href="#logo"/>
             </svg>
           </a>
         </div>
         
-        <div id="footer-socials-container" class="set-width flex-container">
+        <div id="footer-socials-container" data-au="set-width flex-container">
           <!-- instagram -->
-          <a class="footer-social icon-container" href="https://instagram.com/terrabyte_tech" target="_blank">
+          <a class="footer-social icon-container" href="https://instagram.com/terrabyte_tech" target="_blank" aria-label="Terrabyte on Instagram (opens in new window)">
             <div class="icon">
-              <svg viewBox="0 0 50 50">
+              <svg viewBox="0 0 50 50" role="presentation">
                 <use href="#instagram-icon"/>
               </svg>
             </div>
@@ -185,51 +215,51 @@
 
           <!-- mastodon -->
           <!-- rel="me" on homepage -->
-          <!-- <a rel="me" href="https://mastodon.eco/@terrabyte" class="footer-social icon-container" target="_blank"> -->
-          <a href="https://mastodon.eco/@terrabyte" class="footer-social icon-container" target="_blank">
+          <a rel="me" href="https://mastodon.eco/@terrabyte" class="footer-social icon-container" target="_blank" aria-label="Terrabyte on Mastodon (opens in new window)">
+          <!-- <a href="https://mastodon.eco/@terrabyte" class="footer-social icon-container" target="_blank"> -->
             <div class="icon">
-              <svg viewBox="0 0 50 50">
+              <svg viewBox="0 0 50 50" role="presentation">
                 <use href="#mastodon-icon"/>
               </svg>
             </div>
           </a>
           <!-- github -->
-          <a class="footer-social icon-container" href="https://github.com/terrabyte-tech" target="_blank">
+          <a class="footer-social icon-container" href="https://github.com/terrabyte-tech" target="_blank" aria-label="Terrabyte on GitHub (opens in new window)">
             <div class="icon">
-              <svg viewBox="0 0 50 50">
+              <svg viewBox="0 0 50 50" role="presentation">
                 <use href="#github-icon"/>
               </svg>
             </div>
           </a>
           <!-- we dont have time -->
-          <a class="footer-social icon-container" href="https://app.wedonthavetime.org/profile/Terrabyte" target="_blank">
+          <a class="footer-social icon-container" href="https://app.wedonthavetime.org/profile/Terrabyte" target="_blank" aria-label="Terrabyte on We Don't Have Time (opens in new window)">
             <div class="icon">
-              <svg viewBox="0 0 50 50">
+              <svg viewBox="0 0 50 50" role="presentation">
                 <use href="#wdht-icon"/>
               </svg>
             </div>
           </a>
           <!-- youtube -->
-          <a class="footer-social icon-container" href="https://www.youtube.com/@TerrabyteEco" target="_blank">
+          <a class="footer-social icon-container" href="https://www.youtube.com/@TerrabyteEco" target="_blank" aria-label="Terrabyte on YouTube (opens in new window)">
             <div class="icon">
-              <svg viewBox="0 0 50 50">
+              <svg viewBox="0 0 50 50" role="presentation">
                 <use href="#youtube-icon"/>
               </svg>
             </div>
           </a>
           <!-- dot.eco profile -->
-          <a class="footer-social icon-container" href="https://profiles.eco/terrabyte" target="_blank">
+          <a class="footer-social icon-container" href="https://profiles.eco/terrabyte" target="_blank" aria-label="Terrabyte on dot Eco (opens in new window)">
             <div class="icon">
-              <svg viewBox="0 0 50 50">
+              <svg viewBox="0 0 50 50" role="presentation">
                 <use href="#eco-profile-icon"/>
               </svg>
             </div>
           </a>
         </div>
       </div>
-      <div class="footer-cols-container max-width flex-container">
-        <div class="footer-left-cols flex-container flex-width">
-          <div class="footer-info-col set-width">
+      <div class="footer-cols-container max-width" data-au="flex-container">
+        <div class="footer-left-cols" data-au="flex-container flex-width">
+          <div class="footer-info-col" data-au="set-width">
             <h3>Legal</h3>
             <div class="footer-link-container">
               <a class="standard-link" href="https://terrabyte.eco/legal/privacy-policy.html">Privacy Policy</a>
@@ -240,14 +270,14 @@
           </div>
           <div class="footer-info-col set-width">
             <h3>Company</h3>
-            <!-- <div class="footer-link-container">
+            <div class="footer-link-container">
               <a class="standard-link" href="https://terrabyte.eco/about-us">About Us</a>
-            </div> -->
+            </div>
             <!-- <div class="footer-link-container">
               <a class="standard-link" href="https://blog.terrabyte.eco">Blog</a>
             </div> -->
             <div class="footer-link-container">
-              <a class="standard-link" href="https://terrabyte.eco/index.html#faqs">FAQ<span class="force-small-text">s</span></a>
+              <a class="standard-link" href="#faqs">FAQ<span class="force-small-text">s</span></a>
             </div>
             <div class="footer-link-container">
               <a class="standard-link" href="https://terrabyte.eco/get-involved">Get Involved</a>
@@ -255,7 +285,6 @@
             <div class="footer-link-container">
               <a class="standard-link" href="https://terrabyte.eco/donate">Donate</a>
             </div>
-            
 
             <!-- <div class="footer-link-container">
               <a class="standard-link" href="https://terrabyte.eco/our-work">Our Work</a>
@@ -265,18 +294,21 @@
             </div> -->
             
           </div>
-          <div class="footer-info-col set-width">
+          <div class="footer-info-col" data-au="set-width">
             <h3>Projects</h3>
             <div class="footer-link-container">
-              <a class="standard-link" href="https://www.pixelplanettoday.com" target="_blank">Pixel Planet Today</a>
+              <a class="standard-link" href="https://www.pixelplanettoday.com" target="_blank" aria-label="Pixel Planet Today website (opens in new window)">Pixel Planet Today</a>
             </div>
             <div class="footer-link-container">
-              <a class="standard-link" href="https://www.pinekeepers.com" target="_blank">Pinekeepers</a>
+              <a class="standard-link" href="https://www.pinekeepers.com" target="_blank" aria-label="Pinekeepers website (opens in new window)">Pinekeepers</a>
+            </div>
+            <div class="footer-link-container">
+              <a class="standard-link" href="https://www.canapi.io" target="_blank" aria-label="Canapi website (opens in new window)">Canapi</a>
             </div>
           </div>
         </div>
         
-        <div class="footer-right-col flex-width">
+        <div class="footer-right-col" data-au="flex-width">
           <!-- newsletter -->
           <h3>Sign up for the newsletter, <span class="little-bytes-text">&lt;little-bytes&gt;</span></h3>
 
@@ -287,21 +319,21 @@
   onsubmit="window.open('https://buttondown.email/terrabyte', 'popupwindow')"
   class="embeddable-buttondown-form">
     <!-- <label for="bd-email">Enter your email</label> -->
-    <div class="footer-form-rows flex-container">
-      <div id="email-row" class="form-row set-width flex-container">
-        <span class="custom-input-container flex-width">
-          <input type="email" name="email" id="bd-email" placeholder="name@email.com"/>
+    <div class="footer-form-rows" data-au="flex-container">
+      <div id="email-row" class="form-row" data-au="set-width flex-container">
+        <span class="custom-input-container" data-au="flex-width">
+          <input type="email" name="email" id="bd-email" placeholder="name@email.com" aria-label="Email address"/>
         </span>
       </div>
     </div>
 
-    <div class="flex-container align-center">
-      <div class="form-button-container set-width">
-        <input type="submit" value="Subscribe" />
+    <div data-au="flex-container align-center">
+      <div class="form-button-container" data-au="set-width">
+        <input role="button" type="submit" value="Subscribe" />
         <input type="hidden" name="tag" value="Terrabyte Subscribers" />
       </div>
-      <p class="flex-width">Powered by 
-        <a class="standard-link" href="https://buttondown.email" target="_blank">Buttondown</a>
+      <p data-au="flex-width">Powered by 
+        <a class="standard-link" href="https://buttondown.email" target="_blank" aria-label="Buttondown website (opens in new window)">Buttondown</a>
       </p>
     </div>
   </form>
@@ -314,18 +346,18 @@
       </div>
       
 
-      <div class="footer-bottom-container max-width flex-container align-center">
-        <div id="footer-bottom-info-container" class="flex-width">
+      <div class="footer-bottom-container max-width" data-au="flex-container align-center">
+        <div id="footer-bottom-info-container" data-au="flex-width">
           <div id="footer-copyright">
             &copy; <span id="current-year-text"></span> Terrabyte, LLC. All Rights Reserved.
           </div>
           <div id="made-by">
-            <span>Website designed &amp; hosted by <a class="standard-link" href="https://www.goldenharpmedia.com" target="_blank">Golden Harp Media</a></span>
+            <span>Website designed &amp; hosted by <a class="standard-link" href="https://www.goldenharpmedia.com" target="_blank" aria-label="Golden Harp Media website (opens in new window)">Golden Harp Media</a></span>
           </div>
         </div>
         
 
-        <div class="set-width footer-badges-container flex-container align-center">
+        <div class="footer-badges-container" data-au="set-width flex-container align-center">
           <!-- website carbon -->
           <div class="website-carbon-badge footer-badge">
             <div id="wcb" class="carbonbadge wcb-d"></div>
@@ -333,13 +365,15 @@
           </div>
           <!-- clean creatives -->
           <div class="clean-creatives-badge footer-badge">
-            <a href="https://www.cleancreatives.org" target="_blank">
-              <div id="clean-creatives-img"></div>
+            <a href="https://www.cleancreatives.org" target="_blank" aria-label="Clean Creatives website (opens in new window)">
+              <div id="clean-creatives-img" role="img"></div>
             </a>
             
           </div>
         </div>
       </div>
+
+
     </div>
   </footer>
 </body>

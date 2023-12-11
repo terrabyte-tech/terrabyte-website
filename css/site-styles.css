@@ -12,6 +12,37 @@
 }
 /*  */
 
+/* accesibility styles */
+.sr-only{
+  background-color:#333333;
+  display:block;
+  position:fixed;
+  left:-100px;
+  top:0px;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+  transition:width .5s, left .5s;
+  z-index:1000;
+  font-size:25px;
+  padding:0px;
+}
+/* show on focus for those with vision impairments */
+.sr-only:focus-within{
+  left:0;
+  width:100%;
+  max-width:500px;
+  height:auto;
+  padding:20px;
+}
+.sr-only h2{
+  margin-bottom:20px;
+}
+.sr-only a.standard-link{
+  display:block;
+  margin-bottom:10px;
+}
+
 
 /* style scrollbars */
 body::-webkit-scrollbar-track{
