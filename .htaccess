@@ -1,3 +1,11 @@
+<FilesMatch "\.(ico|pdf|flv)$">
+Header set Cache-Control "max-age=2592000, public"
+</FilesMatch>
+
+<FilesMatch "\.(jpg|jpeg|png|gif|webp|js|css|swf|php|html)$">
+Header set Cache-Control "max-age=604800, public"
+</FilesMatch>
+
 ErrorDocument 400 /error.php
 ErrorDocument 401 /error.php
 ErrorDocument 403 /error.php
