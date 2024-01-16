@@ -95,11 +95,11 @@ window.addEventListener("load", function(){
     if(!loadFeed){
       var mastofeedFrame = document.querySelector("[data-mastofeed-frame]");
 
-      if(mastofeedFrame !== null && (windowBottom + 300) > mastofeedFrame.offsetTop){
+      // if user scrolls down close to the feed, load frame
+      if(mastofeedFrame !== null && (windowBottom + window.innerHeight) > mastofeedFrame.offsetTop){
         fillMastofeed(mastofeedFrame);
       }
     }
-    
   });
 
   // only called when scrolling down to a certain part of the page
