@@ -62,13 +62,11 @@ window.addEventListener("load", function(){
   }
 
   // sticky banner
-  function stickNav(cookieBanner){
+  function stickNav(cookieBanner, windowBottom){
 
     var pageFooter = document.querySelector("[data-footer]");
     var footerTop = pageFooter.offsetTop;
 
-    var windowBottom = window.scrollY + window.innerHeight;
-        
     if(windowBottom >= footerTop + cookieBanner.offsetHeight){
       cookieBanner.classList.add("stick");
       pageFooter.style.paddingTop = 0 + "px";
@@ -80,14 +78,35 @@ window.addEventListener("load", function(){
     
   }
 
+  let loadFeed = false;
   this.addEventListener("scroll", function(){
+
+    // get the bottom of the screen
+    var windowBottom = window.scrollY + window.innerHeight;
     
+    // get the cookie banner area (make sure it exists)
     var cookieBanner = document.getElementById("cookie-banner");
 
     if(cookieBanner !== null && cookieBanner.classList.contains("show")){
-      stickNav(cookieBanner);
+      stickNav(cookieBanner, windowBottom);
+    }
+
+    // get mastofeed iframe (make sure it exists)
+    if(!loadFeed){
+      var mastofeedFrame = document.querySelector("[data-mastofeed-frame]");
+
+      // if user scrolls down close to the feed, load frame
+      if(mastofeedFrame !== null && (windowBottom + window.innerHeight) > mastofeedFrame.offsetTop){
+        fillMastofeed(mastofeedFrame);
+      }
     }
   });
+
+  // only called when scrolling down to a certain part of the page
+  function fillMastofeed(mastofeedFrame){
+    loadFeed = true;
+    mastofeedFrame.src = "https://mastofeed.com/apiv2/feed?userurl=https%3A%2F%2Fmastodon.eco%2Fusers%2Fterrabyte&theme=dark&size=100&header=false&replies=false&boosts=false";
+  }
 
 
   // reset when revisiting
@@ -236,7 +255,6 @@ if(cardsContainer !== null){
         }
       })
 }
-
 ///////////////
 
   

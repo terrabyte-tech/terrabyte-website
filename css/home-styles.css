@@ -85,16 +85,20 @@
   margin:0 auto 20px auto;
 }
 #pixel-planet-today-img{
-  background-image:url("../img/pixel-planet-lettering-tight-crop.png");
+  /* background-image:url("../img/pixel-planet-lettering-tight-crop.png"); */
+  background-image:url("../img/pixel-planet-lettering-tight-crop.webp");
 }
 #pinekeepers-img{
-  background-image:url("../img/pine-keepers-title-image-trans.png");
+  /* background-image:url("../img/pine-keepers-title-image-trans.png"); */
+  background-image:url("../img/pine-keepers-title-image-trans.webp");
 }
 #canapi-img{
-  background-image:url("../img/canapi-code-logo-cropped-white-trans.png");
+  /* background-image:url("../img/canapi-code-logo-cropped-white-trans.png"); */
+  background-image:url("../img/canapi-code-logo-cropped-white-trans.webp");
 }
 #wasted-space-img{
-  background-image:url("../img/wasted-space-logo-title-white-large.png");
+  /* background-image:url("../img/wasted-space-logo-title-white-large.png"); */
+  background-image:url("../img/wasted-space-logo-title-white-large.webp");
 }
 /* ************* */
 
@@ -134,40 +138,52 @@
 #carbonii-img{
   /* for better sizing with other partner logos */
   /* border:30px solid transparent; */
-  background-image:url("../img/social-proof/carbonii-logo-white.png");
+  background-image:url("../img/social-proof/carbonii-logo-white.webp");
+  /* background-image:url("../img/social-proof/carbonii-logo-white.png"); */
 }
 #wrd-img{
   background-image:url("../img/social-proof/wrd-logo-white.png");
+  /* background-image:url("../img/social-proof/wrd-logo-white.webp"); */
 }
 #tbep-img{
-  background-image:url("../img/social-proof/tbep-logo-white.png");
+  /* background-image:url("../img/social-proof/tbep-logo-white.png"); */
+  background-image:url("../img/social-proof/tbep-logo-white.webp");
 }
 #pfj-img{
-  background-image:url("../img/social-proof/pfj-logo-white.png");
+  /* background-image:url("../img/social-proof/pfj-logo-white.png"); */
+  background-image:url("../img/social-proof/pfj-logo-white.webp");
 }
 #eco-earth-market-img{
-  background-image:url("../img/social-proof/eco-earth-market-logo-white.png");
+  /* background-image:url("../img/social-proof/eco-earth-market-logo-white.png"); */
+  background-image:url("../img/social-proof/eco-earth-market-logo-white.webp");
 }
 #the-climate-issue-img{
-  background-image:url("../img/social-proof/the-climate-issue-logo-white.png");
+  /* background-image:url("../img/social-proof/the-climate-issue-logo-white.png"); */
+  background-image:url("../img/social-proof/the-climate-issue-logo-white.webp");
 }
 #earth-hacks-img{
-  background-image:url("../img/social-proof/earth-hacks-logo-white.png");
+  /* background-image:url("../img/social-proof/earth-hacks-logo-white.png"); */
+  background-image:url("../img/social-proof/earth-hacks-logo-white.webp");
 }
 #ecta-img{
-  background-image:url("../img/social-proof/ecta-logo-white.png");
+  /* background-image:url("../img/social-proof/ecta-logo-white.png"); */
+  background-image:url("../img/social-proof/ecta-logo-white.webp");
 }
 #eco-earth-market-img{
-  background-image:url("../img/social-proof/eco-earth-market-logo-white.png");
+  /* background-image:url("../img/social-proof/eco-earth-market-logo-white.png"); */
+  background-image:url("../img/social-proof/eco-earth-market-logo-white.webp");
 }
 #wherefrom-img{
-  background-image:url("../img/social-proof/wherefrom-logo-white.png");
+  /* background-image:url("../img/social-proof/wherefrom-logo-white.png"); */
+  background-image:url("../img/social-proof/wherefrom-logo-white.webp");
 }
 #humans-for-earth-img{
-  background-image:url("../img/social-proof/humans-for-earth-logo-white.png");
+  /* background-image:url("../img/social-proof/humans-for-earth-logo-white.png"); */
+  background-image:url("../img/social-proof/humans-for-earth-logo-white.webp");
 }
 #pixel-art-mag-img{
-  background-image:url("../img/social-proof/pixel-art-mag-logo-white.png");
+  /* background-image:url("../img/social-proof/pixel-art-mag-logo-white.png"); */
+  background-image:url("../img/social-proof/pixel-art-mag-logo-white.webp");
 }
 
 /* faqs */
@@ -254,6 +270,17 @@ a.press-card:last-child{
     width: 100%;
     word-wrap: break-word;
   }
+  .press-cards-container.col-content{
+    max-height: unset;
+    overflow-y:visible;
+  }
+  a.press-card{
+    display:flex;
+  }
+  .press-card .card-title{
+    flex:auto;
+    width:100%;
+  }
   #faqs .socials-container{
     display:flex;
     justify-content:space-around;
@@ -266,5 +293,14 @@ a.press-card:last-child{
 @media only screen and (max-width: 440px){
   .social-proof-col{
     margin:20px 15px;
+  }
+}
+
+/* loading container items */
+/* responsive */
+@media only screen and (max-width: 800px){
+  .mastofeed-container.col-content{
+    height:70vh;
+    min-height:300px;
   }
 }

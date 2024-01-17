@@ -66,15 +66,15 @@
     </style>
   </noscript>
 
-  <script type="text/javascript" src="/js/shared-scripts.js"></script>
-  <script type="text/javascript" src="/js/site-scripts.js"></script>
-  <script type="text/javascript" src="/js/header-scripts.js"></script>
+  <script type="text/javascript" src="/js/shared-scripts.js" async></script>
+  <script type="text/javascript" src="/js/site-scripts.js" async></script>
+  <script type="text/javascript" src="/js/header-scripts.js" async></script>
 
   <script data-host="https://microanalytics.io" data-dnt="false" src="https://microanalytics.io/js/script.js" id="ZwSg9rf6GA" async defer></script>
 
   <!-- canapi api implementation -->
-  <!-- <script type="text/javascript" data-canapi-init data-host="https://app.canapi.io" src="https://app.canapi.io/canapi.js"></script> -->
-  <script type="text/javascript" data-canapi-init data-host="https://www.canapi.io" src="https://canapi.io/canapi.js"></script>
+  <!-- <script type="text/javascript" data-canapi-init data-host="https://app.canapi.io" src="https://app.canapi.io/canapi.js" defer></script> -->
+  <script type="text/javascript" data-canapi-init data-host="https://www.canapi.io" src="https://canapi.io/canapi.js" defer></script>
 
 </head>
 
@@ -196,12 +196,12 @@
         <div class="illustration-col section-col" data-au="flex-width flex-container all-center" role="presentation">
           <div class="hero-code-container" data-au="text-center">
             <!-- we are -->
-            <h3 class="code-text hide-on-mobile">01110111 01100101 00100000 01100001 01110010 01100101</h3>
+            <h3 class="code-text hide-on-mobile" role="img" aria-label="binary code (1's and 0's)">01110111 01100101 00100000 01100001 01110010 01100101</h3>
             <!-- saving the planet byte by byte -->
-            <h3 class="code-text">
+            <h3 class="code-text" role="img" aria-label="binary code (1's and 0's)">
               <span class="hide-on-mobile">01110011 01100001 01110110 01101001 01101110 01100111 00100000 01110100 01101000 01100101 00100000 01110000 01101100 01100001 01101110 01100101 01110100 00100000 </span>01100010 01111001 01110100 01100101 00100000 01100010 01111001 00100000 01100010 01111001 01110100 01100101</h3>
             <!-- u in?! -->
-            <h3 class="code-text hide-on-mobile">01110101 00100000 01101001 01101110 00111111 00100001</h3>
+            <h3 class="code-text hide-on-mobile" role="img" aria-label="binary code (1's and 0's)">01110101 00100000 01101001 01101110 00111111 00100001</h3>
           </div>
           <div class="a-mountain-logo" data-au="set-width" data-canapi-click-trigger data-key="
 zScg7IOJa5i18NbV45Sl">
@@ -273,7 +273,7 @@ zScg7IOJa5i18NbV45Sl">
         <div class="section-col-container max-width" data-au="flex-container">
           <!-- pixel planet today -->
           <div class="section-col" data-au="flex-width flex-container flex-vertical">
-            <div id="pixel-planet-today-img" class="col-img" role="img" data-au="set-height"></div>
+            <div id="pixel-planet-today-img" class="col-img" role="img" aria-label="Pixel Planet Today logo" data-au="set-height"></div>
             <div class="col-content" data-au="flex-height">
               <p>Pixel Planet Today is a creative venture that pairs facts about the planet with pixel art designs. What started as a Design-365 project has since spun into a fully-fledged environmental-awareness endeavor, aiming to raise an appreciation for the planet using the power of nostalgia.</p>
             </div>
@@ -292,9 +292,9 @@ zScg7IOJa5i18NbV45Sl">
           </div>
           <!-- canapi -->
           <div class="section-col" data-au="flex-width flex-container flex-vertical">
-            <div id="canapi-img" class="col-img" role="img" data-au="set-height"></div>
+            <div id="canapi-img" class="col-img" role="img" aria-label="Canapi logo" data-au="set-height"></div>
             <div class="col-content" data-au="flex-height">
-              <p>B2B software to help your business go green. More information coming soon!</p>
+              <p>B2B software to help your business go green. More information to come.</p>
               <a class="standard-link ext-link" href="https://canapi.io" target="_blank" aria-label="Canapi website (opens in new window)">
                 <div data-au="flex-container align-center">
                   <span data-au="set-width">Learn More</span>
@@ -324,7 +324,7 @@ zScg7IOJa5i18NbV45Sl">
         <div class="section-col-container max-width" data-au="flex-container">
           <!-- pinekeepers -->
           <div class="section-col" data-au="flex-width flex-container flex-vertical">
-            <div id="pinekeepers-img" class="col-img" role="img" data-au="set-height"></div>
+            <div id="pinekeepers-img" class="col-img" role="img" aria-label="Pinekeepers logo" data-au="set-height"></div>
             <div class="col-content" data-au="flex-height">
               <p>Pinekeepers is a retro-inspired game that turns trees saved in the digital world into real-life saplings!  This game is in the early stages of development, but will feature trees, wildfires, and of course, pixel art. Stay tuned for more information as we release it on our social media channels!</p>
             </div>
@@ -343,7 +343,7 @@ zScg7IOJa5i18NbV45Sl">
           </div>
           <!-- wasted space -->
           <div class="section-col" data-au="flex-width flex-container flex-vertical">
-            <div id="wasted-space-img" class="col-img" role="img" data-au="set-height"></div>
+            <div id="wasted-space-img" class="col-img" role="img" aria-label="Wasted Space logo" data-au="set-height"></div>
             <div class="col-content" data-au="flex-height">
               <p>Wasted Space is a classic-arcade style game that drives home the idea of reusing and recycling. Fly a spaceship through endless enemies and collect metal from destroyed ships in order to upgrade your own! The game is still in development, but we aim to launch a Pico-8 demo by Summer 2024.</p>
             </div>
@@ -375,12 +375,11 @@ zScg7IOJa5i18NbV45Sl">
             <h3 class="section-col-title">As seen in:</h3>
             <!-- card template -->
             <template id="press-card-template">
-              <a data-press-card class="press-card standard-link ext-link" data-au="set-width" href="" target="_blank" aria-label="(opens in new window)">
+              <a data-press-card class="press-card standard-link ext-link" data-au="set-width align-center" href="" target="_blank" aria-label="(opens in new window)">
                 <p data-press-title class="card-title"></p>
-                <p data-press-caption class="card-caption subtext"></p>
-
+                <p data-press-caption class="card-caption subtext hide-on-mobile"></p>
                 <div data-au="flex-container align-center">
-                  <span data-press-link class="standard-link subtext"></span>
+                  <span data-press-link class="standard-link subtext hide-on-mobile"></span>
                   <div class="icon" data-au="set-width">
                     <svg viewBox="0 0 50 50">
                       <use href="#ext-link-icon"/>
@@ -402,8 +401,12 @@ zScg7IOJa5i18NbV45Sl">
           <!-- venn diagram col -->
           <div class="section-col" data-au="flex-width flex-container flex-vertical">
             <h3 class="section-col-title">Updates (via <a class="standard-link" href="https://mastodon.eco/@terrabyte">Mastodon</a>):</h3>
-            <div class="col-content" data-au="flex-height">
-              <iframe title="Terrabyte Mastodon feed" allowfullscreen sandbox="allow-top-navigation allow-scripts allow-popups allow-popups-to-escape-sandbox" width="" height="" src="https://mastofeed.com/apiv2/feed?userurl=https%3A%2F%2Fmastodon.eco%2Fusers%2Fterrabyte&theme=dark&size=100&header=false&replies=false&boosts=false"></iframe>
+            <div class="mastofeed-container loading-container col-content" data-au="flex-height">
+              <iframe data-mastofeed-frame title="Terrabyte Mastodon feed" allowfullscreen sandbox="allow-top-navigation allow-scripts allow-popups allow-popups-to-escape-sandbox" width="" height=""></iframe>
+              <div class="loading-overlay" data-au="flex-container flex-vertical all-center">
+                <div class="spinner"></div>
+                <span>Loading content</span>
+              </div>
             </div>
             
           </div>
@@ -834,7 +837,7 @@ zScg7IOJa5i18NbV45Sl">
           <!-- clean creatives -->
           <div class="clean-creatives-badge footer-badge">
             <a href="https://www.cleancreatives.org" target="_blank" aria-label="Clean Creatives website (opens in new window)">
-              <div id="clean-creatives-img" role="img"></div>
+              <div id="clean-creatives-img" role="img" aria-label="Clean Creatives logo"></div>
             </a>
             
           </div>
