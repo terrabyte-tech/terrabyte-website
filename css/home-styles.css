@@ -270,6 +270,10 @@ a.press-card:last-child{
     width: 100%;
     word-wrap: break-word;
   }
+  .press-cards-container.col-content{
+    max-height: unset;
+    overflow-y:visible;
+  }
   #faqs .socials-container{
     display:flex;
     justify-content:space-around;
@@ -282,5 +286,18 @@ a.press-card:last-child{
 @media only screen and (max-width: 440px){
   .social-proof-col{
     margin:20px 15px;
+  }
+}
+
+/* loading spinner */
+.mastofeed-container.col-content{
+  position:relative;
+}
+
+/* responsive */
+@media only screen and (max-width: 800px){
+  .mastofeed-container.col-content{
+    height:70vh;
+    min-height:300px;
   }
 }
