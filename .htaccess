@@ -1,58 +1,26 @@
-# Expires headers
-<IfModule mod_expires.c>
-ExpiresActive on
-ExpiresDefault "access plus 1 month"
+# Prevent access to some files
+<FilesMatch "^(wp-config.php|readme.html|license.txt|README.md|.gitignore|.gitattributes|.htaccess|error_log)">
+    Order allow,deny
+    Deny from all
+    Satisfy All
+</FilesMatch>
 
-# cache.appcache needs re-requests in FF 3.6
-ExpiresByType text/cache-manifest "access plus 0 seconds"
+# long cache for items in /img
+<Directory "/img">
+Header set Cache-Control "max-age=604800, must-revalidate"
+</Directory>
 
-# Your document html
-ExpiresByType text/html "access plus 1 hour"
+# long cache for other files
+<FilesMatch "\.(js|css|swf|php|html|json)$">
+Header set Cache-Control "max-age=604800, must-revalidate"
+</FilesMatch>
 
-# Data
-ExpiresByType text/xml "access plus 0 seconds"
-ExpiresByType application/xml "access plus 0 seconds"
-ExpiresByType application/json "access plus 0 seconds"
-
-# Feed
-ExpiresByType application/rss+xml "access plus 1 hour"
-ExpiresByType application/atom+xml "access plus 1 hour"
-
-# Favicon
-ExpiresByType image/x-icon "access plus 1 week"
-
-# Media: images, video, audio
-ExpiresByType image/gif "access plus 2 months"
-ExpiresByType image/png "access plus 2 months"
-ExpiresByType image/jpeg "access plus 2 months"
-ExpiresByType image/webp "access plus 2 months"
-ExpiresByType video/ogg "access plus 2 months"
-ExpiresByType audio/ogg "access plus 2 months"
-ExpiresByType video/mp4 "access plus 2 months"
-ExpiresByType video/webm "access plus 2 months"
-
-# Webfonts
-ExpiresByType font/ttf "access plus 4 months"
-ExpiresByType font/otf "access plus 4 months"
-ExpiresByType font/woff "access plus 4 months"
-ExpiresByType font/woff2 "access plus 4 months"
-ExpiresByType image/svg+xml "access plus 1 month"
-ExpiresByType application/vnd.ms-fontobject "access plus 1 month"
-
-# CSS and JavaScript
-ExpiresByType text/css "access plus 1 month"
-ExpiresByType application/javascript "access plus 1 month"
-</IfModule>
-
-
+# loooong cache for items that may never update
 <FilesMatch "\.(ico|pdf|flv)$">
-Header set Cache-Control "max-age=2592000, public"
+Header set Cache-Control "max-age=2592000, must-revalidate"
 </FilesMatch>
 
-<FilesMatch "\.(jpg|jpeg|png|gif|webp|js|css|swf|php|html)$">
-Header set Cache-Control "max-age=604800, public"
-</FilesMatch>
-
+# error pages
 ErrorDocument 400 /error.php
 ErrorDocument 401 /error.php
 ErrorDocument 403 /error.php
