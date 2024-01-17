@@ -375,11 +375,11 @@ zScg7IOJa5i18NbV45Sl">
             <h3 class="section-col-title">As seen in:</h3>
             <!-- card template -->
             <template id="press-card-template">
-              <a data-press-card class="press-card standard-link ext-link" data-au="set-width" href="" target="_blank" aria-label="(opens in new window)">
+              <a data-press-card class="press-card standard-link ext-link" data-au="set-width align-center" href="" target="_blank" aria-label="(opens in new window)">
                 <p data-press-title class="card-title"></p>
                 <p data-press-caption class="card-caption subtext hide-on-mobile"></p>
-                <div class="hide-on-mobile" data-au="flex-container align-center">
-                  <span data-press-link class="standard-link subtext"></span>
+                <div data-au="flex-container align-center">
+                  <span data-press-link class="standard-link subtext hide-on-mobile"></span>
                   <div class="icon" data-au="set-width">
                     <svg viewBox="0 0 50 50">
                       <use href="#ext-link-icon"/>
@@ -401,9 +401,9 @@ zScg7IOJa5i18NbV45Sl">
           <!-- venn diagram col -->
           <div class="section-col" data-au="flex-width flex-container flex-vertical">
             <h3 class="section-col-title">Updates (via <a class="standard-link" href="https://mastodon.eco/@terrabyte">Mastodon</a>):</h3>
-            <div class="mastofeed-container col-content" data-au="flex-height">
+            <div class="mastofeed-container loading-container col-content" data-au="flex-height">
               <iframe data-mastofeed-frame title="Terrabyte Mastodon feed" allowfullscreen sandbox="allow-top-navigation allow-scripts allow-popups allow-popups-to-escape-sandbox" width="" height=""></iframe>
-              <div class="loading-container" data-au="flex-container flex-vertical all-center">
+              <div class="loading-overlay" data-au="flex-container flex-vertical all-center">
                 <div class="spinner"></div>
                 <span>Loading content</span>
               </div>

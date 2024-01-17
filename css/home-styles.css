@@ -274,6 +274,13 @@ a.press-card:last-child{
     max-height: unset;
     overflow-y:visible;
   }
+  a.press-card{
+    display:flex;
+  }
+  .press-card .card-title{
+    flex:auto;
+    width:100%;
+  }
   #faqs .socials-container{
     display:flex;
     justify-content:space-around;
@@ -289,11 +296,7 @@ a.press-card:last-child{
   }
 }
 
-/* loading spinner */
-.mastofeed-container.col-content{
-  position:relative;
-}
-
+/* loading container items */
 /* responsive */
 @media only screen and (max-width: 800px){
   .mastofeed-container.col-content{
