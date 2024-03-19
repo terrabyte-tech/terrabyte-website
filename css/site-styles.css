@@ -76,7 +76,8 @@ html{
 }
 
 body{
-  background-color:#333333;
+  /* background-color:#333333; */
+  background-color:red;
   color:white;
   /* font-family:'Open Sans', sans-serif; */
   /* font-family: 'Courier Prime', monospace; */
