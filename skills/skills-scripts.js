@@ -2,7 +2,7 @@ window.addEventListener("load", function(){
 
   console.log("loaded skills-scripts");
 
-  // populatePresentationLinks()
+  populatePresentationLinks()
 
 ///////////////
 
@@ -19,7 +19,7 @@ function populatePresentationLinks(){
   var linkTemplate = document.getElementById("link-template");
   var linkRowElem = linkTemplate.content.querySelector("[data-link-row]");
 
-  fetch("./presentations.bak.json")
+  fetch("./presentations.json")
     .then(response => response.json())
       .then(data => {
 

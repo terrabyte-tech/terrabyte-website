@@ -1,0 +1,16 @@
+{
+  "presentations": [
+    {
+      "label": "Team A; Wakefield",
+      "href": "./team-a"
+    },
+    {
+      "label": "Team B; Bennington",
+      "href": "./team-b"
+    },
+    {
+      "label": "Team C; Kearney",
+      "href": "./team-c"
+    }
+  ]
+}
