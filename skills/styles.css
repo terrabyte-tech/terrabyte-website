@@ -1,0 +1,23 @@
+body{
+  background-color:white;
+  color:#333333;
+}
+
+main h1 .highlight-container{
+  color:white;
+}
+
+main section > .max-width{
+  border-left:3px solid rgba(10, 140, 97,.25);
+  padding-left:100px;
+}
+main section:first-child > .max-width{
+  border-color:transparent;
+}
+
+@media only screen and (max-width:800px){
+  main section > .max-width{
+    border-width:0px;
+    padding-left:0px;
+  }
+}
