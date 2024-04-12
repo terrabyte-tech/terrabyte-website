@@ -16,6 +16,8 @@ The official Terrabyte website [terrabyte.eco](https://terrabyte.eco). See our p
   - New Subscriber - [/newsletter/new-subscriber.html](./newsletter/new-subscriber.html)
   - Unsubscriber - [/newsletter/unsubscriber.html](./newsletter/new-subscriber.html)
   - Donate (Redirect) - [/donate/index.html](./donate/index.html)
+  - SkillsUSA - [/skills/index.html](./skills/index.html)
+    - Webpage to communicate resources to participating students
 
 <br>
 
