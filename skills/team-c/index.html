@@ -17,25 +17,29 @@
     
     <!-- JavaScript (because for some reason, I could not link to an external JS file) -->
     <script>
+
+        // When hitting a nav icon, set the display of the selected section to 
+        //  block (to be visible) and set the others to none (invisible)
         function setSectionToId(id) {
             const home = document.getElementById('Home');
             const projects = document.getElementById("Projects");
             const missionStatement = document.getElementById("Mission");
-            // const contact = document.getElementById("contactIcon");
-            // const reviews = document.getElementById("reviewsIcon");
             home.style.display = 'none';
             projects.style.display = 'none';
             missionStatement.style.display = 'none';
-            // contact.setAttribute("display", "none"):
-            // reviews.setAttribute("display", "none"):
             const section = document.getElementById(id);
             section.style.display = 'block';
             console.log(section.getAttribute("display"));
         }
         
         function goToActualTerrabyte() {
-            window.open("https://www.terrabyte.eco/", "_blank")
+            window.open("https://www.terrabyte.eco/", "_blank");
         }
+
+        function goToTerrabyteInstagram() {
+            window.open("https://www.instagram.com/terrabyte_tech/", "_blank");
+        }
+
     </script>
 
     <!-- CSS -->
@@ -121,7 +125,7 @@
     </div>
 
     <footer>
-        <img src="https://png.pngtree.com/png-clipart/20180626/ourmid/pngtree-instagram-icon-instagram-logo-png-image_3584853.png" alt="Instagram logo" class="footer-icon">
+        <img style="cursor: pointer" onclick="goToTerrabyteInstagram()" src="https://png.pngtree.com/png-clipart/20180626/ourmid/pngtree-instagram-icon-instagram-logo-png-image_3584853.png" alt="Instagram logo" class="footer-icon">
         <h2>Terrabyte</h2>
     </footer>
 </body>
