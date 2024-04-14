@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Metadata for SEO -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="climate change, modern technology, leading edge, skillsusa website">
+    <meta name="description" content="Built for SkillsUSA, Kojo and Jacob came together to build this website. It depicts an alternative, albeit lighter, version of Terrabyte's website. It was very fun to make and if you are reading this, thank you.">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    
+    <!-- JavaScript (because for some reason, I could not link to an external JS file) -->
+    <script>
+
+        // When hitting a nav icon, set the display of the selected section to 
+        //  block (to be visible) and set the others to none (invisible)
+        function setSectionToId(id) {
+            const home = document.getElementById('Home');
+            const projects = document.getElementById("Projects");
+            const missionStatement = document.getElementById("Mission");
+            home.style.display = 'none';
+            projects.style.display = 'none';
+            missionStatement.style.display = 'none';
+            const section = document.getElementById(id);
+            section.style.display = 'block';
+            console.log(section.getAttribute("display"));
+        }
+        
+        function goToActualTerrabyte() {
+            window.open("https://www.terrabyte.eco/", "_blank");
+        }
+
+        function goToTerrabyteInstagram() {
+            window.open("https://www.instagram.com/terrabyte_tech/", "_blank");
+        }
+
+    </script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./media/Terrabyte Logo V2.png">
+
+
+    <title>Terrabyte</title>
+</head>
+<body onload="setSectionToId('Home')">
+    <div class="flex-column">
+
+        <!-- Header (including navbar) -->
+        <header>
+            <div onclick="goToActualTerrabyte()" id="logo"></div>
+
+            <!-- Navbar -->
+            <nav>
+                <div onclick="setSectionToId('Home')" id="homeIcon" class="nav-icon">
+                    <img src="./media/Stars G .png" alt="Home Icon">
+                    <h2>Home &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+                </div>
+                <div onclick="setSectionToId('Projects')" id="projectsIcon" class="nav-icon">
+                    <img src="./media/Image G.png" alt="Projects icon">
+                    <h2>Projects</h2>
+                </div>
+                <div onclick="setSectionToId('Mission')" id="missionStatementIcon" class="nav-icon">
+                    <img src="./media/Mail G.png" alt="Mission Statement icon">
+                    <h2>Mission Statement</h2>
+                </div>
+            </nav>
+
+        </header>
+        
+        <!-- Home Section -->
+        <section id="Home">
+            <h1>Technology for a greener tomorrow</h1>
+            <img src="./media/terra Gif.gif" alt="GIF of Terrabyte Logo Jumping up and down upon trees">
+            <h2>Turning pixels and bytes into positive environmental change</h2>
+        </section>
+
+        <!-- Project Section -->
+        <section id="Projects">
+            <div class="projects-rows-container">
+                <h1>Our Work</h1>
+                <div class="projects-row">
+                    <div class="left-project-container">
+                        <img src="./media/Rectangle 15.png" alt="Pixel Planet Today">
+                        <h2>Creative venture that pairs facts about the planet with pixel art designs.</h2>
+                    </div>
+                    <div class="right-project-container">
+                        <h2>Classic-arcade style game that drives home the idea of reusing and recycling.</h2>
+                        <img src="./media/Rectangle 17.png" alt="Pine eeper">
+                    </div>
+                </div>
+                <div class="projects-row">
+                    <div class="left-project-container">
+                        <img src="./media/Rectangle 18.png" alt="Wasted Space">
+                        <h2>Retro-inspired game that turns trees saved in the digital world into real-life saplings! (In development)</h2>
+                    </div>
+                    <div class="right-project-container">
+                        <h2>B2B software to help your business go green. More information to come.</h2>
+                        <img src="./media/Rectangle 16.png" alt="{canapi}">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission Statement Section -->
+        <section id="Mission">
+            <div class="mission-container">
+                <div class="mission-text-container">
+                    <h1>Our Mission</h1>
+                    <h2>We strive to find solutions to save our environment for life above and below land by using our skills and passions to create projects for digital worlds that will leave an impact on the real world while working to run carbon free by 2035. </h2>
+                </div>
+                <div class="mission-img-container">
+                    <img src="./media/Terra Gif 2 (1).gif" alt="GIF of the Terrabyte Logo creating trees">
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <img style="cursor: pointer" onclick="goToTerrabyteInstagram()" src="https://png.pngtree.com/png-clipart/20180626/ourmid/pngtree-instagram-icon-instagram-logo-png-image_3584853.png" alt="Instagram logo" class="footer-icon">
+        <h2>Terrabyte</h2>
+    </footer>
+</body>
+</html>
