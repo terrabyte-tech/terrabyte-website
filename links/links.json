@@ -2,6 +2,11 @@
   "linkSections": [
     {
       "label": "Highlights", "linkItems": [
+        
+        {
+          "label": "See us at GTF Berlin!",
+          "href": "https://greentechfestival.com/startup/"
+        },
         {
           "label": "Website",
           "href": "https://terrabyte.eco"
@@ -14,6 +19,10 @@
     },
     {
       "label": "Projects", "linkItems": [
+        {
+          "label": "Wasted Space: Website",
+          "href": "https://terrabyte.eco/wasted-space"
+        },
         {
           "label": "Pixel Planet Today: Website",
           "href": "https://pixelplanettoday.com"
