@@ -198,7 +198,14 @@
         <div class="section-header">
           <h3 data-header-label>Updates (via <a class="standard-link" href="https://mastodon.eco/@terrabyte">Mastodon</a>)</h3>
         </div>
-        <iframe title="Terrabyte Mastodon feed" allowfullscreen sandbox="allow-top-navigation allow-scripts allow-popups allow-popups-to-escape-sandbox" width="500" height="800" src="https://mastofeed.com/apiv2/feed?userurl=https%3A%2F%2Fmastodon.eco%2Fusers%2Fterrabyte&theme=dark&size=100&header=false&replies=false&boosts=false"></iframe>
+        <!-- <iframe title="Terrabyte Mastodon feed" allowfullscreen sandbox="allow-top-navigation allow-scripts allow-popups allow-popups-to-escape-sandbox" width="500" height="800" src="https://mastofeed.com/apiv2/feed?userurl=https%3A%2F%2Fmastodon.eco%2Fusers%2Fterrabyte&theme=dark&size=100&header=false&replies=false&boosts=false"></iframe> -->
+        <div class="mastofeed-container loading-container col-content" data-au="flex-height">
+          <iframe data-mastofeed-frame title="Terrabyte Mastodon feed" allowfullscreen sandbox="allow-top-navigation allow-scripts allow-popups allow-popups-to-escape-sandbox" width="" height=""></iframe>
+          <div class="loading-overlay" data-au="flex-container flex-vertical all-center">
+            <div class="spinner"></div>
+            <span>Loading content</span>
+          </div>
+        </div>
       </div>
     </main>
   </section>
