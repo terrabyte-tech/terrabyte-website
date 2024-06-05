@@ -400,15 +400,21 @@ a.press-card:active:after{
   opacity:.45;
 }
 .standard-link.ext-link .icon,
-.link-row.ext-link .icon{
+.link-row.ext-link .icon,
+.standard-link.anchor-link .icon,
+.link-row.anchor-link .icon{
   width:14px;
 }
 .standard-link.ext-link .icon:last-child,
-.link-row.ext-link .icon:last-child{
+.link-row.ext-link .icon:last-child,
+.standard-link.anchor-link .icon:last-child,
+.link-row.anchor-link .icon:last-child{
   margin-left:10px;
 }
 .standard-link.ext-link .icon:first-child,
-.link-row.ext-link .icon:first-child{
+.link-row.ext-link .icon:first-child,
+.standard-link.anchor-link .icon:first-child,
+.link-row.anchor-link .icon:first-child{
   margin-right:10px;
 }
 
