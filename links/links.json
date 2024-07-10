@@ -3,6 +3,11 @@
     {
       "label": "Highlights", "linkItems": [
         {
+          "label": "Play the Wasted Space Beta!",
+          "href": "https://terrabyte-tech.itch.io/wasted-space",
+          "style": "ext-link"
+        },
+        {
           "label": "Sign up for the newsletter",
           "href": "#newsletter-anchor",
           "style": "anchor-link"
