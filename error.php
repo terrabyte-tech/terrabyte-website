@@ -37,6 +37,13 @@
 
     <title>Page Not Found</title>
 
+    <!-- social cards metadata -->
+    <meta property="og:title" content="Terrabyte: Page Not Found">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://terrabyte.eco">
+    <meta property="og:description" content="Unfortunately, the webpage cannot be found on the Terrabyte website. We'll get you to the Terrabyte homepage instead...">
+    <meta property="og:image" content="/img/meta/og-image.png">
+
     <!-- favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -371,12 +378,9 @@
             <a href="https://www.cleancreatives.org" target="_blank" aria-label="Clean Creatives website (opens in new window)">
               <div id="clean-creatives-img" role="img"></div>
             </a>
-            
           </div>
         </div>
       </div>
-
-
     </div>
   </footer>
 </body>
