@@ -11,7 +11,14 @@
   <link rel="shortcut icon" type="image/png" href="favicon.ico"/>
   <title>Terrabyte: Links</title>
 
-  <meta name="theme-color" content="#0A8C61" />
+  <meta name="theme-color" content="#0A8C61"/>
+
+  <!-- social cards metadata -->
+  <meta property="og:title" content="Terrabyte: Technology for a Greener Tomorrow">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://terrabyte.eco">
+  <meta property="og:description" content="Terrabyte is a green tech company focused on providing creative solutions to environmental challenges while educating the public on environmental crises.">
+  <meta property="og:image" content="/img/meta/og-image.png">
 
 
   <!-- favicons -->
@@ -41,9 +48,10 @@
   <!--------->
   <!-- scripts -->
   <script type="text/javascript" src="/js/shared-scripts.js"></script>
+  <script src="scripts.js"></script>
   <script type="text/javascript" src="/js/site-scripts.js"></script>
   
-  <script src="scripts.js"></script>
+  
 
 </head>
 <body class="loadingx flex-container flex-vertical">
@@ -97,6 +105,7 @@
       <g id="hamburger-menu-icon">
         <path d="M46.93,41.72c0-1.38-.74-2.51-1.64-2.51H4.71c-.91,0-1.64,1.12-1.64,2.51s.74,2.51,1.64,2.51H45.29c.91,0,1.64-1.12,1.64-2.51Zm0-16.72c0-1.38-.74-2.51-1.64-2.51H4.71c-.91,0-1.64,1.12-1.64,2.51s.74,2.51,1.64,2.51H45.29c.91,0,1.64-1.12,1.64-2.51Zm0-16.72c0-1.38-.74-2.51-1.64-2.51H4.71c-.91,0-1.64,1.12-1.64,2.51s.74,2.51,1.64,2.51H45.29c.91,0,1.64-1.12,1.64-2.51Z"/>
       </g>
+      <g id="chevron"></g>
     </defs>
   </svg>
 
@@ -180,9 +189,14 @@
   
       <!-- link template -->
       <template id="link-template">
-        <a data-link-row class="link-row ext-link flex-container align-center flex-horizontal" href="" target="_blank" aria-label="(link opens in new window)">
+        <a data-link-row class="link-row flex-container align-center flex-horizontal" href="">
           <span class="flex-width" data-link-label></span>
-          <div class="icon set-width">
+          <div class="icon anchor set-width">
+            <svg viewBox="0 0 50 50" role="presentation">
+              <use href="#chevron-icon"/>
+            </svg>
+          </div>
+          <div class="icon ext set-width">
             <svg viewBox="0 0 50 50" role="presentation">
               <use href="#ext-link-icon"/>
             </svg>
@@ -198,7 +212,13 @@
         <div class="section-header">
           <h3 data-header-label>Updates (via <a class="standard-link" href="https://mastodon.eco/@terrabyte">Mastodon</a>)</h3>
         </div>
-        <iframe title="Terrabyte Mastodon feed" allowfullscreen sandbox="allow-top-navigation allow-scripts allow-popups allow-popups-to-escape-sandbox" width="500" height="800" src="https://mastofeed.com/apiv2/feed?userurl=https%3A%2F%2Fmastodon.eco%2Fusers%2Fterrabyte&theme=dark&size=100&header=false&replies=false&boosts=false"></iframe>
+        <div class="mastofeed-container loading-container col-content" data-au="flex-height">
+          <iframe data-mastofeed-frame title="Terrabyte Mastodon feed" allowfullscreen sandbox="allow-top-navigation allow-scripts allow-popups allow-popups-to-escape-sandbox" width="" height=""></iframe>
+          <div class="loading-overlay" data-au="flex-container flex-vertical all-center">
+            <div class="spinner"></div>
+            <span>Loading content</span>
+          </div>
+        </div>
       </div>
     </main>
   </section>
@@ -343,6 +363,9 @@
             <h3>Projects</h3>
             <div class="footer-link-container">
               <a class="standard-link" href="https://www.pixelplanettoday.com" target="_blank" aria-label="Pixel Planet Today website (opens in new window)">Pixel Planet Today</a>
+            </div>
+            <div class="footer-link-container">
+              <a class="standard-link" href="https://www.wastedspace.fun" target="_blank" aria-label="Wasted Space website (opens in new window)">Wasted Space</a>
             </div>
             <div class="footer-link-container">
               <a class="standard-link" href="https://www.pinekeepers.com" target="_blank" aria-label="Pinekeepers website (opens in new window)">Pinekeepers</a>

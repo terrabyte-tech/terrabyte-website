@@ -39,6 +39,15 @@ window.addEventListener("load", function(){
 
             createdLink = document.importNode(linkTemplateElem, true);
 
+            // set type of link class
+            createdLinkStyle = data.linkSections[x].linkItems[y].style
+
+            if(createdLinkStyle == "ext-link"){
+              createdLink.setAttribute("target", "_blank")
+              createdLink.setAttribute("aria-label", "(link opens in new window)")
+            }
+            createdLink.classList.add(createdLinkStyle)
+
             // set link label
             createdLink.querySelector("[data-link-label]").innerHTML = data.linkSections[x].linkItems[y].label;
 
