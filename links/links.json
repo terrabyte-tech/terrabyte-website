@@ -3,32 +3,53 @@
     {
       "label": "Highlights", "linkItems": [
         {
+          "label": "Play the Wasted Space Beta!",
+          "href": "https://terrabyte-tech.itch.io/wasted-space",
+          "style": "ext-link"
+        },
+        {
+          "label": "Sign up for the newsletter",
+          "href": "#newsletter-anchor",
+          "style": "anchor-link"
+        },
+        {
           "label": "Website",
-          "href": "https://terrabyte.eco"
+          "href": "https://terrabyte.eco",
+          "style": "ext-link"
         },
         {
           "label": "Etsy",
-          "href": "https://www.etsy.com/shop/TerrabyteLLC"
+          "href": "https://www.etsy.com/shop/TerrabyteLLC",
+          "style": "ext-link"
         }
       ]
     },
     {
       "label": "Projects", "linkItems": [
         {
+          "label": "Wasted Space: Website",
+          "href": "https://wastedspace.fun",
+          "style": "ext-link"
+        },
+        {
           "label": "Pixel Planet Today: Website",
-          "href": "https://pixelplanettoday.com"
+          "href": "https://pixelplanettoday.com",
+          "style": "ext-link"
         },
         {
           "label": "Pixel Planet Today: Shop",
-          "href": "https://shop.pixelplanettoday.com"
+          "href": "https://shop.pixelplanettoday.com",
+          "style": "ext-link"
         },
         {
           "label": "Pixel Planet Today: Giphy",
-          "href": "https://giphy.com/pixelplanettoday"
+          "href": "https://giphy.com/pixelplanettoday",
+          "style": "ext-link"
         },
         {
           "label": "Pinekeepers: Website",
-          "href": "https://pinekeepers.com"
+          "href": "https://pinekeepers.com",
+          "style": "ext-link"
         }
       ]
     }
@@ -51,6 +72,11 @@
     },
     {
       "label": "Old Links", "linkItems": [
+        {
+          "label": "See us at GTF Berlin!",
+          "href": "https://greentechfestival.com/startup/",
+          "style": "ext-link"
+        },
         {
           "label": "GitHub",
           "href": "https://github.com/terrabyte-tech"

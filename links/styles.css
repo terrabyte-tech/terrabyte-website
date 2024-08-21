@@ -42,3 +42,15 @@ header{
 .links-section .section-header{
   margin-bottom:10px;
 }
+
+/* link icons */
+.icon.ext,
+.icon.anchor{
+  display:none;
+}
+.ext-link .icon.ext{
+  display:block;
+}
+.anchor-link .icon.anchor{
+  display:block;
+}
