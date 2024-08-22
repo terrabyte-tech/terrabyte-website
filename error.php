@@ -284,7 +284,7 @@
               <a class="standard-link" href="https://blog.terrabyte.eco">Blog</a>
             </div> -->
             <div class="footer-link-container">
-              <a class="standard-link" href="#faqs">FAQ<span class="force-small-text">s</span></a>
+              <a class="standard-link" href="/#faqs">FAQ<span class="force-small-text">s</span></a>
             </div>
             <div class="footer-link-container">
               <a class="standard-link" href="https://terrabyte.eco/get-involved">Get Involved</a>
