@@ -117,6 +117,13 @@
       <g id="hamburger-menu-icon">
         <path d="M46.93,41.72c0-1.38-.74-2.51-1.64-2.51H4.71c-.91,0-1.64,1.12-1.64,2.51s.74,2.51,1.64,2.51H45.29c.91,0,1.64-1.12,1.64-2.51Zm0-16.72c0-1.38-.74-2.51-1.64-2.51H4.71c-.91,0-1.64,1.12-1.64,2.51s.74,2.51,1.64,2.51H45.29c.91,0,1.64-1.12,1.64-2.51Zm0-16.72c0-1.38-.74-2.51-1.64-2.51H4.71c-.91,0-1.64,1.12-1.64,2.51s.74,2.51,1.64,2.51H45.29c.91,0,1.64-1.12,1.64-2.51Z"/>
       </g>
+
+      <g id="linked-in-icon">
+        <path d="M38.11,2.52H11.89C6.71,2.52,2.52,6.71,2.52,11.89v26.23c0,5.17,4.19,9.37,9.37,9.37h26.23c5.17,0,9.37-4.19,9.37-9.37V11.89c0-5.17-4.19-9.37-9.37-9.37ZM17.51,38.11h-5.62v-20.61h5.62v20.61ZM14.7,15.13c-1.81,0-3.28-1.48-3.28-3.3s1.47-3.3,3.28-3.3,3.28,1.48,3.28,3.3-1.47,3.3-3.28,3.3ZM39.99,38.11h-5.62v-10.5c0-6.31-7.49-5.83-7.49,0v10.5h-5.62v-20.61h5.62v3.31c2.62-4.84,13.11-5.2,13.11,4.64v12.66Z"/>
+      </g>
+      <g id="google-play-icon">
+        <path d="M32.89,15.42L7.59,1.39c-.95-.53-2.12-.52-3.06.02-.22.13-.43.28-.61.45l21.28,21.22,7.69-7.67Z"/><polygon points="3 5.19 3 45.23 23.08 25.21 3 5.19"/><path d="M45.43,22.37l-9.81-5.44-8.3,8.27,8.03,8,10.08-5.59c.96-.54,1.56-1.54,1.56-2.63s-.6-2.09-1.56-2.63Z"/><path d="M4.15,48.32l.38.26c.95.54,2.11.55,3.06.02l25.03-13.88-7.42-7.4L4.15,48.32Z"/>
+      </g>
     </defs>
   </svg>
 
@@ -205,67 +212,65 @@
           <!-- instagram -->
           <a class="footer-social icon-container" href="https://instagram.com/terrabyte_tech" target="_blank" aria-label="Terrabyte on Instagram (opens in new window)">
             <div class="icon">
-              <svg viewBox="0 0 50 50" role="presentation">
+              <svg viewBox="0 0 50 50">
                 <use href="#instagram-icon"/>
               </svg>
             </div>
           </a>
-          <!-- twitter -->
-          <!-- no longer highlighting -->
-          <!-- <a class="footer-social icon-container" href="https://twitter.com/TerrabyteEco" target="_blank">
-            <div class="icon">
-              <svg viewBox="0 0 50 50">
-                <use href="#twitter-icon"/>
-              </svg>
-            </div>
-          </a> -->
-
           <!-- mastodon -->
           <!-- rel="me" on homepage -->
           <a rel="me" href="https://mastodon.eco/@terrabyte" class="footer-social icon-container" target="_blank" aria-label="Terrabyte on Mastodon (opens in new window)">
-          <!-- <a href="https://mastodon.eco/@terrabyte" class="footer-social icon-container" target="_blank"> -->
-            <div class="icon">
-              <svg viewBox="0 0 50 50" role="presentation">
-                <use href="#mastodon-icon"/>
-              </svg>
-            </div>
-          </a>
-          <!-- github -->
-          <a class="footer-social icon-container" href="https://github.com/terrabyte-tech" target="_blank" aria-label="Terrabyte on GitHub (opens in new window)">
-            <div class="icon">
-              <svg viewBox="0 0 50 50" role="presentation">
-                <use href="#github-icon"/>
-              </svg>
-            </div>
-          </a>
+            <!-- <a href="https://mastodon.eco/@terrabyte" class="footer-social icon-container" target="_blank"> -->
+              <div class="icon">
+                <svg viewBox="0 0 50 50">
+                  <use href="#mastodon-icon"/>
+                </svg>
+              </div>
+            </a>
           <!-- we dont have time -->
           <a class="footer-social icon-container" href="https://app.wedonthavetime.org/profile/Terrabyte" target="_blank" aria-label="Terrabyte on We Don't Have Time (opens in new window)">
             <div class="icon">
-              <svg viewBox="0 0 50 50" role="presentation">
+              <svg viewBox="0 0 50 50">
                 <use href="#wdht-icon"/>
               </svg>
             </div>
           </a>
+          <!-- LinkedIn -->
+          <a class="footer-social icon-container" href="https://www.linkedin.com/company/terrabyte-tech/" target="_blank" aria-label="Terrabyte on LinkedIn (opens in new window)">
+            <div class="icon">
+              <svg viewBox="0 0 50 50">
+                <use href="#linked-in-icon"/>
+              </svg>
+            </div>
+          </a>
+          <!-- github
+          <a class="footer-social icon-container" href="https://github.com/terrabyte-tech" target="_blank" aria-label="Terrabyte on GitHub (opens in new window)">
+            <div class="icon">
+              <svg viewBox="0 0 50 50">
+                <use href="#github-icon"/>
+              </svg>
+            </div>
+          </a> -->
           <!-- youtube -->
           <a class="footer-social icon-container" href="https://www.youtube.com/@TerrabyteEco" target="_blank" aria-label="Terrabyte on YouTube (opens in new window)">
             <div class="icon">
-              <svg viewBox="0 0 50 50" role="presentation">
+              <svg viewBox="0 0 50 50">
                 <use href="#youtube-icon"/>
               </svg>
             </div>
           </a>
           <!-- dot.eco profile -->
-          <a class="footer-social icon-container" href="https://profiles.eco/terrabyte" target="_blank" aria-label="Terrabyte on dot Eco (opens in new window)">
+          <!-- <a class="footer-social icon-container" href="https://profiles.eco/terrabyte" target="_blank" aria-label="Terrabyte on dot Eco (opens in new window)">
             <div class="icon">
-              <svg viewBox="0 0 50 50" role="presentation">
+              <svg viewBox="0 0 50 50">
                 <use href="#eco-profile-icon"/>
               </svg>
             </div>
-          </a>
+          </a> -->
         </div>
       </div>
       <div class="footer-cols-container max-width" data-au="flex-container">
-        <div class="footer-left-cols" data-au="flex-container flex-width">
+      <div class="footer-left-cols" data-au="flex-container flex-width">
           <div class="footer-info-col" data-au="set-width">
             <h3>Legal</h3>
             <div class="footer-link-container">
@@ -279,6 +284,12 @@
             <h3>Company</h3>
             <div class="footer-link-container">
               <a class="standard-link" href="https://terrabyte.eco/about-us">About Us</a>
+            </div>
+            <div class="footer-link-container">
+              <a class="standard-link" href="https://profiles.eco/terrabyte">Eco Profile</a>
+            </div>
+            <div class="footer-link-container">
+              <a class="standard-link" href="https://github.com/terrabyte-tech">GitHub</a>
             </div>
             <!-- <div class="footer-link-container">
               <a class="standard-link" href="https://blog.terrabyte.eco">Blog</a>
@@ -310,11 +321,14 @@
               <a class="standard-link" href="https://www.wastedspace.fun" target="_blank" aria-label="Wasted Space website (opens in new window)">Wasted Space</a>
             </div>
             <div class="footer-link-container">
-              <a class="standard-link" href="https://www.pinekeepers.com" target="_blank" aria-label="Pinekeepers website (opens in new window)">Pinekeepers</a>
+              <a class="standard-link" href="https://play.google.com/store/apps/details?id=com.terrabyte.byteosnotes" target="_blank" aria-label="byteOS: Notes on Google Play (opens in new window)">byteOS: Notes</a>
             </div>
             <div class="footer-link-container">
-              <a class="standard-link" href="https://www.canapi.io" target="_blank" aria-label="Canapi website (opens in new window)">Canapi</a>
+              <a class="standard-link" href="https://www.pinekeepers.com" target="_blank" aria-label="Pinekeepers website (opens in new window)">Pinekeepers</a>
             </div>
+            <!-- <div class="footer-link-container">
+              <a class="standard-link" href="https://www.canapi.io" target="_blank" aria-label="Canapi website (opens in new window)">Canapi</a>
+            </div> -->
           </div>
         </div>
         
