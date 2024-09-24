@@ -32,6 +32,11 @@
           "style": "ext-link"
         },
         {
+          "label": "byteOS: Notes on Google Play",
+          "href": "https://play.google.com/store/apps/details?id=com.terrabyte.byteosnotes",
+          "style": "ext-link"
+        },
+        {
           "label": "Pixel Planet Today: Website",
           "href": "https://pixelplanettoday.com",
           "style": "ext-link"
