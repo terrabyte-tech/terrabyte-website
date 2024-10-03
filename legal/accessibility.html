@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="robots" content="noindex">
-  <meta http-equiv="Refresh" content="0; url=https://terrabyte.eco/#newsletter">
-  <title>Redirecting to Newsletter Sign-up...</title>
+  <title>Terrabyte: Accessibility</title>
 
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="keywords" content="accessibility, terrabyte, pixel planet today, pinekeepers, company, policy, environment, climate change, pixel planet, nebraska, omaha, tech, green, environmental">
+  <meta name="description" content="Terrabyte prides itself on creating great experiences for everyone, no matter their abilities. Web accessibility is vital to make this a reality. If you see somewhere in need of attention, please let us know (we're only human, after all).">
   
   <meta name="author" content="Terrabyte">
   <link rel="shortcut icon" type="image/png" href="../favicon.ico"/>
@@ -14,11 +15,12 @@
   <meta name="theme-color" content="#0A8C61" />
 
   <!-- social cards metadata -->
-  <meta property="og:title" content="Terrabyte: Newsletter">
+  <meta property="og:title" content="Terrabyte: Accessibility">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://terrabyte.eco/newsletter">
-  <meta property="og:description" content="Sign-up for the Terrabyte Newsletter, <little-bytes>! Enjoy quarterly updates about our projects, environmental news, and other company updates.">
+  <meta property="og:url" content="https://terrabyte.eco/legal/accessibility.html">
+  <meta property="og:description" content="Terrabyte prides itself on creating great experiences for everyone, no matter their abilities. Web accessibility is vital to make this a reality. If you see somewhere in need of attention, please let us know (we're only human, after all).">
   <meta property="og:image" content="/img/meta/og-image.png">
+
 
   <!-- favicons -->
   <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
@@ -74,10 +76,9 @@
   <script type="text/javascript" src="../js/site-scripts.js"></script>
   <script type="text/javascript" src="../js/header-scripts.js"></script>
 
-
   <script data-host="https://microanalytics.io" data-dnt="false" src="https://microanalytics.io/js/script.js" id="ZwSg9rf6GA" async defer></script>
-  
 </head>
+
 <body class="loadingx flex-container flex-vertical">
   <div class="sr-only">
     <a class="standard-link" href="#top" tabindex="0">Jump to Content</a>
@@ -154,8 +155,20 @@
   </noscript>
 
   <a name="top"></a>
+  <!-- screen reader, page table of contents -->
+  <div class="sr-only sr-toc">
+    <h2>Accessibility Table of Contents</h2>
+    <a class="standard-link" tabindex="0" href="#header">Jump to Page Header</a>
+    <a class="standard-link" tabindex="0" href="#intro">Jump to Intro Section</a>
+    <a class="standard-link" tabindex="0" href="#how-we-measure">Jump to 'How we measure?' Section</a>
+    <a class="standard-link" tabindex="0" href="#accessibility-inclusions">Jump to 'What makes a site accessible' Section</a>
+    <a class="standard-link" tabindex="0" href="#how-to-contact">Jump to 'I have an accessibility issue' Section</a>
+
+    <a class="standard-link" tabindex="0" href="#footer">Jump to Page Footer</a>
+  </div>
+  
   <!-- header -->
-  <header class="padded-section">
+  <header id="header" class="padded-section">
     <div class="max-width flex-container align-center">
       <div class="banner-image-container flex-width flex-container align-center">
         <a id="banner-image" href="https://terrabyte.eco" class="set-width flex-container align-center" aria-label="Home">
@@ -189,15 +202,72 @@
   </header>
 
   <main class="flex-height">
-    <section class="padded-section">
+    <section id="intro" class="padded-section">
       <div class="max-width">
+        <div class="section-header">
+          <h1>
+            <span class="highlight-container">Accessibility</span>
+          </h1>
+        </div>
+        
         <div class="section-content">
-          <p>You should automatically be redirected to our newsletter (&lt;little-bytes&gt;) sign-up form shortly. Not working? You can access the redirected URL <a class="standard-link" href="https://terrabyte.eco/#newsletter">here</a>.</p>
+          <div class="subsection">
+            <p>Terrabyte prides itself on creating great experiences for everyone, no matter their abilities. Web accessibility is vital to make this a reality.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section id="how-we-measure" class="padded-section">
+      <div class="max-width">
+        <div class="section-header">
+          <h2>
+            <span class="highlight-container">How do we measure accessibility?</span>
+          </h2>
+        </div>
+        <div class="section-content">
+          <p>Grading web accessibility can be hard, but thankfully tools generally available online make things easier. We use a combination of tools to conform to the World Wide Web Consortium's Web Content Accessibility guidelines, including <a class="standard-link" target="_blank" href="https://accessibe.com/">accessiBe</a> and <a class="standard-link" target="_blank" href="https://ecograder.com/">Ecograder</a>. These tools grade a web address for categories such as contrast, navigation, and contextual labels.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="accessibility-inclusions" class="padded-section">
+      <div class="max-width">
+        <div class="section-header">
+          <h2>
+            <span class="highlight-container">What do you do to make a website accessible?</span>
+          </h2>
+        </div>
+        <div class="section-content">
+          <p>Web accessibility includes a wide range of web technologies, attributes, and properties. Some of these features include (but are not limited to):</p>
+          <ul>
+            <li>Sufficient contrast ratios between foreground and background objects</li>
+            <li>Page navigation by keyboard</li>
+            <li>Alternate text for images, icons, and links</li>
+            <li>Labels for forms, buttons, and other interactive elements</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  
+    <section id="how-to-contact" class="padded-section">
+      <div class="max-width">
+        <div class="section-header">
+          <h2>
+            <span class="highlight-container">Wait, I'm having issues!</span>
+          </h2>
+        </div>
+        
+        <div class="section-content">
+          <div class="subsection">
+            <p>Found something that needs our attention? Whether it's with this website, one of our project websites, or something else, please let us know by filling out <a class="standard-link" target="_blank" href="https://forms.gle/V8vFB11SNLepcVEp8">this form</a>.</p>
+            <p>If you still have questions or concerns, please contact us at <a class="standard-link" href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#110;&#102;&#111;&#64;&#116;&#101;&#114;&#114;&#97;&#98;&#121;&#116;&#101;&#46;&#101;&#99;&#111;">&#105;<!--ourteam@webmail-->&#110;&#102;&#111;&#64;&#116;&#101;<!--am@webma-->&#114;&#114;&#97;&#98;&#121;&#116;&#101;&#46;<!--@webmail.com-->&#101;&#99;&#111;</a>.</p>
+          </div>
         </div>
       </div>
     </section>
   </main>
-
+  
   <!-- footer -->
   <a id="footer-anchor" name="footer"></a>
   <footer data-footer>
