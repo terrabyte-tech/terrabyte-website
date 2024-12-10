@@ -100,6 +100,16 @@
   /* background-image:url("../img/wasted-space-logo-title-white-large.png"); */
   background-image:url("../img/wasted-space-logo-title-white-large.webp");
 }
+@media only screen and (max-width:800px){
+  .col-img{
+    width:300px;
+    margin-bottom:0px;
+  }
+  #projects .col-content, #projects .col-footer {
+    display: none;
+  }
+}
+
 /* ************* */
 
 /* social proof */
@@ -260,6 +270,10 @@ a.press-card:last-child{
   #faqs .icons-container{
     /* justify-content:space-between; */
   }
+  .press-cards-container.col-content{
+    max-height: unset;
+    overflow-y:visible;
+  }
 }
 @media only screen and (max-width: 600px){
   #hero .code-text{
@@ -269,10 +283,6 @@ a.press-card:last-child{
     transform: translate(-50%, -50%);
     width: 100%;
     word-wrap: break-word;
-  }
-  .press-cards-container.col-content{
-    max-height: unset;
-    overflow-y:visible;
   }
   a.press-card{
     display:flex;
