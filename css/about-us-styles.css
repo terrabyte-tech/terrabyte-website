@@ -115,6 +115,7 @@
   height:125px;
   transition:.35s;
   margin-bottom:10px;
+  margin-right:10px;
 }
 @media (hover: hover) and (pointer: fine) {
   .sdg-container:hover{
