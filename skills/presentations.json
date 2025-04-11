@@ -1,11 +1,11 @@
 {
   "presentations": [
     {
-      "label": "Team A",
+      "label": "Team A: Seward",
       "href": "./team-a"
     },
     {
-      "label": "Team B",
+      "label": "Team B: Niobrara",
       "href": "./team-b"
     }
   ]
