@@ -151,13 +151,13 @@
 }
 #wrd-img{
   /* convert this! */
-  background-image:url("../img/social-proof/wrd-logo-white.png");
+  background-image:url("../img/social-proof/wrd-logo-white.webp");
 }
 #goc-img{
     /* for better sizing with other partner logos */
   border:5px solid transparent;
   /* convert this! */
-  background-image:url("../img/social-proof/goc-logo-white.png");
+  background-image:url("../img/social-proof/goc-logo-white.webp");
 }
 #tbep-img{
   background-image:url("../img/social-proof/tbep-logo-white.webp");
@@ -188,6 +188,9 @@
 }
 #pixel-art-mag-img{
   background-image:url("../img/social-proof/pixel-art-mag-logo-white.webp");
+}
+#skillsusa-neb-img{
+  background-image:url("../img/social-proof/skillsusa-neb-logo-white.webp");
 }
 
 /* faqs */
