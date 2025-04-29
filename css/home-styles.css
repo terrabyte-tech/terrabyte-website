@@ -134,11 +134,10 @@
   background-repeat: no-repeat;
   background-position:center;
   background-size:contain;
-  
   /* margin:0 auto 20px auto; */
 }
 .partner-img{
-  width:250px;
+  width:225px;
   height:100px;
   background-repeat: no-repeat;
   background-position:center;
@@ -149,51 +148,49 @@
   /* for better sizing with other partner logos */
   /* border:30px solid transparent; */
   background-image:url("../img/social-proof/carbonii-logo-white.webp");
-  /* background-image:url("../img/social-proof/carbonii-logo-white.png"); */
 }
 #wrd-img{
-  background-image:url("../img/social-proof/wrd-logo-white.png");
-  /* background-image:url("../img/social-proof/wrd-logo-white.webp"); */
+  /* convert this! */
+  background-image:url("../img/social-proof/wrd-logo-white.webp");
+}
+#goc-img{
+    /* for better sizing with other partner logos */
+  border:5px solid transparent;
+  /* convert this! */
+  background-image:url("../img/social-proof/goc-logo-white.webp");
 }
 #tbep-img{
-  /* background-image:url("../img/social-proof/tbep-logo-white.png"); */
   background-image:url("../img/social-proof/tbep-logo-white.webp");
 }
 #pfj-img{
-  /* background-image:url("../img/social-proof/pfj-logo-white.png"); */
   background-image:url("../img/social-proof/pfj-logo-white.webp");
 }
 #eco-earth-market-img{
-  /* background-image:url("../img/social-proof/eco-earth-market-logo-white.png"); */
   background-image:url("../img/social-proof/eco-earth-market-logo-white.webp");
 }
 #the-climate-issue-img{
-  /* background-image:url("../img/social-proof/the-climate-issue-logo-white.png"); */
   background-image:url("../img/social-proof/the-climate-issue-logo-white.webp");
 }
 #earth-hacks-img{
-  /* background-image:url("../img/social-proof/earth-hacks-logo-white.png"); */
   background-image:url("../img/social-proof/earth-hacks-logo-white.webp");
 }
 #ecta-img{
-  /* background-image:url("../img/social-proof/ecta-logo-white.png"); */
   background-image:url("../img/social-proof/ecta-logo-white.webp");
 }
 #eco-earth-market-img{
-  /* background-image:url("../img/social-proof/eco-earth-market-logo-white.png"); */
   background-image:url("../img/social-proof/eco-earth-market-logo-white.webp");
 }
 #wherefrom-img{
-  /* background-image:url("../img/social-proof/wherefrom-logo-white.png"); */
   background-image:url("../img/social-proof/wherefrom-logo-white.webp");
 }
 #humans-for-earth-img{
-  /* background-image:url("../img/social-proof/humans-for-earth-logo-white.png"); */
   background-image:url("../img/social-proof/humans-for-earth-logo-white.webp");
 }
 #pixel-art-mag-img{
-  /* background-image:url("../img/social-proof/pixel-art-mag-logo-white.png"); */
   background-image:url("../img/social-proof/pixel-art-mag-logo-white.webp");
+}
+#skillsusa-neb-img{
+  background-image:url("../img/social-proof/skillsusa-neb-logo-white.webp");
 }
 
 /* faqs */

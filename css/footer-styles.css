@@ -126,6 +126,7 @@ footer{
 }
 .footer-badge:last-child{
   margin-right:0px;
+  margin-left:-5px;
 }
 #wcb #wcb_g{
   background-color:transparent!important;
@@ -144,8 +145,8 @@ footer{
   width: 80px;
   height: 80px;
 }
-.eco-trustmark {
-  width:50px;
+.eco-trustmark{
+  width:60px;
 }
 
 
@@ -206,6 +207,9 @@ footer{
   #footer-bottom-info-container{
     margin-right:0;
     margin-bottom:15px;
+  }
+  .footer-badges-container{
+    max-width:100%;
   }
 }
 @media only screen and (max-width:525px){
