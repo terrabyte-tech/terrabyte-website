@@ -1,0 +1,17 @@
+/* styles that are shared across org/between projects and sites */
+
+.banner{
+  position: fixed;
+  left: 0;
+  z-index: 900;
+  width: 100%;
+  padding: 15px 20px;
+  font-size: 12px;
+}
+.banner.top{
+  top: 0;
+}
+.banner.error{
+  background-color: #db2a2a;
+  color: white;
+}
