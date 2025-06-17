@@ -1,3 +1,4 @@
 User-agent: *
-Disallow:
+Disallow: /skills/
+Disallow: /newsletter/
 Sitemap: https://terrabyte.eco/sitemap.xml
