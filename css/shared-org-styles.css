@@ -1,5 +1,7 @@
 /* styles that are shared across org/between projects and sites */
 
+/* UI elements */
+/* banners */
 .banner{
   position: fixed;
   left: 0;
@@ -14,4 +16,44 @@
 .banner.error{
   background-color: #db2a2a;
   color: white;
+}
+
+/* accessibility table of contents */
+.sr-only.sr-toc{
+  background-color:var(--background);
+  border: 1px solid var(--foreground);
+  display:block;
+  position:fixed;
+  left:-200px;
+  top:0px;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+  transition:width .5s, left .5s;
+  z-index:1000;
+  font-size:25px;
+  padding:0px;
+  font-family:inherit;
+}
+.sr-only.sr-toc:focus-within{
+  left:0;
+  width:100%;
+  max-width:500px;
+  height:auto;
+  padding:20px;
+  clip:unset;
+}
+.sr-toc h2{
+  margin-bottom:20px;
+}
+.sr-toc ul{
+  list-style-type:none;
+  padding:0px;
+  margin:0px;
+}
+.sr-toc a.text-link{
+  color:inherit;
+  display:block;
+  margin-bottom:10px;
+  text-transform:capitalize;
 }
