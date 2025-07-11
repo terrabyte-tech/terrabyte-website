@@ -2,7 +2,7 @@ window.addEventListener("load", function(){
 
   console.log("shared-scripts.js loaded");
   
-  //change copyright date  
+  // change copyright date
   var currentDate = new Date();
   var currentYear = currentDate.getFullYear();
   

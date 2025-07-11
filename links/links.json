@@ -3,8 +3,13 @@
     {
       "label": "Highlights", "linkItems": [
         {
-          "label": "Play the Wasted Space Beta!",
-          "href": "https://terrabyte-tech.itch.io/wasted-space",
+          "label": "Become a Pixel Peep",
+          "href": "https://patreon.com/terrabyte_tech",
+          "style": "ext-link"
+        },
+        {
+          "label": "Shop the webstore",
+          "href": "https://shop.pixelplanettoday.com",
           "style": "ext-link"
         },
         {
@@ -16,34 +21,14 @@
           "label": "Website",
           "href": "https://terrabyte.eco",
           "style": "ext-link"
-        },
-        {
-          "label": "Etsy",
-          "href": "https://www.etsy.com/shop/TerrabyteLLC",
-          "style": "ext-link"
         }
       ]
     },
     {
       "label": "Projects", "linkItems": [
         {
-          "label": "Wasted Space: Website",
-          "href": "https://wastedspace.fun",
-          "style": "ext-link"
-        },
-        {
-          "label": "byteOS: Notes on Google Play",
-          "href": "https://play.google.com/store/apps/details?id=com.terrabyte.byteosnotes",
-          "style": "ext-link"
-        },
-        {
           "label": "Pixel Planet Today: Website",
           "href": "https://pixelplanettoday.com",
-          "style": "ext-link"
-        },
-        {
-          "label": "Pixel Planet Today: Shop",
-          "href": "https://shop.pixelplanettoday.com",
           "style": "ext-link"
         },
         {
@@ -52,8 +37,18 @@
           "style": "ext-link"
         },
         {
+          "label": "Wasted Space: Website",
+          "href": "https://wastedspace.fun",
+          "style": "ext-link"
+        },
+        {
           "label": "Pinekeepers: Website",
           "href": "https://pinekeepers.com",
+          "style": "ext-link"
+        },
+        {
+          "label": "byteOS: Notes on Google Play",
+          "href": "https://play.google.com/store/apps/details?id=com.terrabyte.byteosnotes",
           "style": "ext-link"
         }
       ]
@@ -77,6 +72,11 @@
     },
     {
       "label": "Old Links", "linkItems": [
+        {
+          "label": "Etsy",
+          "href": "https://www.etsy.com/shop/TerrabyteLLC",
+          "style": "ext-link"
+        },
         {
           "label": "See us at GTF Berlin!",
           "href": "https://greentechfestival.com/startup/",
