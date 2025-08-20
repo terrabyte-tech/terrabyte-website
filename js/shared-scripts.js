@@ -1,6 +1,6 @@
 window.addEventListener("load", function(){
 
-  console.log("shared-scripts.js loaded");
+  console.log("[Terrabyte] shared-scripts.js loaded");
   
   // change copyright date
   var currentDate = new Date();
@@ -18,7 +18,7 @@ window.addEventListener("load", function(){
     oldCopyrightSpan.appendChild(document.createTextNode(currentYear));
   }
   else{
-    // element doesnt exist
+    // element doesn't exist
   }
   
   // 
