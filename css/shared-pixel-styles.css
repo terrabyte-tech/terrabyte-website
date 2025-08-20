@@ -368,7 +368,11 @@ button.primary:active,
 
 /* footer */
 footer{
+/* 	can I do this? lol */
+/*   --background: var(--dark); */
+/*   --foreground: var(--light); */
   background-color:var(--black);
+  color:var(--light);
   font-size:18px;
 }
 footer a.text-link:after{
@@ -383,10 +387,10 @@ footer .section-content{
   padding:40px 50px;
 }
 
-/*eco footer*/
-#cookie-footer{
+#cookie-footer,
+#cookie-disclaimer{
   background-color:#388841cc;
-  color:var(--light);
+  
 }
 
 /* footer logos */
@@ -447,7 +451,7 @@ footer .section-content{
 }
 #wcb #wcb_a{
   font-weight:normal!important;
-  color:var(--background)!important;
+  color:var(--black)!important;
   background-color:var(--foreground)!important;
   border-color:var(--foreground)!important;
   border-radius:0!important;
