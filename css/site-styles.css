@@ -2,13 +2,13 @@
 
 /* css reset */
 *{
-  padding:0;
-  margin:0;
+  /* padding:0; */
+  /* margin:0; */
   box-sizing:border-box;
-  background-size:contain;
-  background-position:center;
-	background-repeat:no-repeat;
-	scroll-behavior: inherit;
+  /* background-size:contain; */
+  /* background-position:center; */
+	/* background-repeat:no-repeat; */
+	/* scroll-behavior: inherit; */
   line-height:1.5;
   -webkit-tap-highlight-color: transparent;
 }
@@ -39,10 +39,6 @@ body::-webkit-scrollbar-track{
 *::-moz-selection{
   color:#333333;
 	background-color: white;
-}
-
-html{
-	scroll-behavior: smooth;
 }
 
 body{
@@ -401,7 +397,7 @@ a.standard-link.current-color-link:after{
   background-color:currentColor;
 }
 
-
+/* MOVE TO SHARED? */
 svg{
 	fill:currentColor;
   width:100%;
@@ -412,6 +408,7 @@ svg{
 /* ********************* */
 /*  */
 /*when javascript isn't enabled, toast message*/
+/* DEPRECATE: MOVE TO UTILIZE BANNERS.NJK */
 .toast-message{
   z-index:900;
   position:absolute;
@@ -432,16 +429,21 @@ svg{
   }
 }
 
+/* MOVE TO SHARED? */
 .force-small-text{
   text-transform:lowercase;
 }
+/* MOVE TO SHARED? */
 .code-text{
   font-family: 'Roboto Mono', Courier, monospace;
 }
+/* DEPRECATE, USE AURUM STYLES */
 .hide{
   display:none;
   opacity:0;
 }
+
+/* MOVE TO SHARED? */
 .max-width{
   max-width:1200px;
   margin:0 auto;
@@ -489,6 +491,7 @@ h1 .highlight-container{
 }
 
 
+/* MOVE TO SHARED? */
 /* section styles */
 section{
   min-height:500px;
