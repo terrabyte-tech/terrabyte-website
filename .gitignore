@@ -1,2 +1,2 @@
-# taken out of gitignore because it does need to be hosted still...
-# /skills/secure-content/
+node_modules
+_site

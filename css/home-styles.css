@@ -1,4 +1,12 @@
+/* general page styles */
+.button-container{
+  margin-top:40px;
+}
+
+
 /* ************** */
+/* hero section */
+/* ********* */
 #hero.full-section{
   height:calc(100vh - 140px);
   min-height:0;
@@ -27,13 +35,12 @@
   margin-bottom:40px;
   font-size:24px;
 }
-.button-container{
-  margin-top:40px;
-}
 /* ********* */
 
 
-/* about us, venn diagram */
+/* ********* */
+/* about us section; venn diagram */
+/* ********* */
 .venn-container{
   position:relative;
   margin: 35px 0;
@@ -73,8 +80,22 @@
 }
 /* ********* */
 
+/* ********* */
+/* problem section */
+/* ********* */
+.category-col{
+  text-align:center;
+}
+.category-col .icon-container{
+  max-width:60px;
+  max-height:60px;
+  margin-bottom:20px;
+}
 
-/* projects */
+
+/* ********* */
+/* projects section */
+/* ********* */
 .col-img{
   width:100%;
   max-width:300px;
@@ -109,10 +130,35 @@
     display: none;
   }
 }
-
 /* ************* */
 
-/* social proof */
+/* ********* */
+/* press section */
+/* more styles specific to the link are in site-styles.css or shared stylesheets */
+/* ********* */
+.press-cards-container.col-content{
+  max-height: 800px;
+  overflow-y: auto;
+}
+a.press-card{
+  /* width:300px; */
+  /* margin-bottom:10px; */
+  /* margin-right:10px; */
+}
+a.press-card:last-child{
+  /* margin-right:0; */
+}
+.card-title{
+  margin-bottom:10px;
+}
+.card-caption{
+  margin-bottom:20px;
+}
+/* ************* */
+
+/* ********* */
+/* social proof section */
+/* ********* */
 .social-proof-col-container{
   flex-wrap: wrap;
   max-width: 765px;
@@ -188,8 +234,11 @@
 #skillsusa-neb-img{
   background-image:url("../img/social-proof/skillsusa-neb-logo-white.webp");
 }
+/* ********* */
 
-/* faqs */
+/* ********* */
+/* faq section */
+/* ********* */
 .accordion-col.section-col{
   /* margin-bottom:50px; */
 }
@@ -214,28 +263,6 @@
   /* margin-right:0; */
 }
 
-/* press */
-/* more styles specific to the link are in site-styles.css */
-.press-cards-container.col-content{
-  max-height: 800px;
-  overflow-y: auto;
-}
-a.press-card{
-  /* width:300px; */
-  /* margin-bottom:10px; */
-  /* margin-right:10px; */
-}
-a.press-card:last-child{
-  /* margin-right:0; */
-}
-.card-title{
-  margin-bottom:10px;
-}
-.card-caption{
-  margin-bottom:20px;
-}
-/* ************* */
-
 
 
 /* ************* */
@@ -247,7 +274,7 @@ a.press-card:last-child{
   #hero .text-col{
     position:absolute;
     width: 80%;
-    text-align: center;
+    /* text-align: center; */
     left: 50%;
     transform: translateX(-50%);
   }

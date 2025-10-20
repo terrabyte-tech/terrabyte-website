@@ -1,0 +1,38 @@
+{# starter code for site header #}
+{# pass in the navSelected variable from frontmatter, add the .selected class to this particular nav item #}
+<header id="header" class="padded-section">
+  <div class="max-width" data-au="flex-container align-center">
+    <div class="header-logo-container" data-au="flex-width flex-container align-center">
+      <a id="header-logo" href="https://www.terrabyte.eco" data-au="set-width flex-container align-center" aria-label="Terrabyte homepage">
+        <svg viewBox="0 0 850 100" role="presentation">
+          <use href="#logo"/>
+        </svg>
+      </a>
+    </div>
+    <div class="nav-container" data-au="set-width flex-container align-center">
+      {# <p>navSelected: {{ navSelected | dump }}</p> #}
+      <div class="hamburger-menu-icon clickable" data-nav-toggle role="button">
+        <svg viewBox="0 0 50 50" role="presentation">
+          <use href="#hamburger-menu-icon"/>
+        </svg>
+      </div>
+      <nav id="main-nav" data-nav data-au="flex-container align-center">
+        <a id="home-nav-link" class="nav-item-container {% if navSelected == 'home' %}selected{% endif %}" href="/">
+          <span>Home</span>
+        </a>
+        <!-- <a class="nav-item-container" href="https://www.blog.terrabyte.eco">
+          <span>Blog</span>
+        </a> -->
+        <a id="projects-nav-link" class="nav-item-container {% if navSelected == 'projects' %}selected{% endif %}" href="/#projects">
+          <span>Projects</span>
+        </a>
+        <a id="about-nav-link" class="nav-item-container {% if navSelected == 'about' %}selected{% endif %}" href="/about">
+          <span>About</span>
+        </a>
+        <a id="newsletter-nav-link" href="#newsletter">
+          <button class="secondary">Get Updates</button>
+        </a>
+      </nav>
+    </div>
+  </div>
+</header>

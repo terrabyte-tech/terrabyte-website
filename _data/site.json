@@ -1,0 +1,15 @@
+{
+  "templateVersion": "1.4.0",
+  "project": "Terrabyte",
+  "title": "Terrabyte",
+  "url": "https://www.terrabyte.eco",
+  "author": "Terrabyte",
+  "brand": "Terrabyte",
+  "language": "en-US",
+  "description": "Terrabyte is a green tech company that turns pixels and bytes into positive environmental change through education, entertainment, and software tools.",
+  "accentColor": "#0A8C61",
+  "backgroundColor": "#333333",
+  "foregroundColor": "#ffffff",
+  "schemaType": "Organization",
+  "fontsRel": "https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Rubik:wght@300&display=swap"
+}

@@ -1,0 +1,25 @@
+<!-- initial load transition -->
+<style>
+  .loading{
+    opacity:0;
+    background-color:{{ site.backgroundColor | default('var(--background)') }};
+  }
+</style>
+<script>
+  window.addEventListener("load", function(){
+    console.log("page loaded, begin load transition");
+    document.body.classList.remove("loading");
+  })
+</script>
+
+<noscript>
+  <style>
+    .loading{
+      opacity:1;
+    }
+    .faq-item-content{
+      display:block;
+      opacity:1;
+    }
+  </style>
+</noscript>

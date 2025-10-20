@@ -1,6 +1,6 @@
 window.addEventListener("load", function(){
 
-  console.log("header-scripts.js loaded");
+  console.log(`[${window.siteData.project}] header-scripts.js loaded`);
   
 ///////////////
 // nav bar scripts
@@ -10,7 +10,7 @@ function createNavSelectBar(){
   navSelectBar.classList.add("nav-select-bar");
   navSelectBar.classList.add("hide-on-mobile");
 
-  var navElement = document.querySelector("nav");
+  var navElement = document.getElementById("main-nav");
 
   navElement.appendChild(navSelectBar);
 
@@ -18,7 +18,7 @@ function createNavSelectBar(){
 }
 
 function navSelectBarDefault(){
-  var selectedNavItem = document.querySelector("nav .nav-item-container.selected");
+  var selectedNavItem = document.querySelector("#main-nav .nav-item-container.selected");
   // get/set width
   navSelectBarWidth(selectedNavItem);
   // get/set position
@@ -42,7 +42,7 @@ function navSelectBarWidth(elem){
 
 // get/set position of bar
 function navSelectBarPosition(elem){
-  var navElement = document.querySelector("nav");
+  var navElement = document.getElementById("main-nav");
   var navSelectBar = document.querySelector(".nav-select-bar");
   // nav elements coords
   var navRect = navElement.getBoundingClientRect();
@@ -73,7 +73,7 @@ for(let x = 0; x < navItems.length; x++){
 }
 
 // change nav bar to default when hover states are over
-var navElement = document.querySelector("nav");
+var navElement = document.getElementById("main-nav");
 navElement.addEventListener("mouseleave", function(){
   navSelectBarDefault();
 })

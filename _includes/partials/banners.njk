@@ -1,0 +1,35 @@
+{% from 'macros/banner.njk' import banner %}
+
+<div class="banner-container">
+  <noscript>
+    {{ banner(
+      content="It looks like JavaScript is currently disabled for your browser. We recommend enabling JavaScript in order for the site to function as anticipated.",
+      id="no-js-banner",
+      dismissible=false,
+      timeout=false,
+      position="top",
+      type="warning"
+    ) }}
+  </noscript>
+
+  {# {{ banner(
+      content="It looks like we've got some bad bytes or dead pixels! If you are having troubles viewing or interacting with our site, please refresh your browser or try again later.",
+      id="maintenance-banner",
+      dismissible=false,
+      timeout=false,
+      position="top",
+      type="info"
+    ) }} #}
+
+  <!--[if IE]>
+    {{ banner(
+      content="It looks like you are using an out-of-date browser. Please use a modern browser for a better browsing experience.",
+      id="ie-banner",
+      dismissible=true,
+      timeout=false,
+      position="top",
+      type="error"
+    ) }}
+  <![endif]-->
+
+  </div>
