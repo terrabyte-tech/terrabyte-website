@@ -39,6 +39,17 @@
 
 
 /* ********* */
+/* intro section; icons */
+/* ********* */
+#ufo-icon svg, #robot-icon svg{
+  stroke:currentColor;
+  stroke-width:2px;
+}
+
+/* ********* */
+
+
+/* ********* */
 /* about us section; venn diagram */
 /* ********* */
 .venn-container{
