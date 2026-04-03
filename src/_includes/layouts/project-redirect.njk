@@ -1,0 +1,19 @@
+{# DEPRECATED, use project-base.njk with a redirectUrl front matter variable instead. This file will be removed in a future release. #}
+
+{% extends "layouts/base.njk" %}
+
+{# head overwrites/additions #}
+{% block additionalSiteStyles %}
+  <link rel="stylesheet" href="/css/header-styles.css" async defer>
+  <link rel="stylesheet" href="/css/footer-styles.css" async defer>
+{% endblock %}
+
+
+{# body overwrites/additions #}
+{% block header %}
+  {% include "partials/project-header.njk" %}
+{% endblock %}
+
+{% block footer %}
+  {% include "partials/footer.njk" %}
+{% endblock %}
