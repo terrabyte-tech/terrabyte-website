@@ -1,9 +1,12 @@
 /* +++++++++++++++++++++++++++++++++++++++++++ */
 /* site-specific styles */
 /* +++++++++++++++++++++++++++++++++++++++++++ */
-/*  */
-/* Careful in template sync, should be site specific */
-/*  */
+
+/* overwrites */
+:root{
+  --primary-font: 'Rubik', sans-serif;
+  --secondary-font: 'Roboto Mono', Courier, monospace;
+}
 
 /* style scrollbars */
 body::-webkit-scrollbar-track{
@@ -227,6 +230,16 @@ iframe{
   border-radius:2px;
   opacity:0;
   transition:opacity .5s;
+}
+/* iframe has loaded */
+iframe[src]{
+  opacity:1;
+  transition-delay: 1s;
+}
+iframe[src] ~ .loading-overlay{
+  opacity:0;
+  transition-delay: 1s;
+  pointer-events: none;
 }
 
 /* responsive */

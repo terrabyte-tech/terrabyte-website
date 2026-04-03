@@ -3,7 +3,7 @@
 window.addEventListener("load", function(){
 
   console.log(`[${window.siteData.project}] site-scripts.js loaded`);
-  console.log(`[${window.siteData.project}] Using Template v${window.siteData.templateVersion}]`);
+  // console.log(`[${window.siteData.project}] Using Template v${window.siteData.templateVersion}]`);
 
   // Add a class to the body element to indicate that the page has loaded
   document.body.classList.add("loaded");
@@ -14,30 +14,34 @@ window.addEventListener("load", function(){
 // on startup
   var cookieBanner = document.getElementById("cookie-banner");
 
-  // hide banner if already accepted/understood
-  if (localStorage.getItem("storeData") == "accept-all" || localStorage.getItem("storeData") == "accept-min"){
-    console.log("previously acknowledged data policy");
-  }
-  // or show it if it hasn't
-  else{
-    cookieBanner.classList.add("show");
-  }
+  if(cookieBanner){
 
-  // update the agreed-to text accordingly
-  updateAgreedToText();
+    // hide banner if already accepted/understood
+    if (localStorage.getItem("storeData") == "accept-all" || localStorage.getItem("storeData") == "accept-min"){
+      console.log("previously acknowledged data policy");
+    }
+    // or show it if it hasn't
+    else{
+      cookieBanner.classList.add("show");
+    }
+
+    // update the agreed-to text accordingly
+    updateAgreedToText();
 
   // set correct position of cookie banner
-  if(cookieBanner !== null && cookieBanner.classList.contains("show")){
-    stickNav(cookieBanner);
-  }
+    if(cookieBanner !== null && cookieBanner.classList.contains("show")){
+      stickNav(cookieBanner);
+    }
 
-  // on click, set policy acknowledgement (if not minimized)
-  if(cookieBanner){
+    // on click, set policy acknowledgement (if not minimized)
     var cookieButtons = document.querySelectorAll("[data-cookie-button]");
 
-    for(let x = 0; x < cookieButtons.length; x++){
-      cookieButtons[x].addEventListener("click", function(){clickedCookieButton(this)});
+    if(cookieButtons.length > 0){
+      for(let x = 0; x < cookieButtons.length; x++){
+        cookieButtons[x].addEventListener("click", function(){clickedCookieButton(this)});
+      }
     }
+    
   }
 
   function clickedCookieButton(buttonClicked){

@@ -1,8 +1,13 @@
 {% extends "layouts/base.njk" %}
 
-{# head overwrites #}
+{# head overwrites/additions #}
+{% block additionalSiteStyles %}
+  <link rel="stylesheet" href="/css/header-styles.css" async defer>
+  <link rel="stylesheet" href="/css/footer-styles.css" async defer>
+{% endblock %}
 
-{# body overwrites #}
+
+{# body overwrites/additions #}
 {% block header %}
   {% include "partials/project-header.njk" %}
 {% endblock %}
