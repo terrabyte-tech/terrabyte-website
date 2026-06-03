@@ -2,10 +2,23 @@
 /* site-specific styles */
 /* +++++++++++++++++++++++++++++++++++++++++++ */
 
+/*  */
+
 /* overwrites */
 :root{
   --primary-font: 'Rubik', sans-serif;
   --secondary-font: 'Roboto Mono', Courier, monospace;
+}
+.padded-section{
+  padding:var(--space-large) 30px;
+}
+.max-width{
+  max-width:1200px;
+  margin:0 auto;
+}
+.icon-container{
+  max-width:1em;
+  max-height:1em;
 }
 
 /* style scrollbars */

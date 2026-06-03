@@ -6,8 +6,16 @@
   <link rel="stylesheet" href="/css/footer-styles.css" async defer>
 {% endblock %}
 
+{% block additionalSiteScripts %}
+  <script src="/js/header-scripts.js" async defer></script>
+{% endblock %}
+
 
 {# body overwrites/additions #}
+{% block icons %}
+  {% include "partials/project-svgs.njk" %}
+{% endblock %}
+
 {% block header %}
   {% include "partials/project-header.njk" %}
 {% endblock %}
