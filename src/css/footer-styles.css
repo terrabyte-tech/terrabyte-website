@@ -73,12 +73,8 @@ footer{
   max-width:200px;
 }
 .footer-social{
-  width:25px;
-  height:25px;
-  margin-right:10px;
-}
-.footer-social:last-child{
-  margin-right:0px;
+  max-width:25px;
+  max-height:25px;
 }
 
 
@@ -244,5 +240,4 @@ footer{
     width:100%;
     margin-right:0;
   }
-
 }

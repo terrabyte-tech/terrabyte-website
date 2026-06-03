@@ -20,6 +20,9 @@
   max-width:1em;
   max-height:1em;
 }
+.highlight-container{
+  background-color:rgba(10, 140, 97, .25);
+}
 
 /* style scrollbars */
 body::-webkit-scrollbar-track{
@@ -50,18 +53,12 @@ h1, h2, h3, h4, h5, h6, button, input[type='submit'], .button{
   letter-spacing:.5em;
 }
 h1{
-  font-size:30px;
+  /* font-size:24px; */
+  font-size:1.5rem;
 }
 h2{
-  /* font-size:23px; */
-  font-size: 18px;
-}
-h3{
-  /* need to reconfigure because this is the same size as h2... */
-  font-size:12px;
-}
-h4{
-  font-size:14px;
+  /* font-size: 18px; */
+  font-size:1.2rem;
 }
 .subtext{
   font-size:12px;
@@ -254,6 +251,75 @@ iframe[src] ~ .loading-overlay{
   transition-delay: 1s;
   pointer-events: none;
 }
+
+input{
+  font-family: inherit;
+  font-size:inherit;
+  color:inherit;
+  background-color:transparent;
+  border:none;
+  outline:none;
+}
+
+.input-container{
+  transform:scale(1);
+	position:relative;
+	display:inline-block;
+	transition: .35s;
+  color:currentColor;
+  text-decoration:none;
+  cursor:text;
+  user-select: none;
+}
+.input-container input{
+  display:block;
+  width:100%;
+  max-width:100%;
+  overflow:hidden;
+  text-overflow: ellipsis;
+}
+
+.input-container:before,
+.input-container:after{
+	content:"";
+  pointer-events: none;
+	opacity:1;
+	position:absolute;
+	left:0;
+  bottom:-4px;
+	height:2px;
+  background-color:#0A8C61;
+  transition:.35s width, .25s opacity;
+}
+
+/* underline, before hover */
+.input-container:before{
+  opacity:.25;
+  width:100%;
+}
+/* underline, shown after hover */
+.input-container:after{
+  opacity:1;
+  width:0;
+}
+
+/* hover */
+@media (hover: hover) and (pointer: fine) {
+  .input-container:hover:after{
+    width:100%;
+  }
+}
+
+/* active */
+.input-container:active:before{
+  opacity:0;
+}
+.input-container:active:after,
+.input-container:focus-within:after{
+  width:100%;
+  opacity:1;
+}
+
 
 /* responsive */
 @media only screen and (max-width:930px){

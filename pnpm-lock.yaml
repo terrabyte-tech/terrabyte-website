@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@terrabyte/web-ui':
         specifier: github:terrabyte-tech/terrabyte-web-ui
-        version: https://codeload.github.com/terrabyte-tech/terrabyte-web-ui/tar.gz/cc3b711dcc2ef52bb79e225e970befb5a34f2bab
+        version: https://codeload.github.com/terrabyte-tech/terrabyte-web-ui/tar.gz/5df84ce049d83bae921f66aca0c97c3936920049
     devDependencies:
       '@11ty/eleventy':
         specifier: ^3.1.2
@@ -65,8 +65,8 @@ packages:
     resolution: {integrity: sha512-doH1gimEu3A46VX6aVxpHTeHrytJAG6HgdxntYnCFiIFHEM/ZGpG8KiZGBChchjQmG0XFIBL552kBTjVcMZXwQ==}
     engines: {node: '>=12'}
 
-  '@terrabyte/web-ui@https://codeload.github.com/terrabyte-tech/terrabyte-web-ui/tar.gz/cc3b711dcc2ef52bb79e225e970befb5a34f2bab':
-    resolution: {tarball: https://codeload.github.com/terrabyte-tech/terrabyte-web-ui/tar.gz/cc3b711dcc2ef52bb79e225e970befb5a34f2bab}
+  '@terrabyte/web-ui@https://codeload.github.com/terrabyte-tech/terrabyte-web-ui/tar.gz/5df84ce049d83bae921f66aca0c97c3936920049':
+    resolution: {tarball: https://codeload.github.com/terrabyte-tech/terrabyte-web-ui/tar.gz/5df84ce049d83bae921f66aca0c97c3936920049}
     version: 1.0.7
 
   a-sync-waterfall@1.0.1:
@@ -713,7 +713,7 @@ snapshots:
     dependencies:
       escape-string-regexp: 5.0.0
 
-  '@terrabyte/web-ui@https://codeload.github.com/terrabyte-tech/terrabyte-web-ui/tar.gz/cc3b711dcc2ef52bb79e225e970befb5a34f2bab': {}
+  '@terrabyte/web-ui@https://codeload.github.com/terrabyte-tech/terrabyte-web-ui/tar.gz/5df84ce049d83bae921f66aca0c97c3936920049': {}
 
   a-sync-waterfall@1.0.1: {}
 
