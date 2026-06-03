@@ -113,12 +113,18 @@ nav .nav-item-container{
     pointer-events: none;
     position:absolute;
     top:-150px;
-    right:-20px;
+    /* right:-20px; */
+    right:0px;
     transition:opacity .25s, top .65s;
-    width:calc(100vw);
+    width:calc(100vw - 40px);
     height:90vh;
     z-index:102;
     box-shadow:0px 95px 60px 50px #333333;
+  }
+  #newsletter-nav-link{
+    margin-top:var(--space-medium);
+    /* width:100%; */
+    /* text-align:center; */
   }
   .hamburger-menu-icon{
     display:block;

@@ -2,7 +2,16 @@
 /* site-specific styles */
 /* +++++++++++++++++++++++++++++++++++++++++++ */
 
-/*  */
+/* for shared? */
+[data-adaptive~="mobile-only"]{
+  display:none;
+}
+@media only screen and (max-width:600px){
+  [data-adaptive~="mobile-only"]{
+    display:revert;
+  }
+}
+
 
 /* overwrites */
 :root{
@@ -11,6 +20,11 @@
 }
 .padded-section{
   padding:var(--space-large) 30px;
+}
+@media only screen and (max-width: 930px){
+  .padded-section{
+    padding:var(--space-small) 10px;
+  }
 }
 .max-width{
   max-width:1200px;
@@ -22,6 +36,13 @@
 }
 .highlight-container{
   background-color:rgba(10, 140, 97, .25);
+}
+
+/* only flex-wrap on mobile */
+@media only screen and (max-width:600px){
+  [data-au~="mobile-flex-wrap"]{
+    flex-wrap: wrap;
+  }
 }
 
 /* style scrollbars */
@@ -217,6 +238,14 @@ input[type='submit']:active{
   background-color:rgba(10, 140, 97,.45);
 }
 
+@media only screen and (max-width:600px){
+  button,
+  .button{
+    width:100%;
+    text-align:center;
+  }
+}
+
 ul{
   padding-left:20px;
   margin-bottom: 20px;
@@ -333,10 +362,10 @@ input{
   }
   .section-col-container{
     flex-wrap:wrap;
+    width:100%;
   }
   .section-col:not(.social-proof-col){
     margin-right:0;
-    margin-bottom:30px;
     flex:auto;
     width:100%;
   }
