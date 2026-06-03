@@ -11,6 +11,11 @@
     display:revert;
   }
 }
+.full-section{
+  height:100vh;
+  max-height:1000px;
+  /* margin-bottom:100px; */
+}
 
 
 /* overwrites */
@@ -23,7 +28,7 @@
 }
 @media only screen and (max-width: 930px){
   .padded-section{
-    padding:var(--space-small) 10px;
+    padding:var(--space-large) 10px;
   }
 }
 .max-width{
@@ -355,7 +360,7 @@ input{
   .full-section{
     height:auto;
     max-height:none;
-    margin-bottom:50px;
+    /* margin-bottom:50px; */
   }
   .hide-on-tablet{
     display:none!important;

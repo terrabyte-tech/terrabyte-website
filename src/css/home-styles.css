@@ -149,6 +149,9 @@
     width:100%;
     margin-bottom:0px;
   }
+  #projects .section-col-container{
+    gap:0;
+  }
   #projects .col-content,
   #projects .col-footer {
     display: none;
@@ -189,13 +192,13 @@ a.press-card:last-child{
   /* padding:40px 0; */
 }
 .social-proof-section{
-  margin-bottom:100px;
+  /* margin-bottom:100px; */
 }
 .social-proof-section + .button-container{
   margin-top:0px;
 }
 .social-proof-col{
-  margin:10px 15px;
+  /* margin:10px 15px; */
 }
 .social-proof-img{
   /* width:90px; */
@@ -346,7 +349,7 @@ a.press-card:last-child{
 
 @media only screen and (max-width: 440px){
   .social-proof-col{
-    margin:20px 15px;
+    /* margin:20px 15px; */
   }
 }
 
