@@ -1,9 +1,13 @@
 header{
-
+  position: fixed;
+  width: 100vw;
+  z-index: 100;
+  background-color: var(--background);
 }
 header.padded-section{
-  padding-top:var(--space-medium);
-  padding-bottom:var(--space-medium);
+  /* padding-top:var(--space-medium); */
+  /* padding-bottom:var(--space-medium); */
+  padding:var(--space-small) var(--space-medium);
 }
 
 /* banner image, header logo */
