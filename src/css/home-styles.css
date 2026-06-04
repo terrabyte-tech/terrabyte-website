@@ -8,7 +8,8 @@
 /* hero section */
 /* ********* */
 #hero.full-section{
-  height:calc(100vh - 140px);
+  /* height:calc(100vh - 140px); */
+  height:calc(100vh - 90px);
   min-height:0;
 }
 /* hero, left col (illustration) */
@@ -112,8 +113,53 @@
 /* ********* */
 /* projects section */
 /* ********* */
+.project-card{
+  border-radius:2px;
+  background-size:cover;
+  /* background-position:center; */
+  /* background-color:var(--accent); */
+  /* padding:var(--space-small); */
+}
+.project-card .col-content{
+  opacity:0;
+  padding:var(--space-medium) var(--space-small);
+  background:linear-gradient(transparent 10%, black 50%);
+  transition:var(--ux-speed);
+}
+.project-card:hover .col-content{
+  opacity:1;
+}
+#pixel-planet-today-card{
+  background-image:url("../img/projects/pixel-planet-today_promo-bg.png");
+}
+#pixel-planet-today-card:hover{
+  background-image:url("../img/projects/pixel-planet-today_promo-bg-anim.gif");
+}
+#pinekeepers-card{
+  background-image:url("../img/projects/pinekeepers_promo-bg.png");
+}
+#pinekeepers-card:hover{
+  background-image:url("../img/projects/pinekeepers_promo-bg-anim.gif");
+}
+#canapi-card{
+  background-image:url("../img/projects/canapi_promo-bg.png");
+}
+#canapi-card:hover{
+  background-image:url("../img/projects/canapi_promo-bg-anim.gif");
+}
+#wasted-space-card{
+  background-image:url("../img/projects/wasted-space_promo-bg.png");
+}
+#wasted-space-card:hover{
+  background-image:url("../img/projects/wasted-space_promo-bg-anim.gif");
+}
+
+.col-img-container{
+  padding:var(--space-medium) var(--space-small);
+}
 .col-img{
   width:100%;
+  margin:var(--space-small);
   max-width:300px;
   min-height:200px;
   background-repeat: no-repeat;
@@ -121,21 +167,17 @@
   background-size:contain;
   margin:0 auto;
 }
-#pixel-planet-today-img{
-  /* background-image:url("../img/pixel-planet-lettering-tight-crop.png"); */
-  background-image:url("../img/pixel-planet-lettering-tight-crop.webp");
+#pixel-planet-today-card .col-img{
+  background-image:url("../img/projects/pixel-planet-lettering-tight-crop.webp");
 }
-#pinekeepers-img{
-  /* background-image:url("../img/pine-keepers-title-image-trans.png"); */
-  background-image:url("../img/pine-keepers-title-image-trans.webp");
+#pinekeepers-card .col-img{
+  background-image:url("../img/projects/pine-keepers-title-image-trans.webp");
 }
-#canapi-img{
-  /* background-image:url("../img/canapi-code-logo-cropped-white-trans.png"); */
-  background-image:url("../img/canapi-code-logo-cropped-white-trans.webp");
+#canapi-card .col-img{
+  background-image:url("../img/projects/canapi-code-logo-cropped-white-trans.webp");
 }
-#wasted-space-img{
-  /* background-image:url("../img/wasted-space-logo-title-white-large.png"); */
-  background-image:url("../img/wasted-space-logo-title-white-large.webp");
+#wasted-space-card .col-img{
+  background-image:url("../img/projects/wasted-space-logo-title-white-large.webp");
 }
 @media only screen and (max-width:800px){
   .col-img{
@@ -163,24 +205,17 @@
 /* press section */
 /* more styles specific to the link are in site-styles.css or shared stylesheets */
 /* ********* */
-.press-cards-container.col-content{
+/* .press-cards-container.col-content{
   max-height: 800px;
   overflow-y: auto;
 }
-a.press-card{
-  /* width:300px; */
-  /* margin-bottom:10px; */
-  /* margin-right:10px; */
-}
-a.press-card:last-child{
-  /* margin-right:0; */
-}
+
 .card-title{
   margin-bottom:10px;
 }
 .card-caption{
   margin-bottom:20px;
-}
+} */
 /* ************* */
 
 /* ********* */
@@ -290,6 +325,9 @@ a.press-card:last-child{
   /* margin-right:0; */
 }
 
+/* contact section */
+/* .socials-container{} */
+
 
 
 /* ************* */
@@ -306,21 +344,18 @@ a.press-card:last-child{
     transform: translateX(-50%);
   }
 
-  #faqs .accordion-col.section-col{
+  /* #faqs .accordion-col.section-col{
     margin-bottom:100px;
   }
   #faqs .accordion-item-content{
     padding:20px;
-  }
+  } */
 }
 @media only screen and (max-width: 800px){
-  #faqs .icons-container{
-    /* justify-content:space-between; */
-  }
-  .press-cards-container.col-content{
+  /* .press-cards-container.col-content{
     max-height: unset;
     overflow-y:visible;
-  }
+  } */
 }
 @media only screen and (max-width: 600px){
   #hero .code-text{
@@ -331,16 +366,19 @@ a.press-card:last-child{
     width: 100%;
     word-wrap: break-word;
   }
-  a.press-card{
+  /* a.press-card{
     display:flex;
   }
   .press-card .card-title{
     flex:auto;
     width:100%;
-  }
-  #faqs .socials-container{
+  } */
+  #contact .socials-container{
     display:flex;
     justify-content:space-around;
+  }
+  #contact .section-col-title{
+    text-align:center;
   }
   .ques-item-container .icon{
     margin-right:0px;
