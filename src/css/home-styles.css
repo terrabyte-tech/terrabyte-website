@@ -130,25 +130,25 @@
   opacity:1;
 }
 #pixel-planet-today-card{
-  background-image:url("../img/projects/pixel-planet-today_promo-bg.png");
+  background-image:url("../img/projects/pixel-planet-today_promo-bg.webp");
 }
 #pixel-planet-today-card:hover{
   background-image:url("../img/projects/pixel-planet-today_promo-bg-anim.gif");
 }
 #pinekeepers-card{
-  background-image:url("../img/projects/pinekeepers_promo-bg.png");
+  background-image:url("../img/projects/pinekeepers_promo-bg.webp");
 }
 #pinekeepers-card:hover{
   background-image:url("../img/projects/pinekeepers_promo-bg-anim.gif");
 }
 #canapi-card{
-  background-image:url("../img/projects/canapi_promo-bg.png");
+  background-image:url("../img/projects/canapi_promo-bg.webp");
 }
 #canapi-card:hover{
   background-image:url("../img/projects/canapi_promo-bg-anim.gif");
 }
 #wasted-space-card{
-  background-image:url("../img/projects/wasted-space_promo-bg.png");
+  background-image:url("../img/projects/wasted-space_promo-bg.webp");
 }
 #wasted-space-card:hover{
   background-image:url("../img/projects/wasted-space_promo-bg-anim.gif");
