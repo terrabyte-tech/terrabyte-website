@@ -65,6 +65,23 @@ main{
 .highlight-container{
   background-color:rgba(10, 140, 97, .25);
 }
+.highlight-container.rainbow {
+    background: linear-gradient(90deg,
+    hsla(0 100% 50% / .25),
+    hsla(30 100% 50% / .25),
+    hsla(60 100% 50% / .25),
+    hsla(90 100% 50% / .25),
+    hsla(120 100% 50% / .25),
+    hsla(150 100% 50% / .25),
+    hsla(180 100% 50% / .25),
+    hsla(210 100% 50% / .25),
+    hsla(240 100% 50% / .25),
+    hsla(270 100% 50% / .25),
+    hsla(300 100% 50% / .25),
+    hsla(330 100% 50% / .25),
+    hsla(360 100% 50% / .25)
+  );
+}
 .little-bytes-text{
   text-transform:lowercase;
 }
@@ -109,6 +126,9 @@ h1, h2, h3, h4, h5, h6, button, input[type='submit'], .button{
 h1{
   /* font-size:24px; */
   font-size:1.5rem;
+}
+h1 .highlight-container{
+  background-color:var(--accent);
 }
 h2{
   /* font-size: 18px; */
