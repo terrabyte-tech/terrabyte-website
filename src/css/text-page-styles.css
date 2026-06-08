@@ -1,7 +1,3 @@
-main{
-  letter-spacing:.5px;
-}
-
 main section{
   min-height:auto;
 }
@@ -10,26 +6,12 @@ main section > .max-width{
   max-width:900px;
 }
 
-main h1, main h2, main h3, main h4, main h5, main h6, main button, main input[type='submit']{
-  letter-spacing:.25em;
-}
-
-.subsection-col{
-  margin-right:15px;
-}
-.subsection-col:last-child{
-  margin-right:0;
-}
-
-
 /* responsive styles */
 @media only screen and (max-width:930px){
   .subsection-col-container{
     flex-wrap:wrap;
   }
   .subsection-col{
-    margin-right:0;
-    margin-bottom:20px;
     flex:auto;
     width:100%;
   }
