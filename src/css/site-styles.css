@@ -14,7 +14,6 @@
 .full-section{
   height:100vh;
   max-height:1000px;
-  /* margin-bottom:100px; */
 }
 
 
@@ -24,7 +23,7 @@
   --secondary-font: 'Roboto Mono', Courier, monospace;
 }
 html{
-  /* header/main nav height */
+  /* account for header/main nav height with anchors */
   scroll-padding-top: 91px; 
 }
 @media only screen and (max-width:600px){
@@ -32,12 +31,15 @@ html{
     scroll-padding-top: 60px; 
   }
 }
+main{
+  padding-top:90px;
+}
 .padded-section{
   padding:var(--space-large) 30px;
 }
 @media only screen and (max-width: 930px){
   .padded-section{
-    padding:var(--space-large) 10px;
+    padding:var(--space-large) 20px;
   }
   section.padded-section{
     overflow-x: hidden;
@@ -47,9 +49,18 @@ html{
   max-width:1200px;
   margin:0 auto;
 }
+/* revisit this because it could break medium/large icons... */
 .icon-container{
   max-width:1em;
   max-height:1em;
+}
+.icon.small-icon{
+  width:2rem;
+  height:2rem;
+}
+.icon.medium-icon{
+  width:3rem;
+  height:3rem;
 }
 .highlight-container{
   background-color:rgba(10, 140, 97, .25);
@@ -74,7 +85,7 @@ body::-webkit-scrollbar-track{
   transition:.15s;
 }
 *::-webkit-scrollbar-thumb{
-  background-color:#0A8C61;
+  background-color:var(--accent);
   border-radius:2px;
   transition:.15s;
 }
@@ -82,13 +93,15 @@ body::-webkit-scrollbar-track{
 /* layout */
 body{
   letter-spacing:1px;
+  font-weight:300;
 }
 
 /* other elements */
 h1, h2, h3, h4, h5, h6, button, input[type='submit'], .button{
   font-weight:bold;
+  /* font-weight:normal; */
   text-transform:uppercase;
-  letter-spacing:.5em;
+  letter-spacing:.35em;
 }
 h1{
   /* font-size:24px; */
@@ -97,6 +110,9 @@ h1{
 h2{
   /* font-size: 18px; */
   font-size:1.2rem;
+}
+h3{
+  font-size:1rem;
 }
 .subtext{
   font-size:12px;
@@ -113,10 +129,9 @@ h2{
 /* text links & link rows*/
 a.text-link,
 a.link-row,
-a.press-card{
-  transform:scale(1);
+a.press-card,
+a.large-link{
 	position:relative;
-	transition: all .35s;
 
   /* manage word wrap on long URLs */
   overflow-wrap: break-word;
@@ -134,14 +149,10 @@ a.press-card{
   background-color:#ffffff07;
   border-radius:2px;
   padding:10px 20px;
-  margin-bottom:10px;
 }
 a.link-row.flex-container,
 a.link-row[data-au~="flex-container"]{
   display:flex;
-}
-.link-row:last-child{
-  margin-bottom:0;
 }
 a.text-link{
 	display:inline-block;
@@ -161,7 +172,7 @@ a.press-card:after{
 	left:0;
   bottom:-4px;
 	height:2px;
-  background-color:#0A8C61;
+  background-color:var(--accent);
   transition:.35s width, .25s opacity;
 }
 /* move link row underlines up */
@@ -217,6 +228,15 @@ p > a.text-link{
 p > a.text-link:before,
 p > a.text-link:after{
     bottom:0;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .large-link:hover{
+    color:rgba(10, 140, 97,1);
+  }
+}
+.large-icon:active{
+  color:rgba(10, 140, 97,.45);
 }
 
 /* override force hiding links */
@@ -407,5 +427,22 @@ input{
 @media only screen and (max-width: 400px){
   .hide-on-small-mobile{
     display:none!important;
+  }
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++ */
+/* shared sections */
+
+/* ********* */
+/* contact section */
+/* ********* */
+/* responsive styles */
+@media only screen and (max-width: 600px){
+  #contact .socials-container{
+    justify-content:space-around;
+    flex-direction:row;
+  }
+  #contact .section-col-title{
+    text-align:center;
   }
 }

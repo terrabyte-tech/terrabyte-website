@@ -8,8 +8,7 @@
 /* hero section */
 /* ********* */
 #hero.full-section{
-  /* height:calc(100vh - 140px); */
-  height:calc(100vh - 90px);
+  height:calc(100vh - 200px);
   min-height:0;
 }
 /* hero, left col (illustration) */
@@ -37,17 +36,40 @@
   overflow-wrap: break-word;
   hyphens: auto;
 }
+/* responsive styles */
+@media only screen and (max-width:930px){
+  #hero .a-mountain-logo{
+    display:none;
+  }
+  #hero .text-col{
+    position:absolute;
+    width: 80%;
+    /* text-align: center; */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media only screen and (max-width: 600px){
+  #hero .code-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    word-wrap: break-word;
+  }
+}
 /* ********* */
 
 
 /* ********* */
 /* intro section; icons */
 /* ********* */
+/* fixes for visual consistency */
 #ufo-icon svg, #robot-icon svg{
   stroke:currentColor;
   stroke-width:2px;
 }
-
 /* ********* */
 
 
@@ -93,6 +115,7 @@
 }
 /* ********* */
 
+
 /* ********* */
 /* problem section */
 /* ********* */
@@ -109,6 +132,8 @@
     font-size: 10px;
   }
 }
+/* ********* */
+
 
 /* ********* */
 /* projects section */
@@ -116,9 +141,6 @@
 .project-card{
   border-radius:2px;
   background-size:cover;
-  /* background-position:center; */
-  /* background-color:var(--accent); */
-  /* padding:var(--space-small); */
 }
 .project-card .col-content{
   opacity:0;
@@ -179,12 +201,6 @@
 #wasted-space-card .col-img{
   background-image:url("../img/projects/wasted-space-logo-title-white-large.webp");
 }
-@media only screen and (max-width:800px){
-  .col-img{
-    /* width:300px; */
-    /* margin-bottom:0px; */
-  }
-}
 @media only screen and (max-width:600px){
   .col-img{
     /* width:300px; */
@@ -201,6 +217,7 @@
 }
 /* ************* */
 
+
 /* ********* */
 /* press section */
 /* more styles specific to the link are in site-styles.css or shared stylesheets */
@@ -216,7 +233,24 @@
 .card-caption{
   margin-bottom:20px;
 } */
+/* responsive styles */
+@media only screen and (max-width: 800px){
+  /* .press-cards-container.col-content{
+    max-height: unset;
+    overflow-y:visible;
+  } */
+}
+@media only screen and (max-width: 600px){
+  /* a.press-card{
+    display:flex;
+  }
+  .press-card .card-title{
+    flex:auto;
+    width:100%;
+  } */
+}
 /* ************* */
+
 
 /* ********* */
 /* social proof section */
@@ -224,16 +258,9 @@
 .social-proof-col-container{
   flex-wrap: wrap;
   max-width: 765px;
-  /* padding:40px 0; */
-}
-.social-proof-section{
-  /* margin-bottom:100px; */
 }
 .social-proof-section + .button-container{
   margin-top:0px;
-}
-.social-proof-col{
-  /* margin:10px 15px; */
 }
 .social-proof-img{
   /* width:90px; */
@@ -298,98 +325,25 @@
 }
 /* ********* */
 
+
 /* ********* */
 /* faq section */
 /* ********* */
-.accordion-col.section-col{
-  /* margin-bottom:50px; */
-}
-.ques-item-container .icon{
-  width:50px;
-  height:50px;
-  margin-right:35px;
-}
-.ques-item-container{
-  transition:.25s;
-  margin-bottom:20px;
-}
-@media (hover: hover) and (pointer: fine) {
-  .ques-item-container:hover{
-    color:rgba(10, 140, 97,1);
-  }
-}
-.ques-item-container:active{
-  color:rgba(10, 140, 97,.45);
-}
-.ques-icon-container:last-child{
-  /* margin-right:0; */
-}
-
-/* contact section */
-/* .socials-container{} */
-
-
-
-/* ************* */
 /* responsive styles */
 @media only screen and (max-width:930px){
-  #hero .a-mountain-logo{
-    display:none;
-  }
-  #hero .text-col{
-    position:absolute;
-    width: 80%;
-    /* text-align: center; */
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  /* #faqs .accordion-col.section-col{
-    margin-bottom:100px;
-  }
-  #faqs .accordion-item-content{
+  /* #faqs .accordion-item-content{
     padding:20px;
   } */
 }
-@media only screen and (max-width: 800px){
-  /* .press-cards-container.col-content{
-    max-height: unset;
-    overflow-y:visible;
-  } */
-}
-@media only screen and (max-width: 600px){
-  #hero .code-text{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    word-wrap: break-word;
-  }
-  /* a.press-card{
-    display:flex;
-  }
-  .press-card .card-title{
-    flex:auto;
-    width:100%;
-  } */
-  #contact .socials-container{
-    display:flex;
-    justify-content:space-around;
-  }
-  #contact .section-col-title{
-    text-align:center;
-  }
-  .ques-item-container .icon{
-    margin-right:0px;
-  }
-}
+/* ********* */
 
-@media only screen and (max-width: 440px){
-  .social-proof-col{
-    /* margin:20px 15px; */
-  }
-}
+
+/* ********* */
+/* contact section */
+/* ********* */
+/* styles in shared */
+/* ************* */
+
 
 /* loading container items */
 /* responsive */
