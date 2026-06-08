@@ -23,12 +23,24 @@
   --primary-font: 'Rubik', sans-serif;
   --secondary-font: 'Roboto Mono', Courier, monospace;
 }
+html{
+  /* header/main nav height */
+  scroll-padding-top: 91px; 
+}
+@media only screen and (max-width:600px){
+  html{
+    scroll-padding-top: 60px; 
+  }
+}
 .padded-section{
   padding:var(--space-large) 30px;
 }
 @media only screen and (max-width: 930px){
   .padded-section{
     padding:var(--space-large) 10px;
+  }
+  section.padded-section{
+    overflow-x: hidden;
   }
 }
 .max-width{
