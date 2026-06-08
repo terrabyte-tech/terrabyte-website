@@ -65,6 +65,9 @@ main{
 .highlight-container{
   background-color:rgba(10, 140, 97, .25);
 }
+.little-bytes-text{
+  text-transform:lowercase;
+}
 
 /* only flex-wrap on mobile */
 @media only screen and (max-width:600px){
