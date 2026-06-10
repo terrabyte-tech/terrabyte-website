@@ -356,6 +356,9 @@ li{
 ul.no-bullets{
   list-style-type: none;
 }
+/* ul.no-bullets >li:only-child{
+  border-left:5px solid rgba(10, 140, 97,.25);
+} */
 
 iframe{
   width: 100%;
