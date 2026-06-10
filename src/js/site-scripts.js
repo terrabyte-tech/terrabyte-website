@@ -140,7 +140,7 @@ window.addEventListener("load", function(){
   function updateAgreedToText(){
     var agreedToText = document.querySelector("[data-cookie-agreed-text]");
 
-    if(agreedToText != null){
+    if(agreedToText){
       var revisitCookiePolicyLink = document.querySelector("[data-revisit-cookie-policy]");
 
       if(localStorage.getItem("storeData") == "accept-all"){

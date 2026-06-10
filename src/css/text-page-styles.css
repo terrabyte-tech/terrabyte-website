@@ -9,6 +9,19 @@ main section > .max-width{
   max-width:900px;
 }
 
+.table-container{
+  overflow-x: auto;
+}
+table th,
+table td{
+  font-size:0.8rem;
+  padding:var(--space-xsmall);
+  
+}
+table .medium-col{
+  min-width:160px;
+}
+
 /* responsive styles */
 @media only screen and (max-width:930px){
   .subsection-col-container{
