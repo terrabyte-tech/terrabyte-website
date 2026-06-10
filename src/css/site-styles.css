@@ -2,6 +2,31 @@
 /* site-specific styles */
 /* +++++++++++++++++++++++++++++++++++++++++++ */
 
+/* for shared (for sure) */
+blockquote{
+  padding:var(--space-medium);
+  /* always need extra spacing... */
+  margin: var(--space-medium) 0;
+  /* position:relative; */
+  border-left: 2px solid var(--accent);
+  background-color:#ffffff07;
+  border-radius:2px;
+}
+/* blockquote:before{
+  content:"\201C";
+  font-family:serif;
+  font-size:10rem;
+  line-height:1px;
+  position:absolute;
+  top:var(--space-small);
+  left:var(--space-small);
+  opacity:.15;
+} */
+blockquote > *{}
+
+/* site blockquote */
+
+
 /* for shared? */
 [data-adaptive~="mobile-only"]{
   display:none;
@@ -244,12 +269,18 @@ a.press-card:active:after{
   opacity:.45;
 }
 
-/* links inside a paragraph */
-p > a.text-link{
+/* links inside a paragraph or other text elem */
+p > a.text-link,
+ul a.text-link,
+ol a.text-link{
     margin-bottom:0;
 }
 p > a.text-link:before,
-p > a.text-link:after{
+p > a.text-link:after,
+ul a.text-link:before,
+ul a.text-link:after,
+ol a.text-link:before,
+ol a.text-link:after{
     bottom:0;
 }
 
@@ -308,7 +339,7 @@ input[type='submit']:active{
 
 ul{
   padding-left:20px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 ul.left-border{
   /* margin-top:5px; */
