@@ -1,0 +1,61 @@
+<section id="contact" class="padded-section full-section" data-au="flex-container all-center">
+  <div data-au="flex-width flex-container flex-vertical">
+    <div class="section-col-container max-width" data-au="flex-width flex-container large-gap">
+      <!-- social media links -->
+      <div class="section-col" data-au="flex-width flex-container flex-vertical large-gap">
+        <div class="" data-au="flex-container flex-vertical medium-gap">
+          <h2 class="section-col-title">Stay <span class="highlight-container">up to date</span> with what we're doing</h2>
+          <div class="socials-container" data-au="flex-container flex-vertical medium-gap">
+            <!-- instagram -->
+            <a class="large-link" data-au="flex-container align-center small-gap" href="https://instagram.com/terrabyte_tech" target="_blank" aria-label="@terrabyte-tech on Instagram (opens in new window)">
+              <div class="medium-icon icon" data-au="set-width" role="presentation">
+                <svg viewBox="0 0 50 50" role="presentation">
+                  <use href="#instagram-icon"></use>
+                </svg>
+              </div>
+              <div class="hide-on-mobile" data-au="flex-width">
+                <span>@terrabyte_eco</span>
+              </div>
+            </a>
+            <!-- mastodon -->
+            <a class="large-link" data-au="flex-container align-center small-gap" href="https://mastodon.eco/@terrabyte" target="_blank" aria-label="Terrabyte@mastodon.eco on Mastodon (opens in new window)">
+              <div class="medium-icon icon" data-au="set-width" role="presentation">
+                <svg viewBox="0 0 50 50" role="presentation">
+                  <use href="#mastodon-icon"></use>
+                </svg>
+              </div>
+              <div class="hide-on-mobile" data-au="flex-width">
+                <span>terrabyte@mastodon.eco</span>
+              </div>
+            </a>
+            <!-- email -->
+            <a class="large-link" data-au="flex-container align-center small-gap" data-obfu-email href="" target="_blank" aria-label="Email us! (opens in new window)">
+              <div class="medium-icon icon" data-au="set-width" role="presentation">
+                <svg viewBox="0 0 50 50" role="presentation">
+                  <use href="#email-icon"></use>
+                </svg>
+              </div>
+              <div class="hide-on-mobile" data-au="flex-width">
+                <span data-obfu-email-text></span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="newsletter-container">
+          {% include "partials/newsletter-signup.njk" %}
+        </div>
+      </div>
+      <!-- mastodon col -->
+      <div class="section-col" data-au="flex-width flex-container flex-vertical medium-gap">
+        {# <h3 class="section-col-title">Updates (via <a class="text-link" href="https://mastodon.eco/@terrabyte">Mastodon</a>):</h3> #}
+        <div class="mastofeed-container loading-container col-content" data-au="flex-height">
+          <iframe data-mastofeed-frame title="Terrabyte Mastodon feed" allowfullscreen sandbox="allow-top-navigation allow-scripts allow-popups allow-popups-to-escape-sandbox" width="" height=""></iframe>
+          <div class="loading-overlay" data-au="flex-container flex-vertical all-center">
+            <div class="spinner"></div>
+            <span>Loading content</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,224 @@
+/* overwrite shared */
+.full-section{
+  max-height:unset;
+}
+
+/* hero */
+#hero.padded-section{
+  /* height:calc(100vh - 140px); */
+  padding-top:200px;
+  height:calc(100vh - 90px);
+  min-height:0;
+}
+@media only screen and (max-width: 600px){
+  #hero.padded-section{
+    padding-top:var(--space-large);
+    height:auto;
+  }
+}
+
+.hero-content{
+  position:relative;
+}
+.hero-content > :not(.graphic-container){
+  z-index:2;
+  position:relative;
+}
+#hero .graphic-container{
+  position:absolute;
+  max-width:800px;
+  right:0;
+  top:-200px;
+}
+#hero .code-text{
+  opacity:.35;
+  color: var(--accent);
+  margin-bottom:20px;
+}
+.terrabyte-earth-graphic{
+  width: 100%;
+  max-width: 200px;
+  position: absolute;
+  top:-30px;
+  right:0;
+}
+
+/* our story */
+@media only screen and (min-width: 930px){
+  .text-link.read-more-trigger{
+    display:none;
+  }
+}
+
+/* the team */
+#the-team{
+  /* max-height:unset; */
+}
+.team-row{
+  /* margin-bottom:50px; */
+}
+.team-row:last-child{
+  margin-bottom:0px;
+}
+
+.team-avatar{
+  /* margin-right:30px; */
+  width:150px;
+  height:150px;
+  border-radius:50%;
+  background-size:cover;
+}
+
+.team-row-name{
+  /* margin-bottom:5px; */
+}
+.team-links{
+  /* margin-bottom:20px; */
+}
+.team-link{
+  width: 25px;
+  height: 25px;
+  /* margin-right: 10px; */
+}
+.team-link:last-child{
+  /* margin-right: 0px; */
+}
+
+/* avatars */
+#sammy-harper .team-avatar{
+  background-image:url(/img/team-avatars/sammy-harper-crop.jpg);
+}
+#ashley-florer .team-avatar{
+  background-image:url(/img/team-avatars/ashley-florer-crop.jpg);
+}
+#pablo-morales .team-avatar{
+  background-image:url(/img/team-avatars/pablo-morales-crop.jpg);
+}
+#mikayla-biggers .team-avatar{
+  background-image:url(/img/team-avatars/mikayla-biggers-crop.jpg);
+}
+
+#wanttobehere-row{
+  padding:100px 0;
+}
+
+#our-org .section-col:last-child{
+  padding-left:50px
+}
+/* UN SDGs */
+.sdg-container{
+  border:2px solid currentColor;
+  border-radius:2px;
+  width:125px;
+  height:125px;
+  transition:.35s;
+  margin-bottom:10px;
+  margin-right:10px;
+}
+@media (hover: hover) and (pointer: fine) {
+  .sdg-container:hover{
+    background-color:var(--accent);
+  }
+}
+.sdg-container:active{
+  background-color:rgba(10, 140, 97,.45);
+}
+
+.checkbox-row{
+  margin-bottom:10px;
+}
+.checkbox-container{
+  width:20px;
+  height:20px;
+  margin-right:20px;
+  border:2px solid currentColor;
+  border-radius: 2px;
+}
+.checkbox-container svg{
+  display:none;
+}
+/* checked checkbox */
+.checked.checkbox-container{
+  background-color:var(--accent);
+}
+.checked.checkbox-container svg{
+  display:block;
+}
+
+/* responsive styles */
+/* weird desktop hero styles */
+@media only screen and (max-height: 650px){
+  .terrabyte-earth-graphic{
+    display:none;
+  }
+}
+@media only screen and (max-height: 820px) and (max-width:880px){
+  .terrabyte-earth-graphic{
+    display:none;
+  }
+}
+@media only screen and (max-height: 750px){
+  #hero .graphic-container{
+    /* top:-150px; */
+    top:-100px;
+  }
+}
+@media only screen and (max-width: 600px){
+  #hero .code-text.text-right{
+    text-align:center;
+    z-index:1;
+  }
+}
+@media only screen and (max-width: 600px){
+  #hero .graphic-container{
+    top: 50%;
+    width: 80%;
+    right: 50%;
+    transform: translate(50%, -50%);
+  }
+}
+@media only screen and (max-width: 400px){
+  #hero .code-text.text-right{
+    /* display:none; */
+  }
+}
+
+
+/* tablet */
+@media only screen and (max-width: 930px){
+  #our-org .section-col:last-child{
+    padding-left:0px;
+  }
+  .read-more-trigger{
+    display:inline-block;
+  }
+  .read-more-content{
+    display:none;
+  }
+  .show.read-more-content{
+    display:inline;
+  }
+  .hide.read-more-trigger{
+    display:none;
+  }
+}
+
+/* mobile */
+@media only screen and (max-width: 600px){
+  .sdg-container{
+    width:100px;
+    height:100px;
+  }
+  .team-row{
+    flex-wrap: wrap;
+  }
+  .team-avatar{
+    /* margin-right:0; */
+    /* margin-bottom: 30px; */
+  }
+}
+@media only screen and (max-width: 500px){
+  #sdg-col .col-content{
+    /* display:none; */
+  }
+}

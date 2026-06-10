@@ -1,0 +1,358 @@
+/* general page styles */
+.button-container{
+  margin-top:40px;
+}
+
+
+/* ************** */
+/* hero section */
+/* ********* */
+#hero.full-section{
+  height:calc(100vh - 200px);
+  min-height:0;
+}
+#hero h1{
+  font-size:1.5rem;
+}
+/* hero, left col (illustration) */
+.a-mountain-logo{
+  width:100%;
+  max-width:200px;
+  position:absolute;
+}
+.hero-code-container{}
+.hero-code-container .code-text{
+  opacity:.35;
+  color: #0A8C61;
+  margin-bottom:20px;
+}
+.hero-code-container .code-text:last-child{
+  margin-bottom:0px;
+}
+/* hero, right col (text) */
+#hero .text-col{
+  width:100%;
+  max-width:435px;
+}
+#hero h1{
+  margin-bottom:40px;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+/* responsive styles */
+@media only screen and (max-width:930px){
+  #hero .a-mountain-logo{
+    display:none;
+  }
+  #hero .text-col{
+    position:absolute;
+    width: 80%;
+    /* text-align: center; */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media only screen and (max-width: 600px){
+  #hero .code-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    word-wrap: break-word;
+  }
+}
+/* ********* */
+
+
+/* ********* */
+/* intro section; icons */
+/* ********* */
+/* fixes for visual consistency */
+#ufo-icon svg, #robot-icon svg{
+  stroke:currentColor;
+  stroke-width:2px;
+}
+/* ********* */
+
+
+/* ********* */
+/* about us section; venn diagram */
+/* ********* */
+.venn-container{
+  position:relative;
+  margin: 35px 0;
+  border: 50px solid transparent;
+}
+.venn-circle{
+  position:absolute;
+  width:250px;
+  height:250px;
+  border-radius:50%;
+  background-color:rgba(10, 140, 97,.33);
+  top:0;
+  left:0;
+}
+#venn-guide-circle{
+  position:relative;
+  background-color:transparent;
+  border:none;
+}
+#venn-circle-1{
+  transform:translateY(-33.33%);
+}
+#venn-circle-2{
+  transform:translate(-33.33%, 33.33%);
+}
+#venn-circle-3{
+  transform:translate(33.33%, 33.33%);
+}
+.venn-circle-label{
+  position:relative;
+  margin-top:10px;
+}
+.venn-logo{
+  width:30px;
+  height:30px;
+  margin-top:35px;
+}
+/* ********* */
+
+
+/* ********* */
+/* problem section */
+/* ********* */
+.category-col{
+  text-align:center;
+}
+.category-col .icon-container{
+  max-width:60px;
+  max-height:60px;
+  margin-bottom:20px;
+}
+@media only screen and (max-width:1200px){
+  .category-col h3{
+    font-size: 10px;
+  }
+}
+/* ********* */
+
+
+/* ********* */
+/* projects section */
+/* ********* */
+.project-card{
+  border-radius:2px;
+  background-size:cover;
+}
+.project-card .col-content{
+  opacity:0;
+  padding:var(--space-medium) var(--space-small);
+  background:linear-gradient(transparent 10%, black 50%);
+  transition:var(--ux-speed);
+}
+.project-card:hover .col-content{
+  opacity:1;
+}
+#pixel-planet-today-card{
+  background-image:url("../img/projects/pixel-planet-today_promo-bg.webp");
+}
+#pixel-planet-today-card:hover{
+  background-image:url("../img/projects/pixel-planet-today_promo-bg-anim.gif");
+}
+#pinekeepers-card{
+  background-image:url("../img/projects/pinekeepers_promo-bg.webp");
+}
+#pinekeepers-card:hover{
+  background-image:url("../img/projects/pinekeepers_promo-bg-anim.gif");
+}
+#canapi-card{
+  background-image:url("../img/projects/canapi_promo-bg.webp");
+}
+#canapi-card:hover{
+  background-image:url("../img/projects/canapi_promo-bg-anim.gif");
+}
+#wasted-space-card{
+  background-image:url("../img/projects/wasted-space_promo-bg.webp");
+}
+#wasted-space-card:hover{
+  background-image:url("../img/projects/wasted-space_promo-bg-anim.gif");
+}
+
+.col-img-container{
+  padding:var(--space-medium) var(--space-small);
+}
+.col-img{
+  width:100%;
+  margin:var(--space-small);
+  max-width:300px;
+  min-height:200px;
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size:contain;
+  margin:0 auto;
+}
+#pixel-planet-today-card .col-img{
+  background-image:url("../img/projects/pixel-planet-lettering-tight-crop.webp");
+}
+#pinekeepers-card .col-img{
+  background-image:url("../img/projects/pine-keepers-title-image-trans.webp");
+}
+#canapi-card .col-img{
+  background-image:url("../img/projects/canapi-code-logo-cropped-white-trans.webp");
+}
+#wasted-space-card .col-img{
+  background-image:url("../img/projects/wasted-space-logo-title-white-large.webp");
+}
+@media only screen and (max-width:600px){
+  .col-img{
+    /* width:300px; */
+    width:100%;
+    margin-bottom:0px;
+  }
+  #projects .section-col-container{
+    gap:0;
+  }
+  #projects .col-content,
+  #projects .col-footer {
+    display: none;
+  }
+}
+/* ************* */
+
+
+/* ********* */
+/* press section */
+/* more styles specific to the link are in site-styles.css or shared stylesheets */
+/* ********* */
+/* .press-cards-container.col-content{
+  max-height: 800px;
+  overflow-y: auto;
+}
+
+.card-title{
+  margin-bottom:10px;
+}
+.card-caption{
+  margin-bottom:20px;
+} */
+/* responsive styles */
+@media only screen and (max-width: 800px){
+  /* .press-cards-container.col-content{
+    max-height: unset;
+    overflow-y:visible;
+  } */
+}
+@media only screen and (max-width: 600px){
+  /* a.press-card{
+    display:flex;
+  }
+  .press-card .card-title{
+    flex:auto;
+    width:100%;
+  } */
+}
+/* ************* */
+
+
+/* ********* */
+/* social proof section */
+/* ********* */
+.social-proof-col-container{
+  flex-wrap: wrap;
+  max-width: 765px;
+}
+.social-proof-section + .button-container{
+  margin-top:0px;
+}
+.social-proof-img{
+  /* width:90px; */
+  width:120px;
+  height:90px;
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size:contain;
+  /* margin:0 auto 20px auto; */
+}
+.partner-img{
+  width:225px;
+  height:100px;
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size:contain;
+}
+/* partners */
+#carbonii-img{
+  background-image:url("../img/social-proof/carbonii-logo-white.webp");
+}
+#wrd-img{
+  background-image:url("../img/social-proof/wrd-logo-white.webp");
+}
+#goc-img{
+    /* for better sizing with other partner logos */
+  border:5px solid transparent;
+  background-image:url("../img/social-proof/goc-logo-white.webp");
+}
+#tbep-img{
+  background-image:url("../img/social-proof/tbep-logo-white.webp");
+}
+#pfj-img{
+  background-image:url("../img/social-proof/pfj-logo-white.webp");
+}
+#eco-earth-market-img{
+  background-image:url("../img/social-proof/eco-earth-market-logo-white.webp");
+}
+#the-climate-issue-img{
+  background-image:url("../img/social-proof/the-climate-issue-logo-white.webp");
+}
+#earth-hacks-img{
+  background-image:url("../img/social-proof/earth-hacks-logo-white.webp");
+}
+#ecta-img{
+  background-image:url("../img/social-proof/ecta-logo-white.webp");
+}
+#eco-earth-market-img{
+  background-image:url("../img/social-proof/eco-earth-market-logo-white.webp");
+}
+#wherefrom-img{
+  background-image:url("../img/social-proof/wherefrom-logo-white.webp");
+}
+#humans-for-earth-img{
+  background-image:url("../img/social-proof/humans-for-earth-logo-white.webp");
+}
+#pixel-art-mag-img{
+  background-image:url("../img/social-proof/pixel-art-mag-logo-white.webp");
+}
+#skillsusa-neb-img{
+  background-image:url("../img/social-proof/skillsusa-neb-logo-white.webp");
+}
+/* ********* */
+
+
+/* ********* */
+/* faq section */
+/* ********* */
+/* responsive styles */
+@media only screen and (max-width:930px){
+  /* #faqs .accordion-item-content{
+    padding:20px;
+  } */
+}
+/* ********* */
+
+
+/* ********* */
+/* contact section */
+/* ********* */
+/* styles in shared */
+/* ************* */
+
+
+/* loading container items */
+/* responsive */
+@media only screen and (max-width: 800px){
+  .mastofeed-container.col-content{
+    height:70vh;
+    min-height:300px;
+  }
+}

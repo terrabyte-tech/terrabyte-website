@@ -1,0 +1,17 @@
+{
+  "terrabyteWebUI": "true",
+  "project": "Terrabyte",
+  "title": "Terrabyte",
+  "url": "https://www.terrabyte.eco",
+  "author": "Terrabyte",
+  "brand": "Terrabyte",
+  "keywords": "terrabyte, eco, technology, green tech, omaha, nebraska, silicon prairie",
+  "language": "en-US",
+  "description": "Terrabyte is a green tech company that turns pixels and bytes into positive environmental change through education, entertainment, and software tools.",
+  "accentColor": "#0A8C61",
+  "defaultTheme": "dark",
+  "backgroundColor": "#333333",
+  "foregroundColor": "#ffffff",
+  "schemaType": "Organization",
+  "fontsRel": "https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Rubik:wght@300&display=swap"
+}
