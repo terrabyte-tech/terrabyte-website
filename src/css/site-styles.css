@@ -347,8 +347,14 @@ ul.left-border{
 }
 ol{
   /* padding-left:20px; */
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   list-style-position: inside;
+}
+li{
+  margin: var(--space-xsmall) 0;
+}
+ul.no-bullets{
+  list-style-type: none;
 }
 
 iframe{
