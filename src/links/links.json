@@ -8,13 +8,18 @@
           "style": "ext-link"
         },
         {
+          "label": "Sign up for the Canapi Beta",
+          "href": "https://canapi.io",
+          "style": "ext-link"
+        },
+        {
           "label": "Shop the webstore",
           "href": "https://shop.pixelplanettoday.com",
           "style": "ext-link"
         },
         {
           "label": "Sign up for the newsletter",
-          "href": "#newsletter-anchor",
+          "href": "#newsletter",
           "style": "anchor-link"
         },
         {
@@ -32,13 +37,13 @@
           "style": "ext-link"
         },
         {
-          "label": "Pixel Planet Today: Giphy",
-          "href": "https://giphy.com/pixelplanettoday",
+          "label": "Wasted Space: Website",
+          "href": "https://wastedspace.fun",
           "style": "ext-link"
         },
         {
-          "label": "Wasted Space: Website",
-          "href": "https://wastedspace.fun",
+          "label": "Canapi: Website",
+          "href": "https://www.canapi.io",
           "style": "ext-link"
         },
         {

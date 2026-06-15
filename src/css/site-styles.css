@@ -58,6 +58,7 @@ html{
 }
 main{
   padding-top:90px;
+  padding-bottom:var(--space-xlarge);
 }
 .padded-section{
   padding:var(--space-large) 30px;

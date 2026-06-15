@@ -1,0 +1,32 @@
+/* Styles unique to the links page */
+
+/* top-level elems */
+.max-width{
+  max-width:900px;
+}
+
+/* top socials */
+/* responsive */
+@media only screen and (max-width:600px){
+  .padded-section{
+    padding-top:var(--space-medium);
+    padding-bottom:var(--space-medium);
+    overflow:hidden;
+  }
+}
+.top-social{
+  max-width:32px;
+  max-height:32px;
+}
+
+/* link icons */
+.icon.ext,
+.icon.anchor{
+  display:none;
+}
+.ext-link .icon.ext{
+  display:block;
+}
+.anchor-link .icon.anchor{
+  display:block;
+}

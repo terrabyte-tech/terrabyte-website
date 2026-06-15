@@ -1,5 +1,5 @@
 main{
-  padding-bottom:var(--space-xlarge);
+  /* padding-bottom:var(--space-xlarge); */
 }
 main section{
   min-height:auto;
