@@ -8,15 +8,11 @@
 /* top socials */
 /* responsive */
 @media only screen and (max-width:600px){
-  .padded-section{
+  .padded-section:not(header){
     padding-top:var(--space-medium);
     padding-bottom:var(--space-medium);
     overflow:hidden;
   }
-}
-.top-social{
-  max-width:32px;
-  max-height:32px;
 }
 
 /* link icons */

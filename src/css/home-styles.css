@@ -41,13 +41,15 @@
 }
 /* responsive styles */
 @media only screen and (max-width:930px){
+  /* replace with .hide-on-mobile? */
   #hero .a-mountain-logo{
     display:none;
   }
+}
+@media only screen and (max-width:930px) and (min-width:600px){
   #hero .text-col{
     position:absolute;
     width: 80%;
-    /* text-align: center; */
     left: 50%;
     transform: translateX(-50%);
   }
