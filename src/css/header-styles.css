@@ -5,8 +5,6 @@ header{
   background-color: var(--background);
 }
 header.padded-section{
-  /* padding-top:var(--space-medium); */
-  /* padding-bottom:var(--space-medium); */
   padding:var(--space-small) var(--space-medium);
 }
 
@@ -76,6 +74,10 @@ nav .nav-item-container{
   /* left:0; */
   /* width:100px; */
   transition:.35s;
+}
+.top-social{
+  max-width:32px;
+  max-height:32px;
 }
 
 
@@ -149,6 +151,9 @@ nav .nav-item-container{
     opacity:1;
     pointer-events:all;
     transition:opacity .65s, top .25s;
+  }
+  body:has(.hamburger-menu-icon.show){
+    overflow:hidden;
   }
   .nav-item-container{
     width:100%;

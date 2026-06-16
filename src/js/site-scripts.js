@@ -168,6 +168,8 @@ var navTriggers = document.querySelectorAll("[data-nav-toggle]");
 if(navTriggers.length > 0){
   navTriggers[0].addEventListener("click", function(){
     this.classList.toggle("show");
+    var expanded = this.getAttribute("aria-expanded") === "true";
+    this.setAttribute("aria-expanded", !expanded);
   })
 }
 
