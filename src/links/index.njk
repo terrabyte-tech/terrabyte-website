@@ -2,15 +2,12 @@
 subtitle: Links
 layout: layouts/project-base.njk
 keywords: links, linktree, linkinbio
-redirectUrl: https://www.terrabyte.eco
-styles: /links/styles.css
-scripts: /links/scripts.js
+styles: /css/links-styles.css
 ---
-{# 
-<section id="header">
-  <div id="header-img"></div>
-  <div id="top-socials-container" class="set-width flex-container justify-center">
-    <!-- instagram -->
+
+<h1 class="sr-only">Terrabyte Links</h1>
+<section id="socials" class="padded-section" data-au="" aria-label="Social links">
+  <div class="max-width" data-au="flex-width flex-container justify-center mobile-flex-wrap medium-gap">
     <a class="top-social icon-container" href="https://instagram.com/terrabyte_tech" target="_blank" aria-label="Terrabyte on Instagram (opens in new window)">
       <div class="icon">
         <svg viewBox="0 0 50 50" role="presentation">
@@ -18,7 +15,6 @@ scripts: /links/scripts.js
         </svg>
       </div>
     </a>
-    <!-- mastodon -->
     <a rel="me" href="https://mastodon.eco/@terrabyte" class="top-social icon-container" target="_blank" aria-label="Terrabyte on Mastodon (opens in new window)">
       <div class="icon">
         <svg viewBox="0 0 50 50" role="presentation">
@@ -33,7 +29,6 @@ scripts: /links/scripts.js
         </svg>
       </div>
     </a>
-    <!-- we dont have time -->
     <a class="top-social icon-container" href="https://app.wedonthavetime.org/profile/Terrabyte" target="_blank" aria-label="Terrabyte on We Don't Have Time (opens in new window)">
       <div class="icon">
         <svg viewBox="0 0 50 50" role="presentation">
@@ -41,14 +36,13 @@ scripts: /links/scripts.js
         </svg>
       </div>
     </a>
-    <a class="top-social icon-container" href="https://github.com/terrabyte-tech" target="_blank" aria-label="Terrabyte on LinkedIn (opens in new window)">
+    <a class="top-social icon-container" href="https://www.linkedin.com/company/terrabyte-tech/" target="_blank" aria-label="Terrabyte on LinkedIn (opens in new window)">
       <div class="icon">
         <svg viewBox="0 0 50 50" role="presentation">
-          <use href="#linked-in-icon"/>
+          <use href="#linkedin-icon"/>
         </svg>
       </div>
     </a>
-    <!-- youtube -->
     <a class="top-social icon-container" href="https://www.youtube.com/@TerrabyteEco" target="_blank" aria-label="Terrabyte on YouTube (opens in new window)">
       <div class="icon">
         <svg viewBox="0 0 50 50" role="presentation">
@@ -56,6 +50,52 @@ scripts: /links/scripts.js
         </svg>
       </div>
     </a>
-
   </div>
-</section> #}
+</section>
+  
+{% for section in linkSections %}
+<section id="{{ section.label }}" class="padded-section">
+  <div class="max-width" data-au="flex-width flex-container flex-vertical medium-gap">
+    <div class="section-header">
+      <h2>{{ section.label }}</h2>
+    </div>
+    <div class="section-content" data-au="flex-container flex-vertical xsmall-gap">
+      {% for item in section.linkItems %}
+        <a class="link-row {{ item.style }}" href="{{ item.href }}"
+          data-au="flex-container align-center flex-horizontal small-gap align-center"
+          {% if item.style == "ext-link" %}target="_blank" aria-label="{{ item.label }} (link opens in new window)"{% endif %}>
+          <span data-au="flex-width">{{ item.label }}</span>
+          <div class="icon-container" data-au="set-width">
+            <div class="icon anchor" data-au="set-width">
+              <svg viewBox="0 0 50 50" role="presentation">
+                <use href="#arrow-down-icon"/>
+              </svg>
+            </div>
+            <div class="icon ext" data-au="set-width">
+              <svg viewBox="0 0 50 50" role="presentation">
+                <use href="#ext-link-icon"/>
+              </svg>
+            </div>
+          </div>
+        </a>
+      {% endfor %}
+    </div>
+</div>
+</section>
+{% endfor %}
+
+<section id="updates" class="padded-section">
+  <div id="devlog" class="max-width" data-au="flex-width flex-container flex-vertical medium-gap">
+  {# <div id="devlog" class="links-section devlog-section"> #}
+    <div class="section-header">
+      <h3>Updates (via <a class="text-link" href="https://mastodon.eco/@terrabyte">Mastodon</a>)</h3>
+    </div>
+    <div class="mastofeed-container loading-container col-content" data-au="flex-height">
+      <iframe data-mastofeed-frame title="Terrabyte Mastodon feed" allowfullscreen sandbox="allow-top-navigation allow-scripts allow-popups allow-popups-to-escape-sandbox" width="" height=""></iframe>
+      <div class="loading-overlay" data-au="flex-container flex-vertical all-center">
+        <div class="spinner"></div>
+        <span>Loading content</span>
+      </div>
+    </div>
+  </div>
+</section>
