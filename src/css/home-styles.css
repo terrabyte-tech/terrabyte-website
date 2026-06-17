@@ -14,6 +14,17 @@
 #hero h1{
   font-size:1.5rem;
 }
+/* responsive */
+@media only screen and (max-width:930px){
+  #hero.full-section{
+    height:auto;
+    max-height:none;
+  }
+  #hero h1{
+    font-size:1.2rem;
+  }
+}
+
 /* hero, left col (illustration) */
 .a-mountain-logo{
   width:100%;
@@ -215,6 +226,9 @@
   #projects .section-col-container{
     gap:0;
   }
+  /* #projects .project-card{
+    position:relative;
+  } */
   #projects .col-content,
   #projects .col-footer {
     display: none;
