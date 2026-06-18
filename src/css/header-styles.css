@@ -104,17 +104,21 @@ nav .nav-item-container{
 }
 
 /* responsive styles */
-@media only screen and (min-width:600px) and (max-width:800px){
+@media only screen and (min-width:600px) and (max-width:900px){
+  nav .nav-item-container{
+    padding:var(--space-small) var(--space-xsmall);
+    font-size:0.8rem;
+  }
   #home-nav-link{
     display:none;
   }
 }
-@media only screen and (max-width:800px){
+/* @media only screen and (max-width:800px){
   header > .flex-container,
   header > [data-au~="flex-container"]{
     flex-wrap:wrap;
   }
-}
+} */
 
 @media only screen and (max-width:600px){
   header > .flex-container,

@@ -44,7 +44,7 @@
 }
 
 /* our story */
-@media only screen and (min-width: 930px){
+@media only screen and (min-width: 900px){
   .text-link.read-more-trigger{
     display:none;
   }
@@ -185,7 +185,7 @@
 
 
 /* tablet */
-@media only screen and (max-width: 930px){
+@media only screen and (max-width: 900px){
   #our-org .section-col:last-child{
     padding-left:0px;
   }
