@@ -79,23 +79,6 @@ main{
   text-transform:lowercase;
 }
 
-/* style scrollbars */
-body::-webkit-scrollbar-track{
-  background-color:transparent;
-  transition:.15s;
-}
-*::-webkit-scrollbar{
-  width: 10px;
-  height: 10px;
-  background-color:transparent;
-  transition:.15s;
-}
-*::-webkit-scrollbar-thumb{
-  background-color:var(--accent);
-  border-radius:2px;
-  transition:.15s;
-}
-
 /* layout */
 body{
   letter-spacing:1px;
@@ -324,18 +307,6 @@ iframe{
   max-height:100vh;
   border:none;
   border-radius:2px;
-  opacity:0;
-  transition:opacity .5s;
-}
-/* iframe has loaded */
-iframe[src]{
-  opacity:1;
-  transition-delay: 1s;
-}
-iframe[src] ~ .loading-overlay{
-  opacity:0;
-  transition-delay: 1s;
-  pointer-events: none;
 }
 
 .input-container{

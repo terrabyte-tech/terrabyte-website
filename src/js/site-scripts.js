@@ -113,6 +113,9 @@ window.addEventListener("load", function(){
   // only called when scrolling down to a certain part of the page
   function fillMastofeed(mastofeedFrame){
     loadFeed = true;
+    mastofeedFrame.addEventListener("load", function(){
+      mastofeedFrame.closest("[data-state]").dataset.state = "loaded";
+    }, { once: true });
     mastofeedFrame.src = "https://mastofeed.com/apiv2/feed?userurl=https%3A%2F%2Fmastodon.eco%2Fusers%2Fterrabyte&theme=dark&size=100&header=false&replies=false&boosts=false";
   }
 
