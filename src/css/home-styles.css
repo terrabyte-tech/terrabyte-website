@@ -15,7 +15,7 @@
   font-size:1.5rem;
 }
 /* responsive */
-@media only screen and (max-width:930px){
+@media only screen and (max-width:900px){
   #hero.full-section{
     height:auto;
     max-height:none;
@@ -51,13 +51,13 @@
   hyphens: auto;
 }
 /* responsive styles */
-@media only screen and (max-width:930px){
+@media only screen and (max-width:900px){
   /* replace with .hide-on-mobile? */
   #hero .a-mountain-logo{
     display:none;
   }
 }
-@media only screen and (max-width:930px) and (min-width:600px){
+@media only screen and (max-width:900px) and (min-width:600px){
   #hero .text-col{
     position:absolute;
     width: 80%;
@@ -73,6 +73,9 @@
     transform: translate(-50%, -50%);
     width: 100%;
     word-wrap: break-word;
+  }
+  #hero .text-col{
+    max-width:100%;
   }
 }
 /* ********* */
@@ -349,7 +352,7 @@
 /* faq section */
 /* ********* */
 /* responsive styles */
-@media only screen and (max-width:930px){
+@media only screen and (max-width:900px){
   /* #faqs .accordion-item-content{
     padding:20px;
   } */

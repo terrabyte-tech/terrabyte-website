@@ -22,6 +22,8 @@ module.exports = function (eleventyConfig) {
   const siteData = require("./_data/site.json");
   env.addGlobal("site", siteData);
   env.addGlobal("siteData", siteData);
+  env.addGlobal("currentYear", new Date().getFullYear());
+  env.addGlobal("buildId", Date.now());
 
 // Allow UI package to access the same environment
   if (typeof ui.setNunjucksEnvironment === "function") {

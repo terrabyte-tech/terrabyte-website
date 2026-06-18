@@ -2,40 +2,7 @@
 /* site-specific styles */
 /* +++++++++++++++++++++++++++++++++++++++++++ */
 
-/* for shared (for sure) */
-blockquote{
-  padding:var(--space-medium);
-  /* always need extra spacing... */
-  margin: var(--space-medium) 0;
-  /* position:relative; */
-  border-left: 2px solid var(--accent);
-  background-color:#ffffff07;
-  border-radius:2px;
-}
-/* blockquote:before{
-  content:"\201C";
-  font-family:serif;
-  font-size:10rem;
-  line-height:1px;
-  position:absolute;
-  top:var(--space-small);
-  left:var(--space-small);
-  opacity:.15;
-} */
-blockquote > *{}
-
-/* site blockquote */
-
-
 /* for shared? */
-[data-adaptive~="mobile-only"]{
-  display:none;
-}
-@media only screen and (max-width:600px){
-  [data-adaptive~="mobile-only"]{
-    display:revert;
-  }
-}
 .full-section{
   height:100vh;
   max-height:1000px;
@@ -63,7 +30,7 @@ main{
 .padded-section{
   padding:var(--space-large) 30px;
 }
-@media only screen and (max-width: 930px){
+@media only screen and (max-width: 900px){
   .padded-section{
     padding:var(--space-large) 20px;
   }
@@ -110,13 +77,6 @@ main{
 }
 .little-bytes-text{
   text-transform:lowercase;
-}
-
-/* only flex-wrap on mobile */
-@media only screen and (max-width:600px){
-  [data-au~="mobile-flex-wrap"]{
-    flex-wrap: wrap;
-  }
 }
 
 /* style scrollbars */
@@ -168,10 +128,6 @@ h3{
 }
 .force-small-text{
   text-transform:lowercase;
-}
-/* MOVE TO SHARED? */
-.code-text{
-  font-family: 'Roboto Mono', Courier, monospace;
 }
 
 /* +++++++++++++++++++++++++++++++++++++++++++ */
@@ -382,15 +338,6 @@ iframe[src] ~ .loading-overlay{
   pointer-events: none;
 }
 
-input{
-  font-family: inherit;
-  font-size:inherit;
-  color:inherit;
-  background-color:transparent;
-  border:none;
-  outline:none;
-}
-
 .input-container{
   transform:scale(1);
 	position:relative;
@@ -452,7 +399,7 @@ input{
 
 
 /* responsive */
-@media only screen and (max-width:930px){
+@media only screen and (max-width:900px){
   .full-section{
     height:auto;
     max-height:none;
