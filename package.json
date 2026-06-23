@@ -1,0 +1,28 @@
+{
+  "name": "terrabyte-website",
+  "version": "1.0.0",
+  "description": "The official Terrabyte website [terrabyte.eco](https://terrabyte.eco). See our products, get in touch, and learn more about us.",
+  "main": "index.js",
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/terrabyte-tech/terrabyte-website.git"
+  },
+  "keywords": [],
+  "author": "Terrabyte",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/terrabyte-tech/terrabyte-website/issues"
+  },
+  "homepage": "https://github.com/terrabyte-tech/terrabyte-website#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "cheerio": "^1.1.2"
+  },
+  "dependencies": {
+    "@terrabyte/web-ui": "github:terrabyte-tech/terrabyte-web-ui"
+  }
+}
