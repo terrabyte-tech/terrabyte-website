@@ -8,7 +8,7 @@ noIndex: true
 
 <?php
   $page_redirected_from = $_SERVER['REQUEST_URI'];  // this is especially useful with error 404 to indicate the missing page.
-  $server_url = "http://" . $_SERVER["SERVER_NAME"];
+  $server_url = "https://" . $_SERVER["SERVER_NAME"];
   $redirect_url = $_SERVER["REDIRECT_URL"];
   $redirect_url_array = parse_url($redirect_url);
   $end_of_path = strrchr($redirect_url_array["path"], "/");
