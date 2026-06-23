@@ -3,6 +3,13 @@ ErrorDocument 401 /error.php
 ErrorDocument 403 /error.php
 ErrorDocument 404 /error.php
 
+# Redirect legacy .html URLs to clean trailing-slash paths
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteRule ^(.+)\.html$ /$1/ [R=301,L]
+</IfModule>
+
 # Performance: Caching headers
 <IfModule mod_expires.c>
   ExpiresActive On
