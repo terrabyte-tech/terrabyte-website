@@ -10,30 +10,20 @@ window.addEventListener("load", function(){
 
   ///////////////
 // Cookie Banner Scripts
-  
-// on startup
+
   var cookieBanner = document.getElementById("cookie-banner");
 
   if(cookieBanner){
 
-    // hide banner if already accepted/understood
-    if (localStorage.getItem("storeData") == "accept-all" || localStorage.getItem("storeData") == "accept-min"){
-      console.log("previously acknowledged data policy");
-    }
-    // or show it if it hasn't
-    else{
+    // show banner if preference not yet set
+    if (localStorage.getItem("storeData") !== "accept-all" && localStorage.getItem("storeData") !== "accept-min"){
       cookieBanner.classList.add("show");
     }
 
-    // update the agreed-to text accordingly
+    // update the agreed-to text on the cookie policy page
     updateAgreedToText();
 
-  // set correct position of cookie banner
-    if(cookieBanner !== null && cookieBanner.classList.contains("show")){
-      stickNav(cookieBanner);
-    }
-
-    // on click, set policy acknowledgement (if not minimized)
+    // on click, save preference and dismiss
     var cookieButtons = document.querySelectorAll("[data-cookie-button]");
 
     if(cookieButtons.length > 0){
@@ -41,7 +31,7 @@ window.addEventListener("load", function(){
         cookieButtons[x].addEventListener("click", function(){clickedCookieButton(this)});
       }
     }
-    
+
   }
 
   function clickedCookieButton(buttonClicked){
@@ -52,38 +42,9 @@ window.addEventListener("load", function(){
     }else if(cookieButtonAction == "accept-min"){
       localStorage.setItem("storeData", "accept-min");
       console.log("data policy acknowledged, accepted essential");
-    }else{
-      localStorage.setItem("storeData", "declined");
-      console.log("ERROR: nothing to decline");
     }
-    closeCookieBanner(cookieBanner);
-    updateAgreedToText();
-  }
-
-  function closeCookieBanner(cookieBanner){
     cookieBanner.classList.remove("show");
-    cookieBanner.classList.remove("stick");
-    cookieBanner.style.bottom = (cookieBanner.offsetHeight * -1) + "px";
-
-    var pageFooter = document.querySelector("[data-footer]");
-    pageFooter.style.paddingTop = 0 + "px";
-  }
-
-  // sticky banner
-  function stickNav(cookieBanner, windowBottom){
-
-    var pageFooter = document.querySelector("[data-footer]");
-    var footerTop = pageFooter.offsetTop;
-
-    if(windowBottom >= footerTop + cookieBanner.offsetHeight){
-      cookieBanner.classList.add("stick");
-      pageFooter.style.paddingTop = 0 + "px";
-    }
-    else{
-      cookieBanner.classList.remove("stick");
-      pageFooter.style.paddingTop = cookieBanner.offsetHeight + "px";
-    }
-    
+    updateAgreedToText();
   }
 
   let loadFeed = false;
@@ -94,10 +55,6 @@ window.addEventListener("load", function(){
     
     // get the cookie banner area (make sure it exists)
     var cookieBanner = document.getElementById("cookie-banner");
-
-    if(cookieBanner !== null && cookieBanner.classList.contains("show")){
-      stickNav(cookieBanner, windowBottom);
-    }
 
     // get mastofeed iframe (make sure it exists)
     if(!loadFeed){
@@ -125,17 +82,9 @@ window.addEventListener("load", function(){
 
   if(revisitCookiePolicyLink.length > 0){
     revisitCookiePolicyLink[0].addEventListener("click", function(){
-
-      // reset saved value
       localStorage.removeItem("storeData");
-
-      var cookieBanner = document.getElementById("cookie-banner");
-      // reset cookiebanner
-      cookieBanner.classList.add("show");
-      cookieBanner.style.bottom = "0px";
-      // listen for scrolling again
-      stickNav(cookieBanner);
-
+      updateAgreedToText();
+      if(cookieBanner) cookieBanner.classList.add("show");
     })
   }
 
