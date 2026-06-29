@@ -236,6 +236,7 @@ ol a.text-link:after{
 /* override force hiding links */
 a.text-link.hide{
   pointer-events: none;
+  opacity:0;
 }
 
 /* override for forcing white links */
