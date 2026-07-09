@@ -123,6 +123,17 @@ if(navTriggers.length > 0){
     var expanded = this.getAttribute("aria-expanded") === "true";
     this.setAttribute("aria-expanded", !expanded);
   })
+
+  // Close the menu on any nav link click — same-page anchor links (e.g.
+  // "/#projects") don't trigger a full page navigation, so nothing else
+  // would ever tell the menu to close.
+  var navLinks = document.querySelectorAll("[data-nav] a");
+  for(let x = 0; x < navLinks.length; x++){
+    navLinks[x].addEventListener("click", function(){
+      navTriggers[0].classList.remove("show");
+      navTriggers[0].setAttribute("aria-expanded", "false");
+    })
+  }
 }
 
 ///////////////
