@@ -132,11 +132,16 @@ a.large-link{
 a.link-row,
 a.press-card{
   /* may be flex container... */
-  display:block;
+  /* display:block; */
   overflow:hidden;
   background-color:#ffffff07;
   border-radius:2px;
-  padding:10px 20px;
+}
+a.link-row{
+  padding:var(--space-xsmall) var(--space-small);
+}
+a.press-card{
+  padding:var(--space-medium) var(--space-small);
 }
 a.link-row.flex-container,
 a.link-row[data-au~="flex-container"]{

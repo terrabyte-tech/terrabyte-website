@@ -233,32 +233,35 @@
 /* press section */
 /* more styles specific to the link are in site-styles.css or shared stylesheets */
 /* ********* */
-/* .press-cards-container.col-content{
-  max-height: 800px;
-  overflow-y: auto;
+/* row breaks out of .max-width (not wrapped in it in the markup) so it can use the full section width */
+.press-cards-container{
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  padding: var(--space-small) 0;
+  /* discovered a new css property! :D */
+  scroll-snap-type: x proximity;
 }
-
+a.press-card{
+  width: 280px;
+  /* discovered a new css property! :D */
+  scroll-snap-align: start;
+}
 .card-title{
   margin-bottom:10px;
 }
 .card-caption{
-  margin-bottom:20px;
-} */
+  margin-bottom:0;
+}
 /* responsive styles */
-@media only screen and (max-width: 800px){
-  /* .press-cards-container.col-content{
-    max-height: unset;
-    overflow-y:visible;
-  } */
+@media only screen and (max-width: 900px){
+  .card-title{
+    font-size:0.8rem;
+  }
 }
 @media only screen and (max-width: 600px){
-  /* a.press-card{
-    display:flex;
+  a.press-card{
+    width: 60vw;
   }
-  .press-card .card-title{
-    flex:auto;
-    width:100%;
-  } */
 }
 /* ************* */
 

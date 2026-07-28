@@ -36,6 +36,7 @@ navSelected: home
 </section>
 
 <section id="projects" class="padded-section" data-au="flex-container all-center" aria-label="Our projects">
+  <h2 class="sr-only" data-au="">Our Projects</h2>
   <div class="section-col-container max-width" data-au="flex-container xsmall-gap">
     <!-- pixel planet today --> 
     <a id="pixel-planet-today-card" class="section-col project-card" data-au="flex-width flex-container flex-vertical justify-right small-gap" href="https://www.pixelplanettoday.com" target="_blank" aria-label="Pixel Planet Today website (opens in new window)">
@@ -166,9 +167,29 @@ navSelected: home
   </div>
 </section>
 
+<section id="press" class="padded-section" data-au="flex-container flex-vertical medium-gap">
+  <div class="max-width" data-au="flex-width flex-container flex-vertical medium-gap">
+
+    <h2 class="" data-au="text-center">As Seen In</h2>
+
+    <div class="press-cards-container" data-au="flex-container small-gap">
+      {% for item in press.pressItems %}
+      <a class="press-card" href="{{ item.linkHref }}" target="_blank" aria-label="{{ item.label }} (opens in new window)" data-au="set-width flex-container flex-vertical small-gap">
+        <h3 class="card-title">{{ item.label }}</h3>
+        <div class="" data-au="flex-height">
+          <p class="card-caption subtext">{{ item.caption }}</p>
+        </div>
+        <span class="card-link subtext">{{ item.linkLabel }}</span>
+      </a>
+      {% endfor %}
+    </div>
+
+  </div>
+</section>
+
 <section id="social-proof" class="padded-section full-section" data-au="flex-container flex-vertical justify-center xlarge-gap">
   <div class="social-proof-section" data-au="flex-container flex-vertical medium-gap">
-    <h3 class="section-col-title" data-au="text-center">Our Partners:</h3>
+    <h2 class="" data-au="text-center">Our Partners:</h2>
 
     <div class="social-proof-col-container section-col-container max-width" data-au="flex-container all-center medium-gap">
       <div class="social-proof-col section-col" data-au="set-width">
