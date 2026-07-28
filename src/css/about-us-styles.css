@@ -31,9 +31,9 @@
   top:-200px;
 }
 #hero .code-text{
-  opacity:.35;
-  color: var(--accent);
-  margin-bottom:20px;
+  /* opacity:.35; */
+  /* color: var(--accent); */
+  /* margin-bottom:20px; */
 }
 .terrabyte-earth-graphic{
   width: 100%;
@@ -175,11 +175,6 @@
     width: 80%;
     right: 50%;
     transform: translate(50%, -50%);
-  }
-}
-@media only screen and (max-width: 400px){
-  #hero .code-text.text-right{
-    /* display:none; */
   }
 }
 

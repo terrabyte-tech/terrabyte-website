@@ -80,6 +80,11 @@ nav .nav-item-container{
   max-height:32px;
 }
 
+/* main nav CTA buttons */
+header nav .button{
+  margin-left:4rem;
+}
+
 
 /* secondary pages, showing the back button */
 .back-button-container{
@@ -105,8 +110,12 @@ nav .nav-item-container{
 
 /* responsive styles */
 @media only screen and (min-width:600px) and (max-width:900px){
-  nav .nav-item-container{
+  header nav .nav-item-container{
     padding:var(--space-small) var(--space-xsmall);
+    font-size:0.8rem;
+  }
+  header nav .button{
+    margin-left:2rem;
     font-size:0.8rem;
   }
   #home-nav-link{

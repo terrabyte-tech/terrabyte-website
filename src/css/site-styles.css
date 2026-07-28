@@ -406,6 +406,25 @@ iframe{
 /* shared sections */
 
 /* ********* */
+/* hero section */
+/* ********* */
+.hero-code-container .code-text{
+  opacity:.35;
+  color: var(--accent);
+  margin-bottom:20px;
+}
+.hero-code-container .code-text:last-child{
+  margin-bottom:0px;
+}
+
+@media only screen and (max-width: 600px){
+  #hero .code-text{
+    word-wrap: break-word;
+  }
+}
+
+
+/* ********* */
 /* contact section */
 /* ********* */
 /* responsive styles */

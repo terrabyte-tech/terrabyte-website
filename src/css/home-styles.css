@@ -31,15 +31,6 @@
   max-width:200px;
   position:absolute;
 }
-.hero-code-container{}
-.hero-code-container .code-text{
-  opacity:.35;
-  color: #0A8C61;
-  margin-bottom:20px;
-}
-.hero-code-container .code-text:last-child{
-  margin-bottom:0px;
-}
 /* hero, right col (text) */
 #hero .text-col{
   width:100%;
@@ -71,7 +62,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
-    word-wrap: break-word;
   }
   #hero .text-col{
     max-width:100%;
