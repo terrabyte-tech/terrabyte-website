@@ -8,7 +8,7 @@ createNavSelectBar();
 function createNavSelectBar(){
   var navSelectBar = document.createElement("div");
   navSelectBar.classList.add("nav-select-bar");
-  navSelectBar.classList.add("hide-on-mobile");
+  navSelectBar.setAttribute("data-adaptive", "tablet desktop");
 
   var navElement = document.getElementById("main-nav");
 
