@@ -11,12 +11,12 @@ navSelected: home
     <div class="illustration-col section-col" data-au="flex-width flex-container all-center" role="presentation">
       <div class="hero-code-container" data-au="text-center">
         <!-- we are -->
-        <p class="code-text hide-on-mobile" role="img" aria-label="decorative binary code (1's and 0's)">01110111 01100101 00100000 01100001 01110010 01100101</p>
+        <p class="code-text" data-adaptive="tablet desktop" role="img" aria-label="decorative binary code (1's and 0's)">01110111 01100101 00100000 01100001 01110010 01100101</p>
         <!-- saving the planet byte by byte -->
         <p class="code-text" role="img" aria-label="binary code (1's and 0's)">
-          <span class="hide-on-mobile">01110011 01100001 01110110 01101001 01101110 01100111 00100000 01110100 01101000 01100101 00100000 01110000 01101100 01100001 01101110 01100101 01110100 00100000 </span>01100010 01111001 01110100 01100101 00100000 01100010 01111001 00100000 01100010 01111001 01110100 01100101</p>
+          <span data-adaptive="tablet desktop">01110011 01100001 01110110 01101001 01101110 01100111 00100000 01110100 01101000 01100101 00100000 01110000 01101100 01100001 01101110 01100101 01110100 00100000 </span>01100010 01111001 01110100 01100101 00100000 01100010 01111001 00100000 01100010 01111001 01110100 01100101</p>
         <!-- u in?! -->
-        <p class="code-text hide-on-mobile" role="img" aria-label="binary code (1's and 0's)">01110101 00100000 01101001 01101110 00111111 00100001</p>
+        <p class="code-text" data-adaptive="tablet desktop" role="img" aria-label="binary code (1's and 0's)">01110101 00100000 01101001 01101110 00111111 00100001</p>
       </div>
       <div class="a-mountain-logo" data-au="set-width">
         <svg viewBox="0 0 1000 1000" role="presentation">
@@ -36,6 +36,7 @@ navSelected: home
 </section>
 
 <section id="projects" class="padded-section" data-au="flex-container all-center" aria-label="Our projects">
+  <h2 class="sr-only" data-au="">Our Projects</h2>
   <div class="section-col-container max-width" data-au="flex-container xsmall-gap">
     <!-- pixel planet today --> 
     <a id="pixel-planet-today-card" class="section-col project-card" data-au="flex-width flex-container flex-vertical justify-right small-gap" href="https://www.pixelplanettoday.com" target="_blank" aria-label="Pixel Planet Today website (opens in new window)">
@@ -131,7 +132,7 @@ navSelected: home
   <div data-au="flex-container flex-vertical">
     <div class="section-col-container max-width" data-au="flex-container align-center medium-gap">
       <!-- venn diagram col -->
-      <div class="section-col hide-on-tablet hide-on-mobile" data-au="flex-width flex-container all-center">
+      <div class="section-col" data-adaptive="desktop" data-au="flex-width flex-container all-center">
         <div class="venn-container" data-au="set-width" role="presentation">
           <div id="venn-circle-1" class="venn-circle"></div>
           <div id="venn-circle-2" class="venn-circle"></div>
@@ -166,9 +167,29 @@ navSelected: home
   </div>
 </section>
 
+<section id="press" class="padded-section" data-au="flex-container flex-vertical medium-gap">
+  <div class="max-width" data-au="flex-width flex-container flex-vertical medium-gap">
+
+    <h2 class="" data-au="text-center">As Seen In</h2>
+
+    <div class="press-cards-container" data-au="flex-container small-gap">
+      {% for item in press.pressItems %}
+      <a class="press-card" href="{{ item.linkHref }}" target="_blank" aria-label="{{ item.label }} (opens in new window)" data-au="set-width flex-container flex-vertical small-gap">
+        <h3 class="card-title">{{ item.label }}</h3>
+        <div class="" data-au="flex-height">
+          <p class="card-caption subtext">{{ item.caption }}</p>
+        </div>
+        <span class="card-link subtext">{{ item.linkLabel }}</span>
+      </a>
+      {% endfor %}
+    </div>
+
+  </div>
+</section>
+
 <section id="social-proof" class="padded-section full-section" data-au="flex-container flex-vertical justify-center xlarge-gap">
   <div class="social-proof-section" data-au="flex-container flex-vertical medium-gap">
-    <h3 class="section-col-title" data-au="text-center">Our Partners:</h3>
+    <h2 class="" data-au="text-center">Our Partners:</h2>
 
     <div class="social-proof-col-container section-col-container max-width" data-au="flex-container all-center medium-gap">
       <div class="social-proof-col section-col" data-au="set-width">
