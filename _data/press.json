@@ -1,6 +1,12 @@
 {"pressItems": [
   {
-    "label": "Greentech Festival Berlin 2024",
+    "label": "P.E.A. Awards Nominee (2026)",
+    "caption": "The People, Environment, and Accomplishment (P.E.A.) Awards is the UK's leading sustainability and climate awards. Hosted annually during London's Climate Week, the awards recognize individuals and teams behind industries that are changing the planet for the better. We were thrilled to be shortlisted for the Technology category",
+    "linkLabel": "See the full 2026 shortlist",
+    "linkHref": "https://www.peaawards.com/p-e-a-awards-2026-shortlist/"
+  },
+  {
+    "label": "Greentech Festival Berlin (2024)",
     "caption": "If you attended the 2024 Greentech Festival in Berlin, you may have spotted our booth in Start-Up Land! We were there showcasing the beta version of Wasted Space, promoting the game but also getting valuable feedback on our portable arcade machines.",
     "linkLabel": "See who else was there",
     "linkHref": "https://greentechfestival.com/startup"
@@ -12,7 +18,7 @@
     "linkHref": "https://branch.climateaction.tech/issues/issue-8/"
   },
   {
-    "label": "Keep Nebraska Beautiful 2023 Sustainability Awards",
+    "label": "Keep Nebraska Beautiful Sustainability Awards (2023)",
     "caption": "We are incredibly honored to have received the Business/Industry Award in Sustainability by Keep Nebraska Beautiful! Our project, Pixel Planet Today, gathered the interest of many organizations at the ceremony.",
     "linkLabel": "See all 2023 Award Recipients",
     "linkHref": "https://knb.org/awards"
