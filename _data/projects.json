@@ -1,0 +1,73 @@
+{"projects": [
+  {
+    "label": "Pixel Planet Today",
+    "highlighted": true,
+    "caption": "Social media snippets that pair facts about the planet with pixel art designs.",
+    "links": [
+      {
+        "linkLabel": "Visit the project website",
+        "linkHref": "https://www.pixelplanettoday.com"
+      },
+      {
+        "linkLabel": "Follow on Instagram",
+        "linkHref": "https://www.instagram.com/pixelplanettoday/"
+      },
+      {
+        "linkLabel": "Follow on Facebook",
+        "linkHref": "https://www.facebook.com/pixelplanettoday"
+      }
+    ]
+  },
+  {
+    "label": "Wasted Space",
+    "highlighted": true,
+    "caption": "A classic-arcade game that drives home the concepts of reusing and recycling.",
+    "links": [
+      {
+        "linkLabel": "Visit the project website",
+        "linkHref": "https://www.wastedspace.fun"
+      },
+      {
+        "linkLabel": "Play online",
+        "linkHref": "https://terrabyte-tech.itch.io/wasted-space"
+      }
+    ]
+  },
+  {
+    "label": "Pinekeepers",
+    "highlighted": false,
+    "caption": "A retro-inspired game that turns trees saved in the digital world into real-life saplings.",
+    "links": [
+      {
+        "linkLabel": "Visit the project website",
+        "linkHref": "https://www.pinekeepers.com"
+      }
+    ]
+  },
+  {
+    "label": "Canapi",
+    "highlighted": true,
+    "caption": "Automation software (marketplace &amp; API) that turns digital interactions into environmental contributions.",
+    "links": [
+      {
+        "linkLabel": "Visit the project website",
+        "linkHref": "https://www.canapi.io"
+      },
+      {
+        "linkLabel": "Sign up for the beta",
+        "linkHref": "https://www.canapi.io/#beta"
+      }
+    ]
+  },
+  {
+    "label": "byteOS: Notes",
+    "highlighted": false,
+    "caption": "A bare-bones notepad app that allows you to take notes without cloud storage, tracking, or AI.",
+    "links": [
+      {
+        "linkLabel": "Download for Android",
+        "linkHref": "https://play.google.com/store/apps/details?id=com.terrabyte.byteosnotes"
+      }
+    ]
+  }
+]}
