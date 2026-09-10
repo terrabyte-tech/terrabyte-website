@@ -144,8 +144,8 @@ if(navTriggers.length > 0){
   var accordionTriggers = document.querySelectorAll("[data-accordion-trigger]");
   for(let x = 0; x < accordionTriggers.length; x++){
     accordionTriggers[x].addEventListener("click", function(){
-      
-      var closestContainer = this.closest("[data-accordion-container");
+
+      var closestContainer = this.closest("[data-accordion-container]");
 
       var closestContentContainer = closestContainer.querySelector("[data-accordion-content-container]");
       var closestContent = closestContainer.querySelector("[data-accordion-content]");
@@ -153,13 +153,21 @@ if(navTriggers.length > 0){
         closestContainer.classList.remove("show");
 
         closestContentContainer.style.height = "0px";
-        
+        this.setAttribute("aria-expanded", "false");
       }
       else{
         resetAccordions();
         closestContainer.classList.add("show");
 
         closestContentContainer.style.height = closestContent.offsetHeight + "px";
+        this.setAttribute("aria-expanded", "true");
+      }
+    })
+    // triggers are <a role="button"> with no href, so wire up keyboard activation
+    accordionTriggers[x].addEventListener("keydown", function(e){
+      if(e.key === "Enter" || e.key === " " || e.key === "Spacebar"){
+        e.preventDefault();
+        this.click();
       }
     })
   }
@@ -168,7 +176,10 @@ if(navTriggers.length > 0){
     for(let x = 0; x < accordions.length; x++){
       accordions[x].classList.remove("show");
 
-      accordions[x].querySelector("[data-accordion-content-container]").style.height = "0px";;
+      accordions[x].querySelector("[data-accordion-content-container]").style.height = "0px";
+    }
+    for(let x = 0; x < accordionTriggers.length; x++){
+      accordionTriggers[x].setAttribute("aria-expanded", "false");
     }
   }
 ///////////////
