@@ -108,7 +108,7 @@
   padding:100px 0;
 }
 
-#our-org .section-col:last-child{
+#our-org .elem-col:last-child{
   padding-left:50px
 }
 /* UN SDGs */
@@ -127,7 +127,7 @@
   }
 }
 .sdg-container:active{
-  background-color:rgba(10, 140, 97,.45);
+  background-color:var(--accent-a50);
 }
 
 .checkbox-row{
@@ -187,7 +187,7 @@
 
 /* tablet */
 @media only screen and (max-width: 900px){
-  #our-org .section-col:last-child{
+  #our-org .elem-col:last-child{
     padding-left:0px;
   }
   .read-more-trigger{
@@ -212,14 +212,5 @@
   }
   .team-row{
     flex-wrap: wrap;
-  }
-  .team-avatar{
-    /* margin-right:0; */
-    /* margin-bottom: 30px; */
-  }
-}
-@media only screen and (max-width: 500px){
-  #sdg-col .col-content{
-    /* display:none; */
   }
 }

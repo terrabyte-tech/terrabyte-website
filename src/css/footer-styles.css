@@ -1,7 +1,6 @@
 footer{
   background-color:#333333;
   color:white;
-  /* border-top: 5px solid rgba(10, 140, 97,.25); */
 }
 
 /* banner */
@@ -58,7 +57,7 @@ footer{
   z-index:101;
   position:relative;
   background-color:#333333;
-  border-top: 5px solid rgba(10, 140, 97,.25);
+  border-top: 5px solid var(--accent-a25);
   padding-top:50px;
   padding-bottom:50px;
   font-size:13px;

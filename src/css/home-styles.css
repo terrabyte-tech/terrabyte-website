@@ -11,9 +11,6 @@
   height:calc(100vh - 200px);
   min-height:0;
 }
-#hero h1{
-  font-size:1.5rem;
-}
 /* responsive */
 @media only screen and (max-width:900px){
   #hero.full-section{
@@ -37,9 +34,7 @@
   max-width:435px;
 }
 #hero h1{
-  margin-bottom:40px;
-  overflow-wrap: break-word;
-  hyphens: auto;
+  margin-bottom:40px; /* homepage hero spaces with margin, not flex gap */
 }
 /* responsive styles */
 @media only screen and (max-width:900px){
@@ -94,7 +89,7 @@
   width:250px;
   height:250px;
   border-radius:50%;
-  background-color:rgba(10, 140, 97,.33);
+  background-color:var(--accent-a33);
   top:0;
   left:0;
 }
@@ -150,13 +145,13 @@
   border-radius:2px;
   background-size:cover;
 }
-.project-card .col-content{
+.project-card .elem-content{
   opacity:0;
   padding:var(--space-medium) var(--space-small);
   background:linear-gradient(transparent 10%, black 50%);
   transition:var(--ux-speed);
 }
-.project-card:hover .col-content{
+.project-card:hover .elem-content{
   opacity:1;
 }
 #pixel-planet-today-card{
@@ -211,18 +206,17 @@
 }
 @media only screen and (max-width:600px){
   .col-img{
-    /* width:300px; */
     width:100%;
     margin-bottom:0px;
   }
-  #projects .section-col-container{
+  #projects .elem-col-container{
     gap:0;
   }
   /* #projects .project-card{
     position:relative;
   } */
-  #projects .col-content,
-  #projects .col-footer {
+  #projects .elem-content,
+  #projects .elem-footer {
     display: none;
   }
 }
@@ -276,67 +270,6 @@ a.press-card{
 .social-proof-section + .button-container{
   margin-top:0px;
 }
-.social-proof-img{
-  /* width:90px; */
-  width:120px;
-  height:90px;
-  background-repeat: no-repeat;
-  background-position:center;
-  background-size:contain;
-  /* margin:0 auto 20px auto; */
-}
-.partner-img{
-  width:225px;
-  height:100px;
-  background-repeat: no-repeat;
-  background-position:center;
-  background-size:contain;
-}
-/* partners */
-#carbonii-img{
-  background-image:url("../img/social-proof/carbonii-logo-white.webp");
-}
-#wrd-img{
-  background-image:url("../img/social-proof/wrd-logo-white.webp");
-}
-#goc-img{
-    /* for better sizing with other partner logos */
-  border:5px solid transparent;
-  background-image:url("../img/social-proof/goc-logo-white.webp");
-}
-#tbep-img{
-  background-image:url("../img/social-proof/tbep-logo-white.webp");
-}
-#pfj-img{
-  background-image:url("../img/social-proof/pfj-logo-white.webp");
-}
-#eco-earth-market-img{
-  background-image:url("../img/social-proof/eco-earth-market-logo-white.webp");
-}
-#the-climate-issue-img{
-  background-image:url("../img/social-proof/the-climate-issue-logo-white.webp");
-}
-#earth-hacks-img{
-  background-image:url("../img/social-proof/earth-hacks-logo-white.webp");
-}
-#ecta-img{
-  background-image:url("../img/social-proof/ecta-logo-white.webp");
-}
-#eco-earth-market-img{
-  background-image:url("../img/social-proof/eco-earth-market-logo-white.webp");
-}
-#wherefrom-img{
-  background-image:url("../img/social-proof/wherefrom-logo-white.webp");
-}
-#humans-for-earth-img{
-  background-image:url("../img/social-proof/humans-for-earth-logo-white.webp");
-}
-#pixel-art-mag-img{
-  background-image:url("../img/social-proof/pixel-art-mag-logo-white.webp");
-}
-#skillsusa-neb-img{
-  background-image:url("../img/social-proof/skillsusa-neb-logo-white.webp");
-}
 /* ********* */
 
 
@@ -362,7 +295,7 @@ a.press-card{
 /* loading container items */
 /* responsive */
 @media only screen and (max-width: 800px){
-  .mastofeed-container.col-content{
+  .mastofeed-container.elem-content{
     height:70vh;
     min-height:300px;
   }
