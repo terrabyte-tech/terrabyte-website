@@ -1,0 +1,34 @@
+/* ============================================================
+   partner.njk — page-specific styles.
+   ============================================================ */
+
+#hero .placeholder-media {
+  max-width: 350px;
+}
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: var(--space-medium);
+}
+
+/* only row-reverse on large screen sizes */
+@media only screen and (min-width: 601px) {
+  .scenario:nth-child(even){
+    flex-direction: row-reverse;
+  }
+}
+
+/* image placeholders */
+.placeholder-media {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border: 2px dashed currentColor;
+  border-radius: var(--small-radius);
+  opacity: 0.45;
+}
+.placeholder-media[data-ratio="wide"]{
+  aspect-ratio: 16 / 9;
+}
+.placeholder-media[data-ratio="square"]{
+  aspect-ratio: 1 / 1;
+}
