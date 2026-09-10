@@ -1,6 +1,7 @@
 {"projects": [
   {
     "label": "Pixel Planet Today",
+    "logo": "",
     "highlighted": true,
     "caption": "Social media snippets that pair facts about the planet with pixel art designs.",
     "links": [
@@ -20,6 +21,7 @@
   },
   {
     "label": "Wasted Space",
+    "logo": "",
     "highlighted": true,
     "caption": "A classic-arcade game that drives home the concepts of reusing and recycling.",
     "links": [
@@ -35,6 +37,7 @@
   },
   {
     "label": "Pinekeepers",
+    "logo": "",
     "highlighted": false,
     "caption": "A retro-inspired game that turns trees saved in the digital world into real-life saplings.",
     "links": [
@@ -46,6 +49,7 @@
   },
   {
     "label": "Canapi",
+    "logo": "",
     "highlighted": true,
     "caption": "Automation software (marketplace &amp; API) that turns digital interactions into environmental contributions.",
     "links": [
@@ -61,12 +65,29 @@
   },
   {
     "label": "byteOS: Notes",
+    "logo": "",
     "highlighted": false,
     "caption": "A bare-bones notepad app that allows you to take notes without cloud storage, tracking, or AI.",
     "links": [
       {
         "linkLabel": "Download for Android",
         "linkHref": "https://play.google.com/store/apps/details?id=com.terrabyte.byteosnotes"
+      }
+    ]
+  },
+  {
+    "label": "Eco Arcade",
+    "logo": "",
+    "highlighted": false,
+    "caption": "An upcycled arcade machine fit with Terrabyte games, allowing people to get a hands-on, unique environmental experience.",
+    "links": [
+      {
+        "linkLabel": "See it in action",
+        "linkHref": ""
+      },
+      {
+        "linkLabel": "Bring us to your event",
+        "linkHref": ""
       }
     ]
   }
