@@ -43,12 +43,17 @@ module.exports = function (eleventyConfig) {
     "node_modules/@terrabyte/web-ui/js": "js",
     "node_modules/@terrabyte/web-ui/img": "img"
   });
+  // Aurum framework
+  eleventyConfig.addPassthroughCopy({
+    "node_modules/@goldenharpmedia/aurum/dist": "css/aurum"
+  });
 
 // Watch targets
   eleventyConfig.addWatchTarget("src/**/*.css");
   eleventyConfig.addWatchTarget("src/**/*.js");
   eleventyConfig.addWatchTarget("src/**/*.{png,jpg,jpeg,gif,svg,webp,ico,woff,woff2}");
   eleventyConfig.addWatchTarget("node_modules/@terrabyte/web-ui");
+  eleventyConfig.addWatchTarget("node_modules/@goldenharpmedia/aurum");
 
 // Shortcodes
   eleventyConfig.addShortcode("currentYear", () => `${new Date().getFullYear()}`);

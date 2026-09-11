@@ -23,6 +23,7 @@
     "cheerio": "^1.1.2"
   },
   "dependencies": {
+    "@goldenharpmedia/aurum": "github:goldenharpmedia/aurum",
     "@terrabyte/web-ui": "github:terrabyte-tech/terrabyte-web-ui"
   }
 }
