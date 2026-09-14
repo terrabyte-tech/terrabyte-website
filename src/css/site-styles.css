@@ -27,22 +27,6 @@ main{
   padding-top:90px;
   padding-bottom:var(--space-xlarge);
 }
-.padded-section{
-  padding:var(--space-large) 30px;
-}
-@media only screen and (max-width: 900px){
-  .padded-section{
-    padding:var(--space-large) 20px;
-  }
-  section.padded-section{
-    overflow-x: hidden;
-  }
-}
-.max-width{
-  max-width:1200px;
-  width:100%;
-  margin:0 auto;
-}
 /* revisit this because it could break medium/large icons... */
 .icon-container{
   max-width:1em;
